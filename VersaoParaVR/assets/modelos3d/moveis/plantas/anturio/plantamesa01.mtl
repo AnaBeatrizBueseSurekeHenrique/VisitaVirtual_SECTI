@@ -1,0 +1,59 @@
+# Blender 4.2.2 LTS MTL File: 'plantamesa03.blend'
+# www.blender.org
+
+newmtl Cinza_Escuro
+Ns 250.000000
+Kd 0.010120 0.004472 0.031433
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Bump -bm 1.000000 ../../../../texturas/plastico/plastico_normal.jpg
+
+newmtl Folha
+Ns 250.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+illum 2
+map_Kd ../../../../texturas/anturio_folha/anturio_folha_cor.png
+map_d C../../../../texturas/anturio_folha/anturio_folha_cor.png
+
+newmtl Terra
+Ns 250.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd ../../../../texturas/terra/terra_cor.jpg
+map_Bump -bm 1.000000 ../../../../texturas/terra/terra_normal.jpg
+
+newmtl Verde
+Ns 250.000000
+Kd 0.071514 0.102083 0.014584
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl flor
+Ns 250.000000
+Kd 0.801500 0.000000 0.045804
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl flor_amarelo
+Ns 250.000000
+Kd 0.802017 0.641882 0.124955
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Bump -bm 1.000000 ../../../../texturas/anturio_flor_amarelo/anturio_flor_amarelo_normal.jpg

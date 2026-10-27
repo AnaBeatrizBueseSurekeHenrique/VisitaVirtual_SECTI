@@ -1,0 +1,31 @@
+# Blender 4.2.2 LTS MTL File: 'escadas.blend'
+# www.blender.org
+
+newmtl Marmore
+Ns 250.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd ../../../texturas/chao/chao_lajotas/chao_lajotas_cor.png
+map_Bump -bm 1.000000 ../../../texturas/chao/chao_lajotas/chao_lajotas_normal.png
+
+newmtl Metal_Claro
+Ns 648.919800
+Kd 0.315389 0.315389 0.315389
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 3
+
+newmtl Parede_Preta
+Ns 0.000000
+Kd 0.005880 0.006235 0.006051
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Bump -bm 1.000000 ../../../texturas/paredes/parede_interna/parede_interna_normal.jpg

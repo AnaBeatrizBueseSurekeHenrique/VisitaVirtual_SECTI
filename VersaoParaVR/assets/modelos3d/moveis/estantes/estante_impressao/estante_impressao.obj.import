@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://owqxn7dd7sqm"
+path="res://.godot/imported/estante_impressao.obj-87e1a112f0d35a761a5ec05d998c45aa.mesh"
+
+[deps]
+
+files=["res://.godot/imported/estante_impressao.obj-87e1a112f0d35a761a5ec05d998c45aa.mesh"]
+
+source_file="res://assets/modelos3d/moveis/estantes/estante_impressao/estante_impressao.obj"
+dest_files=["res://.godot/imported/estante_impressao.obj-87e1a112f0d35a761a5ec05d998c45aa.mesh", "res://.godot/imported/estante_impressao.obj-87e1a112f0d35a761a5ec05d998c45aa.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

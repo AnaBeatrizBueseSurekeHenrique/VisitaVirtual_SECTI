@@ -1,0 +1,30 @@
+# Blender 4.2.2 LTS MTL File: 'mesinha_centro.blend'
+# www.blender.org
+
+newmtl Madeira
+Ns 250.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd ../../../../texturas/madeiras/madeira_clara/madeira_clara_cor_base.png
+map_Bump -bm 1.000000 ../../../../texturas/madeiras/madeira_clara/madeira_clara_normal.png
+
+newmtl Material
+Ns 250.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl Metal
+Ns 648.919800
+Kd 0.016491 0.016491 0.016491
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 3

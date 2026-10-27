@@ -1,0 +1,48 @@
+# Blender 4.2.2 LTS MTL File: 'sofazinho_tecido_segundo_andar.blend'
+# www.blender.org
+
+newmtl Materiais
+Ns 250.000000
+Kd 0.082452 0.095366 0.131435
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Bump -bm 1.000000 ../../../../../texturas/tecido/tecido_cortina/tecido_cortina_opacidade.jpg
+
+newmtl Metal_Claro
+Ns 648.919800
+Kd 0.797293 0.797293 0.797293
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 3
+
+newmtl Metal_Claro.001
+Ns 648.919800
+Kd 0.797293 0.797293 0.797293
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 3
+
+newmtl Metal_Claro.002
+Ns 648.919800
+Kd 0.797293 0.797293 0.797293
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 3
+
+newmtl Metal_Claro.003
+Ns 648.919800
+Kd 0.797293 0.797293 0.797293
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 3

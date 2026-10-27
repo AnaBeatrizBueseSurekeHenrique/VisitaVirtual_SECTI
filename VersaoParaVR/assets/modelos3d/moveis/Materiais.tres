@@ -1,0 +1,42 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://drjrinrco555o"]
+
+[ext_resource type="Texture2D" uid="uid://csc6jgy0k5n0o" path="res://assets/modelos3d/moveis/lobo_46725.png" id="1_6tik4"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6tik4"]
+render_priority = 1
+transparency = 1
+shading_mode = 0
+albedo_color = Color(0, 0, 0, 1)
+grow = true
+grow_amount = 0.01
+stencil_mode = 3
+stencil_flags = 1
+stencil_compare = 5
+metadata/_stencil_owned = true
+
+[resource]
+resource_name = "Materiais"
+next_pass = SubResource("StandardMaterial3D_6tik4")
+diffuse_mode = 3
+disable_fog = true
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_6tik4")
+metallic = 0.29
+metallic_specular = 0.3
+emission_enabled = true
+emission = Color(1, 1, 1, 1)
+emission_energy_multiplier = 0.7
+emission_operator = 1
+emission_texture = ExtResource("1_6tik4")
+rim_enabled = true
+rim_tint = 0.0
+clearcoat_enabled = true
+anisotropy_enabled = true
+ao_enabled = true
+heightmap_scale = 0.0
+backlight_enabled = true
+refraction_enabled = true
+point_size = 14.5
+fov_override = 1.0
+stencil_mode = 1
+stencil_flags = 2

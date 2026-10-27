@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b2ln36x3mfy1h"
+path="res://.godot/imported/planta1.obj-091668a24e6207693d40e1ae997e3988.mesh"
+
+[deps]
+
+files=["res://.godot/imported/planta1.obj-091668a24e6207693d40e1ae997e3988.mesh"]
+
+source_file="res://assets/modelos3d/moveis/plantas/arvore/planta1.obj"
+dest_files=["res://.godot/imported/planta1.obj-091668a24e6207693d40e1ae997e3988.mesh", "res://.godot/imported/planta1.obj-091668a24e6207693d40e1ae997e3988.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

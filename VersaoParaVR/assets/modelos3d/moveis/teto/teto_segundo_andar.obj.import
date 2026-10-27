@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cr5oxbtai8sbd"
+path="res://.godot/imported/teto_segundo_andar.obj-0337cc605c41ea47b8d73f456b95a71c.mesh"
+
+[deps]
+
+files=["res://.godot/imported/teto_segundo_andar.obj-0337cc605c41ea47b8d73f456b95a71c.mesh"]
+
+source_file="res://assets/modelos3d/moveis/teto/teto_segundo_andar.obj"
+dest_files=["res://.godot/imported/teto_segundo_andar.obj-0337cc605c41ea47b8d73f456b95a71c.mesh", "res://.godot/imported/teto_segundo_andar.obj-0337cc605c41ea47b8d73f456b95a71c.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false
