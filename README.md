@@ -7,7 +7,7 @@ As pastas do projeto estão listadas a seguir:
 ├── VersaoParaWeb/                <- Códigos, assets e texturas utilizados na versão para navegador do projeto.
 └── README.md
 ```
-Além disso, cada versão do projeto possui a seguinte organização:
+Além disso, ambas as pastas ``VersaoParaVR`` e ``VersaoParaWeb`` possuem a seguinte organização:
 ```
 ├── assets/               
       ├── fontes/                 <- Armazena as fontes e suas respectivas licenças utilizadas no projeto.
@@ -20,13 +20,14 @@ Além disso, cada versão do projeto possui a seguinte organização:
 ```
 ## Instalação do projeto:
   Para a instalação desse projeto, é necessário:
-  - [Godot - Versão 4.6.stable.](https://godotengine.org/download/archive/4.6.3-stable/)
-Ao ser finalizada a instalação, para abrir os projetos desse repositório se segue os seguintes passos:
-Em primeiro lugar, se é selecionado a opção de Importar de Godot
+  - [Godot - Versão 4.6.](https://godotengine.org/download/archive/4.6.3-stable/)
+    
+Ao ser finalizada a instalação, os seguintes passos devem ser seguidos para se utilizar dos projetos deste repositório:
+- Em primeiro lugar, se é selecionado a opção de *Importar* de Godot:
 
 ![Importar](https://file.garden/XufHAN0HKkSMo1Zp/1.png)
 
-Após isto, se é selecionado o *project.godot* do projeto. A versão para realidade virtual, e a versão para navegador possuem project.godot diferentes, sendo projetos diferentes.
+Após isto, se é selecionado o *project.godot* do projeto. A versão para realidade virtual, e a versão para navegador possuem *project.godot*s diferentes, resultando em projetos diferentes na _game engine_.
 
 ![Projeto](https://file.garden/XufHAN0HKkSMo1Zp/2.png)
 
