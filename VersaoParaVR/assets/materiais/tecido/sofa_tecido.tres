@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://6kdy07y3atfi"]
+
+[ext_resource type="Texture2D" uid="uid://cfxqy838ykhan" path="res://assets/texturas/tecido/tecido_cortina/tecido_cortina_normal.jpg" id="1_rgugc"]
+
+[resource]
+cull_mode = 2
+albedo_color = Color(0.23537052, 0.23537052, 0.23537052, 1)
+normal_enabled = true
+normal_texture = ExtResource("1_rgugc")

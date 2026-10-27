@@ -1,0 +1,13 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://jqoxw0opxe08"]
+
+[ext_resource type="Texture2D" uid="uid://dbu4nwqv8nu71" path="res://assets/texturas/chao/chao_externo/chao_externo_cor.jpg" id="1_fvw3i"]
+[ext_resource type="Texture2D" uid="uid://dig6w13hhbxq2" path="res://assets/texturas/chao/chao_externo/chao_externo_oclusao_ambiente.jpg" id="2_77x36"]
+[ext_resource type="Texture2D" uid="uid://bey3hdjcadjn" path="res://assets/texturas/chao/chao_externo/chao_externo_rugosidade.jpg" id="3_mvmbg"]
+
+[resource]
+resource_name = "ChaoExterno"
+albedo_texture = ExtResource("1_fvw3i")
+roughness_texture = ExtResource("3_mvmbg")
+normal_enabled = true
+ao_enabled = true
+ao_texture = ExtResource("2_77x36")

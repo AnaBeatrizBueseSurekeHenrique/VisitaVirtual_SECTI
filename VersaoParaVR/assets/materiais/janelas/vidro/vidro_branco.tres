@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://2ik3c4l81vfc"]
+
+[resource]
+resource_name = "Branco_Luz"
+cull_mode = 2
+disable_fog = true
+albedo_color = Color(0.6913568, 0.6913569, 0.69135636, 1)
+roughness = 0.0
+disable_receive_shadows = true

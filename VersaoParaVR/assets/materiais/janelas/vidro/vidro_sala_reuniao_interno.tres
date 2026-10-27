@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://die7vouc8ofog"]
+
+[resource]
+resource_name = "Vidro_Interno"
+cull_mode = 2
+specular_mode = 1
+albedo_color = Color(0.73552895, 0.84094703, 1, 1)
+metallic = 0.53
+metallic_specular = 0.2
+roughness = 0.29

@@ -1,0 +1,20 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://fjq5rul2ysow"]
+
+[ext_resource type="Texture2D" uid="uid://bavxhwegs4e4k" path="res://assets/texturas/paredes/parede_listra_cozinha/listra_cozinha_cor.png" id="1_hhtao"]
+[ext_resource type="Texture2D" uid="uid://u7ll8e04eq0" path="res://assets/texturas/paredes/parede_listra_cozinha/listra_cozinha_oclusao_ambiente.png" id="2_13r5a"]
+[ext_resource type="Texture2D" uid="uid://bm3faunrx86ql" path="res://assets/texturas/paredes/parede_listra_cozinha/listra_cozinha_metal.png" id="3_24rf6"]
+[ext_resource type="Texture2D" uid="uid://supx4r8lb4ct" path="res://assets/texturas/paredes/parede_listra_cozinha/listra_cozinha_normal.png" id="4_6snwm"]
+[ext_resource type="Texture2D" uid="uid://caah73naxku44" path="res://assets/texturas/paredes/parede_listra_cozinha/listra_cozinha_rugosidade.png" id="5_5ldbe"]
+
+[resource]
+resource_name = "ParedeCozinha2"
+cull_mode = 2
+albedo_color = Color(0.96597856, 0.96075565, 0.95149153, 1)
+albedo_texture = ExtResource("1_hhtao")
+metallic = 1.0
+metallic_texture = ExtResource("3_24rf6")
+roughness_texture = ExtResource("5_5ldbe")
+normal_enabled = true
+normal_texture = ExtResource("4_6snwm")
+ao_enabled = true
+ao_texture = ExtResource("2_13r5a")

@@ -1,0 +1,14 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://bqpij70w1flsk"]
+
+[ext_resource type="Texture2D" uid="uid://eglkdtoakx8e" path="res://assets/texturas/anturio_folha/anturio_folha_cor.png" id="1_7ci6d"]
+[ext_resource type="Texture2D" uid="uid://cicv6scogf0sx" path="res://assets/texturas/anturio_folha/anturio_folha_normal.png" id="2_grfjr"]
+
+[resource]
+resource_name = "Folha"
+transparency = 4
+cull_mode = 2
+albedo_texture = ExtResource("1_7ci6d")
+roughness = 0.5
+normal_enabled = true
+normal_texture = ExtResource("2_grfjr")
+texture_filter = 2

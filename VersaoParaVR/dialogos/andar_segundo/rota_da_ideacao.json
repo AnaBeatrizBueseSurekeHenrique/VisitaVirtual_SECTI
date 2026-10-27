@@ -1,0 +1,44 @@
+{
+	"falas":[
+		{
+			"dialogo": "Dentre seus projetos, a SECTI possui a Rota da Ideação, o ponto de partida onde a inovação ganha forma!"
+		},
+			{
+			"dialogo": "PERGUNTA",
+			"texto": "Tem alguma dúvida sobre este projeto?",
+			"opcoes":
+				[
+					{
+						"texto": "O que é a Rota da Ideação?",
+						"acao": "pula",
+						"id": 2
+					},
+					{	
+						"texto": "Quero saber sobre os outros projetos, tchau!",
+						"acao": "muda_falante",
+						"id": 0
+					}
+				
+				]
+			},
+			{
+				"dialogo": "É uma oficina metodológica, um ambiente dinâmico focado em motodologias ativas e design thinking!"
+			},
+			{
+				"dialogo": "VOLTA",
+				"texto": "É um espaço perfeito para exercitar a criatividade, identificar problemas locais, debater ideias e estruturar propostas inovadoras com real impacto social e econômico.",
+				"volta": 1
+			},
+			{
+				"dialogo": "PERGUNTA",
+				"texto": "",
+				"opcoes":
+					[
+						{
+							"texto": "Tchau!",
+							"acao": "pular_fim"
+						}
+					]
+			}
+	]
+}

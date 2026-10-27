@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://ddi0ias2ygwgb"]
+
+[ext_resource type="Texture2D" uid="uid://djlb3uwcwgjqb" path="res://assets/texturas/anturio_flor/anturio_flor_normal.png" id="1_elfcp"]
+
+[resource]
+resource_name = "flor"
+cull_mode = 2
+albedo_color = Color(0.90708244, 0, 0.23694031, 1)
+roughness = 0.5
+normal_enabled = true
+normal_texture = ExtResource("1_elfcp")

@@ -1,0 +1,57 @@
+{
+	"falas": [
+		{
+			"dialogo": "Boas vindas ao terceiro andar da SECTI!"
+		},
+		{
+			"dialogo": "Aqui, nossa visita se aproxima de seu fim..."
+		},
+		{
+			"dialogo": "Você tem alguma dúvida sobre os projetos aqui apresentados, ou gostaria de encerrar o tour?"
+		},
+		{
+			"dialogo": "PERGUNTA",
+			"texto": " ",
+			"opcoes": [
+				{
+					"texto": "As oficinas e atividades têm algum custo para a população?",
+					"acao": "pula",
+					"id": 4
+				},
+				{
+					"texto": "Como faço para participar de um projeto?",
+					"acao": "pula",
+					"id": 6
+				},
+				{
+					"texto": "Ainda quero dar mais uma olhada pelo prédio!",
+					"acao": "pular_fim"
+				},
+				{
+					"texto": "Quero terminar a visita virtual.",
+					"acao": "trigger_fim"
+				}
+			
+			]
+		},
+		{
+			"dialogo": "Não! Todas as nossas oficinas, treinamentos e eventos são 100% gratuitos!"
+		},
+		{
+			"dialogo": "VOLTA",
+			"texto": "Como fazemos parte de uma Secretaria Municipal, nosso compromisso é garantir acesso livre, inclusivo e de qualidade à inovação e à tecnologia para toda a comunidade.",
+			"volta": 3
+		},
+		{
+			"dialogo": "É muito simples! Basta seguir a nossa página no Instagram @inovaguarapuava para ficar por dentro de tudo e acompanhar o lançamento dos formulários de inscrição."
+		},
+		{
+			"dialogo": "VOLTA",
+			"texto": "Se você precisa agendar visitas técnicas ou oficinas de ideação para turmas e grupos, entre em contato diretamente com um de nossos colaboradores.",
+			"volta":1
+		},
+		{
+			"dialogo": "Muito obrigado por participar de nossa visita guiada!"
+		}
+	]
+}

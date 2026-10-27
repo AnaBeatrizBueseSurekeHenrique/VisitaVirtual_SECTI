@@ -1,0 +1,48 @@
+{
+	"falas":[
+		{
+			"dialogo": "Olá! Dentre seus projetos, a SECTI possui o Guarabot, mãos na massa com a robótica e programação!"
+		}, 
+		{
+			"dialogo": "PERGUNTA",
+			"texto": "Tem alguma dúvida sobre este projeto?",
+			"opcoes":
+				[
+					{
+						"texto": "O que é o projeto Guarabot?",
+						"acao": "pula",
+						"id": 2
+					},
+					{
+						"texto": "Quero saber sobre os outros projetos, tchau!",
+						"acao": "muda_falante",
+						"id": 0
+					}
+				
+				
+				]
+		},
+		{
+			"dialogo": "É uma iniciativa que integra tecnologia e educação, sendo experência imersiva, prática e divertida para alunos do fundamental da rede municipal!"
+		},
+		{
+			"dialogo": "Este projeto permite que os estudantes possam, em primeira mão, aplicar seus conhecimentos da escola de forma prática."
+		},
+		{
+			"dialogo": "VOLTA",
+			"texto": "Ele desperta o racicínio lógico, a resolução de problemas e o trabalho de equipe, desafiando os participante a construírem e programarem seus próprios robôs!",
+			"volta":1
+		},
+		{
+			"dialogo": "PERGUNTA",
+			"texto": "",
+			"opcoes":
+				[
+					{
+						"texto": "Tchau!",
+						"acao": "pular_fim"
+					}
+				]
+		}
+	]
+}

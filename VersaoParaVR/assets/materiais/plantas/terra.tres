@@ -1,0 +1,14 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cxoqsy6col853"]
+
+[ext_resource type="Texture2D" uid="uid://bvt4r54dig502" path="res://assets/texturas/terra/terra_cor.jpg" id="1_kambg"]
+[ext_resource type="Texture2D" uid="uid://co00i8ke8r5ui" path="res://assets/texturas/terra/terra_oclusao_ambiente.jpg" id="2_q3pkh"]
+[ext_resource type="Texture2D" uid="uid://ba7v135h6vsaa" path="res://assets/texturas/terra/terra_normal.jpg" id="3_ix42a"]
+[ext_resource type="Texture2D" uid="uid://wnibf0vk6mjw" path="res://assets/texturas/terra/terra_rugosidade.jpg" id="4_ylblx"]
+
+[resource]
+albedo_texture = ExtResource("1_kambg")
+roughness_texture = ExtResource("4_ylblx")
+normal_enabled = true
+normal_texture = ExtResource("3_ix42a")
+ao_enabled = true
+ao_texture = ExtResource("2_q3pkh")

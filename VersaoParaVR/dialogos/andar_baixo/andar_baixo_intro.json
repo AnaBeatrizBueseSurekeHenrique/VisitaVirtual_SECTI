@@ -1,0 +1,40 @@
+{
+	"falas": [
+		{
+			"dialogo": "Boas vindas ao primeiro andar da SECTI!"
+		},
+		{
+			"dialogo": "Sinta-se livre para explorar o lugar!"
+		},
+		{
+			"dialogo": "Quando quiser, pode acessar o segundo andar subindo a escada!"
+		},
+		{
+			"dialogo": "Fale comigo de novo caso quiser uma explicação mais a fundo dos projetos daqui!"
+		},
+		{
+			"dialogo": "PERGUNTA",
+			"texto": "Qual projeto você gostaria de conhecer?",
+			"opcoes": [
+				{
+					"texto": "Coworking Municipal",
+					"acao": "muda_falante",
+					"id": 0.0
+				},
+				{
+					"texto": "Inova3D",
+					"acao": "muda_falante",
+					"id": 1.0
+				},
+				{
+					"texto": "Rota da Exploração",
+					"acao": "muda_falante",
+					"id": 2.0
+				}
+			]
+		},
+		{
+			"dialogo": "Certo, me siga!"
+		}
+	]
+}

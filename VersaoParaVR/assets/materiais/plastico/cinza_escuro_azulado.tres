@@ -1,0 +1,12 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cndse6rgkq0ac"]
+
+[ext_resource type="Texture2D" uid="uid://b4x1gkc3id2ph" path="res://assets/texturas/plastico/plastico_normal.jpg" id="1_xxltb"]
+[ext_resource type="Texture2D" uid="uid://6xe2l2c0tnhp" path="res://assets/texturas/plastico/plastico_rugosidade.jpg" id="2_xoglh"]
+
+[resource]
+resource_name = "Cinza_Escuro"
+cull_mode = 2
+albedo_color = Color(0.10062658, 0.05573513, 0.19455238, 1)
+roughness_texture = ExtResource("2_xoglh")
+normal_enabled = true
+normal_texture = ExtResource("1_xxltb")

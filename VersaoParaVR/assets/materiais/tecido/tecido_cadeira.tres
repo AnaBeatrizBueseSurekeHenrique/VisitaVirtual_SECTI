@@ -1,0 +1,15 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://gbbjyusg1hq8"]
+
+[ext_resource type="Texture2D" uid="uid://6gyqg5dq1m4x" path="res://assets/texturas/tecido/tecido_cadeira/tecido_cadeira_oclusao_ambiente.jpg" id="1_6urjc"]
+[ext_resource type="Texture2D" uid="uid://b3bf8a66gv70h" path="res://assets/texturas/tecido/tecido_cadeira/tecido_cadeira_normal.jpg" id="2_f2eml"]
+[ext_resource type="Texture2D" uid="uid://8gprhu68towt" path="res://assets/texturas/tecido/tecido_cadeira/tecido_cadeira_rugosidade.jpg" id="3_dux43"]
+
+[resource]
+resource_name = "Materiais"
+cull_mode = 2
+albedo_color = Color(0.92906654, 0.75551075, 0.53804713, 1)
+roughness_texture = ExtResource("3_dux43")
+normal_enabled = true
+normal_texture = ExtResource("2_f2eml")
+ao_enabled = true
+ao_texture = ExtResource("1_6urjc")

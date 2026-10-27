@@ -1,0 +1,15 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://4qes8c8t3uvh"]
+
+[ext_resource type="Texture2D" uid="uid://c7jdxlbnhlr6x" path="res://assets/texturas/estrada/concreto_difuso.jpg" id="1_id5de"]
+[ext_resource type="Texture2D" uid="uid://nwbjhrd4wra3" path="res://assets/texturas/estrada/concreto_oclusao_ambiente.jpg" id="2_2dfar"]
+[ext_resource type="Texture2D" uid="uid://bykv271jhq4hq" path="res://assets/texturas/estrada/concreto_metal.jpg" id="3_fpmrk"]
+[ext_resource type="Texture2D" uid="uid://bekde85kr2isk" path="res://assets/texturas/estrada/concreto_normal.jpg" id="4_5ucma"]
+
+[resource]
+albedo_texture = ExtResource("1_id5de")
+metallic = 1.0
+metallic_texture = ExtResource("3_fpmrk")
+normal_enabled = true
+normal_texture = ExtResource("4_5ucma")
+ao_enabled = true
+ao_texture = ExtResource("2_2dfar")

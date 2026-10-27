@@ -1,0 +1,6 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://d1snhk5gxmma4"]
+
+[ext_resource type="Texture2D" uid="uid://w22dwxqgbbnm" path="res://assets/texturas/teto_casas/teto_casas_cor.jpg" id="1_w1b2q"]
+
+[resource]
+albedo_texture = ExtResource("1_w1b2q")

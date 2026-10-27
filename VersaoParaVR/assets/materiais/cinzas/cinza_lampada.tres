@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://7gb8apesikjf"]
+
+[resource]
+resource_name = "Cinza_Luz"
+cull_mode = 2
+roughness = 0.35
+rim_enabled = true

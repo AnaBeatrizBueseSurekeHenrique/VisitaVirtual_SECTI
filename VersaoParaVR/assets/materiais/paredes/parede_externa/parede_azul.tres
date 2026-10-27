@@ -1,0 +1,13 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://nbhgmvjc7xul"]
+
+[ext_resource type="Texture2D" uid="uid://dxoqedp8cm235" path="res://assets/texturas/paredes/parede_externa/parede_externa_normal.png" id="1_4seaf"]
+[ext_resource type="Texture2D" uid="uid://dt6eee6wpbcpc" path="res://assets/texturas/paredes/parede_externa/parede_externa_rugosidade.png" id="2_6iiiu"]
+
+[resource]
+resource_name = "Parede_Azul"
+cull_mode = 2
+disable_fog = true
+albedo_color = Color(0.29487887, 0.4877981, 0.99441165, 1)
+roughness_texture = ExtResource("2_6iiiu")
+normal_enabled = true
+normal_texture = ExtResource("1_4seaf")

@@ -1,0 +1,12 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://bilpvhxijfle2"]
+
+[ext_resource type="Texture2D" uid="uid://bt8rxedvvh4u8" path="res://assets/texturas/anturio_flor_amarelo/anturio_flor_amarelo_normal.jpg" id="1_0o84p"]
+[ext_resource type="Texture2D" uid="uid://d0iap1lg4n38h" path="res://assets/texturas/anturio_flor_amarelo/anturio_flor_amarelo_rugosidade.jpg" id="2_hivn8"]
+
+[resource]
+resource_name = "flor_amarelo"
+cull_mode = 2
+albedo_color = Color(0.90734094, 0.82205206, 0.3885061, 1)
+roughness_texture = ExtResource("2_hivn8")
+normal_enabled = true
+normal_texture = ExtResource("1_0o84p")
