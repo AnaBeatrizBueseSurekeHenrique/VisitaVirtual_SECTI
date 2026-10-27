@@ -1,0 +1,30 @@
+# Blender 4.2.2 LTS MTL File: '16.blend'
+# www.blender.org
+
+newmtl Cinza_Escuro
+Ns 250.000000
+Kd 0.010120 0.004472 0.031433
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Bump -bm 1.000000 ../../../texturas/plastico/plastico_normal.jpg
+
+newmtl Cinza_Escuro.001
+Ns 250.000000
+Kd 0.010120 0.004472 0.031433
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Bump -bm 1.000000 ../../../texturas/plastico/plastico_normal.jpg
+newmtl Material
+Ns 250.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2

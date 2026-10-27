@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c0qlddgynu52t"
+path="res://.godot/imported/02.obj-06672e839b1c3e3f254c2dfcce0fcdbb.mesh"
+
+[deps]
+
+files=["res://.godot/imported/02.obj-06672e839b1c3e3f254c2dfcce0fcdbb.mesh"]
+
+source_file="res://assets/modelos3d/placas/02/02.obj"
+dest_files=["res://.godot/imported/02.obj-06672e839b1c3e3f254c2dfcce0fcdbb.mesh", "res://.godot/imported/02.obj-06672e839b1c3e3f254c2dfcce0fcdbb.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false
