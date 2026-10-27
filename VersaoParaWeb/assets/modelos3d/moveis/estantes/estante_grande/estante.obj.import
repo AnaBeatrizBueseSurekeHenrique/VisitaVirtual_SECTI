@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bn8rloun0la6n"
+path="res://.godot/imported/estante.obj-6b5e904264a416e4b811f678d4e48137.mesh"
+
+[deps]
+
+files=["res://.godot/imported/estante.obj-6b5e904264a416e4b811f678d4e48137.mesh"]
+
+source_file="res://assets/modelos3d/moveis/estantes/estante_grande/estante.obj"
+dest_files=["res://.godot/imported/estante.obj-6b5e904264a416e4b811f678d4e48137.mesh", "res://.godot/imported/estante.obj-6b5e904264a416e4b811f678d4e48137.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

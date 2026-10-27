@@ -1,0 +1,21 @@
+# Blender 4.2.2 LTS MTL File: 'banquinho_cozinha.blend'
+# www.blender.org
+
+newmtl Cadeira_Sofá
+Ns 250.000000
+Kd 0.000000 0.000000 0.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Bump -bm 1.000000 ../../../../../texturas/tecido/tecido_couro/tecido_couro_normal.jpg
+
+newmtl Metal
+Ns 648.919800
+Kd 0.016491 0.016491 0.016491
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 3

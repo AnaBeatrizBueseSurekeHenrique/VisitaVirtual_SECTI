@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cus8ggsqfy2su"]
+
+[ext_resource type="Texture2D" uid="uid://bno6djgdx8hw2" path="res://assets/texturas/chao/chao_lajotas/chao_lajotas_normal.png" id="1_7chja"]
+
+[resource]
+albedo_color = Color(0.08701607, 0.08701607, 0.08701605, 1)
+normal_enabled = true
+normal_texture = ExtResource("1_7chja")

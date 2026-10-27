@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://bavdwpw3sju4k"]
+
+[ext_resource type="Texture2D" uid="uid://dew4n47udw4gh" path="res://assets/texturas/chao/chao_lajotas/chao_lajotas_cor.png" id="1_iqlum"]
+[ext_resource type="Texture2D" uid="uid://bno6djgdx8hw2" path="res://assets/texturas/chao/chao_lajotas/chao_lajotas_normal.png" id="4_bp670"]
+
+[resource]
+resource_name = "Chao"
+cull_mode = 2
+albedo_texture = ExtResource("1_iqlum")
+normal_enabled = true
+normal_texture = ExtResource("4_bp670")

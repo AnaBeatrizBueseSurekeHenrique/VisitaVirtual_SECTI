@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://dyt8mhpl12wqc"]
+
+[ext_resource type="Texture2D" uid="uid://ddkrobtq6uj3n" path="res://assets/texturas/paredes/parede_interna/parede_interna_normal.jpg" id="1_qm17p"]
+
+[resource]
+resource_name = "Parede_Preta"
+cull_mode = 2
+disable_fog = true
+albedo_color = Color(0.10224319, 0.10224321, 0.10224321, 1)
+normal_enabled = true
+normal_texture = ExtResource("1_qm17p")

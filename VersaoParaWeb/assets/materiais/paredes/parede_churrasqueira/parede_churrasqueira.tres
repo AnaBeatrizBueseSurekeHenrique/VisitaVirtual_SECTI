@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://dtds4yjr71bnu"]
+
+[ext_resource type="Texture2D" uid="uid://d0jmgmu0ylwsl" path="res://assets/texturas/paredes/churrasqueira_cor.jpg" id="1_5jhe8"]
+[ext_resource type="Texture2D" uid="uid://bi6oktps4grhg" path="res://assets/texturas/paredes/churrasqueira_normal.jpg" id="2_5gi2x"]
+
+[resource]
+cull_mode = 2
+albedo_texture = ExtResource("1_5jhe8")
+normal_enabled = true
+normal_texture = ExtResource("2_5gi2x")

@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://chyf2jchdvo4r"]
+
+[ext_resource type="Texture2D" uid="uid://i60fiohcafd3" path="res://assets/texturas/madeiras/madeira_chao/madeira_cor.jpg" id="1_cyhal"]
+
+[resource]
+resource_name = "Madeira"
+cull_mode = 2
+albedo_texture = ExtResource("1_cyhal")
+normal_enabled = true

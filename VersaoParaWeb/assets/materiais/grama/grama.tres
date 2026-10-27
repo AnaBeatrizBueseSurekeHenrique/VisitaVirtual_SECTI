@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://4gpy8mmxvjd1"]
+
+[ext_resource type="Texture2D" uid="uid://cpp3xlhr8iuj" path="res://assets/texturas/grama/grama_cor.jpg" id="1_7ocxo"]
+
+[resource]
+albedo_texture = ExtResource("1_7ocxo")
+metallic = 1.0

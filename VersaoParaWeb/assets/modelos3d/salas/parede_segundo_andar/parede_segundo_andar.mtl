@@ -1,0 +1,192 @@
+# Blender 4.2.2 LTS MTL File: 'parede_segundo_andar.blend'
+# www.blender.org
+
+newmtl Chao
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd C:/Users/anabe/OneDrive/Documentos/Estagio/Projeto_MundoVirtual_SecretariaInovacao/Assets/texturas/madeiras/madeira_chao/madeira_cor.jpg
+map_Bump -bm 1.000000 C:/Users/anabe/OneDrive/Documentos/Estagio/Projeto_MundoVirtual_SecretariaInovacao/Assets/texturas/madeiras/madeira_chao/madeira_chao_normal.jpg
+
+newmtl Chao.001
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd C:/Users/anabe/OneDrive/Documentos/Estagio/Projeto_MundoVirtual_SecretariaInovacao/Assets/texturas/chao/chao_lajotas/chao_lajotas_cor.png
+map_Bump -bm 1.000000 C:/Users/anabe/OneDrive/Documentos/Estagio/Projeto_MundoVirtual_SecretariaInovacao/Assets/texturas/chao/chao_lajotas/chao_lajotas_normal.png
+
+newmtl Churraqueira_Listras
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.045136 0.005481 0.001984
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl Churrasqueira
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd C:/Users/anabe/OneDrive/Documentos/Estagio/Projeto_MundoVirtual_SecretariaInovacao/Assets/texturas/paredes/parede_churrasqueira/churrasqueira_cor.jpg
+map_Bump -bm 1.000000 C:/Users/anabe/OneDrive/Documentos/Estagio/Projeto_MundoVirtual_SecretariaInovacao/Assets/texturas/paredes/parede_churrasqueira/churrasqueira_normal.jpg
+
+newmtl CinzaClaro.001
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd C:/Users/anabe/OneDrive/Documentos/Estagio/Projeto_MundoVirtual_SecretariaInovacao/Assets/texturas/chao/chao_lajotas/chao_lajotas_cor.png
+
+newmtl Contorno_Preto
+Ns 250.000000
+Ka 0.073394 0.073394 0.073394
+Kd 0.012375 0.013285 0.023847
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 3
+
+newmtl Marmore.002
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/anabe/OneDrive/Documentos/Estagio/Projeto_MundoVirtual_SecretariaInovacao/Assets/texturas/chao/chao_lajotas/chao_lajotas_cor.png
+map_Bump -bm 1.000000 C:/Users/anabe/OneDrive/Documentos/Estagio/Projeto_MundoVirtual_SecretariaInovacao/Assets/texturas/chao/chao_lajotas/chao_lajotas_normal.png
+
+newmtl Material_Listras
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd C:/Users/anabe/OneDrive/Documentos/Estagio/Projeto_MundoVirtual_SecretariaInovacao/Assets/texturas/bamboo/bamboo_cor.png
+map_Bump -bm 1.000000 C:/Users/anabe/OneDrive/Documentos/Estagio/Projeto_MundoVirtual_SecretariaInovacao/Assets/texturas/bamboo/bamboo_normal.png
+
+newmtl Metal
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl Parede_Azul
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.000000 0.028819 0.470249
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Bump -bm 1.000000 C:/Users/anabe/OneDrive/Documentos/Estagio/Projeto_MundoVirtual_SecretariaInovacao/Assets/texturas/paredes/parede_externa/parede_externa_normal.png
+
+newmtl Parede_Azul_Claro
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.000000 0.326699 0.468940
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Bump -bm 1.000000 C:/Users/anabe/OneDrive/Documentos/Estagio/Projeto_MundoVirtual_SecretariaInovacao/Assets/texturas/paredes/parede_externa/parede_externa_normal.png
+
+newmtl Parede_Interna
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.557896 0.659667 0.754483
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Bump -bm 1.000000 C:/Users/anabe/OneDrive/Documentos/Estagio/Projeto_MundoVirtual_SecretariaInovacao/Assets/texturas/paredes/parede_interna/parede_interna_normal.jpg
+
+newmtl Parede_Preta
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.000000 0.000000 0.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Bump -bm 1.000000 C:/Users/anabe/OneDrive/Documentos/Estagio/Projeto_MundoVirtual_SecretariaInovacao/Assets/texturas/paredes/parede_preta_segundo_andar/parede_preta2_normal.jpg
+
+newmtl Parede_Preta_Geral
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.035907 0.032635 0.038715
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Bump -bm 1.000000 C:/Users/anabe/OneDrive/Documentos/Estagio/Projeto_MundoVirtual_SecretariaInovacao/Assets/texturas/paredes/parede_externa/parede_externa_normal.png
+
+newmtl Parede_Terceiro_Andar
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800094 0.517788 0.097661
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl Tijolo.001
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd C:/Users/anabe/OneDrive/Documentos/Estagio/Projeto_MundoVirtual_SecretariaInovacao/Assets/Texturas/paredes/parede_tijolo/parede_tijolo_cor.jpg
+
+newmtl TijoloBranco
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl Vidro
+Ns 360.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2

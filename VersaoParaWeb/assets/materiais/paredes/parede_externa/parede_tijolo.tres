@@ -1,0 +1,12 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cqkddtwrjfnvq"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_uy2ml"]
+load_path = "res://.godot/imported/parede_tijolo_2_normal.jpg-57b44404963444084686409c30d07141.s3tc.ctex"
+
+[resource]
+resource_name = "Tijolo"
+cull_mode = 2
+disable_fog = true
+albedo_color = Color(0.42607644, 0.17711377, 0.13278952, 1)
+normal_enabled = true
+normal_texture = SubResource("CompressedTexture2D_uy2ml")

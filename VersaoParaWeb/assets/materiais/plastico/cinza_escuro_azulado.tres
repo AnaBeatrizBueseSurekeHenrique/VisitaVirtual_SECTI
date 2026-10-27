@@ -1,0 +1,6 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cndse6rgkq0ac"]
+
+[resource]
+resource_name = "Cinza_Escuro"
+cull_mode = 2
+albedo_color = Color(0.10062658, 0.05573513, 0.19455238, 1)

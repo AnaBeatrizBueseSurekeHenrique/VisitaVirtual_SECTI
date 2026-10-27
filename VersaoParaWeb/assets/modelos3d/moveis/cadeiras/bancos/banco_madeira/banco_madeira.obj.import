@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cumoica1eoa2i"
+path="res://.godot/imported/banco_madeira.obj-52c26a4cb71f06ed411615ca81d079df.mesh"
+
+[deps]
+
+files=["res://.godot/imported/banco_madeira.obj-52c26a4cb71f06ed411615ca81d079df.mesh"]
+
+source_file="res://assets/modelos3d/moveis/cadeiras/bancos/banco_madeira/banco_madeira.obj"
+dest_files=["res://.godot/imported/banco_madeira.obj-52c26a4cb71f06ed411615ca81d079df.mesh", "res://.godot/imported/banco_madeira.obj-52c26a4cb71f06ed411615ca81d079df.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

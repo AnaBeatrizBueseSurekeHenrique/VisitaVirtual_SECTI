@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://u6olaxedu14t"]
+
+[ext_resource type="Texture2D" uid="uid://c53nvcse2velx" path="res://assets/texturas/madeiras/madeira_clara/madeira_clara_cor_base.png" id="1_wicel"]
+[ext_resource type="Texture2D" uid="uid://chmkvqd7lu14a" path="res://assets/texturas/madeiras/madeira_clara/madeira_clara_normal.png" id="4_s0kur"]
+
+[resource]
+resource_name = "Madeira"
+cull_mode = 2
+albedo_texture = ExtResource("1_wicel")
+normal_enabled = true
+normal_texture = ExtResource("4_s0kur")

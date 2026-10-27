@@ -1,0 +1,138 @@
+# Blender 4.2.2 LTS MTL File: 'parede_primeiro_andar.blend'
+# www.blender.org
+
+newmtl Chao
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd C:/Users/anabe/OneDrive/Documentos/Estagio/Projeto_MundoVirtual_SecretariaInovacao/Assets/texturas/chao/chao_lajotas/chao_lajotas_cor.png
+map_Bump -bm 1.000000 C:/Users/anabe/OneDrive/Documentos/Estagio/Projeto_MundoVirtual_SecretariaInovacao/Texturas/Chao_Lajotas/lajotas_normal.jpg
+
+newmtl Contorno_Preto
+Ns 250.000000
+Ka 0.073394 0.073394 0.073394
+Kd 0.012375 0.013285 0.023847
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 3
+
+newmtl Contorno_Preto.001
+Ns 250.000000
+Ka 0.073394 0.073394 0.073394
+Kd 0.012375 0.013285 0.023847
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 3
+
+newmtl Grama
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd C:/Users/anabe/OneDrive/Documentos/Estagio/Projeto_MundoVirtual_SecretariaInovacao/Assets/texturas/grama/grama_cor.jpg
+map_Bump -bm 1.000000 C:/Users/Downloads/Grass004_4K-JPG/Grass004_4K_Color.jpg
+
+newmtl Madeira
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd C:/Users/anabe/OneDrive/Documentos/Estagio/Projeto_MundoVirtual_SecretariaInovacao/Assets/texturas/madeiras/madeira_clara/madeira_clara_cor_base.png
+map_Bump -bm 1.000000 C:/Users/anabe/OneDrive/Documentos/Estagio/Projeto_MundoVirtual_SecretariaInovacao/Texturas/Madeira/Madeira_Mesa/4K-anigre_normal.png
+
+newmtl Metal
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl ParedeCozinha2
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd C:/Users/anabe/OneDrive/Documentos/Estagio/Projeto_MundoVirtual_SecretariaInovacao/Assets/texturas/paredes/parede_listra_cozinha/listra_cozinha_cor.png
+map_Bump -bm 1.000000 C:/Users/anabe/OneDrive/Documentos/Estagio/Projeto_MundoVirtual_SecretariaInovacao/Texturas/parede_Cozinha2/ceramic_52_normal-4K.png
+
+newmtl Parede_Azul
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.000000 0.028819 0.470249
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Bump -bm 1.000000 C:/Users/anabe/OneDrive/Documentos/Estagio/Projeto_MundoVirtual_SecretariaInovacao/Assets/Texturas/Parede/Parede_Normal.png
+
+newmtl Parede_Cozinha
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd C:/Users/anabe/OneDrive/Documentos/Estagio/Projeto_MundoVirtual_SecretariaInovacao/Assets/texturas/paredes/parede_listra_cozinha/listra_cozinha_cor.png
+
+newmtl Parede_Interna
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.557896 0.659667 0.754483
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Bump -bm 1.000000 C:/Users/anabe/OneDrive/Documentos/Estagio/Projeto_MundoVirtual_SecretariaInovacao/Assets/texturas/paredes/parede_interna/parede_interna_normal.jpg
+
+newmtl Vidro
+Ns 353.949707
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl Vidro.Transparente
+Ns 353.949707
+Ka 1.000000 1.000000 1.000000
+Kd 0.732044 0.800378 0.653234
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.228700
+illum 9
+
+newmtl Vidro_Interno
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.435962 0.532390 0.800172
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2

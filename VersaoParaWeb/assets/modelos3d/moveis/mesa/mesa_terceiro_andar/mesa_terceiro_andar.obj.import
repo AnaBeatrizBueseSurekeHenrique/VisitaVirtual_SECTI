@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cd4qgfi0dkxyv"
+path="res://.godot/imported/mesa_terceiro_andar.obj-a7d89789308d1ab2a3e7b1e50710ebc8.mesh"
+
+[deps]
+
+files=["res://.godot/imported/mesa_terceiro_andar.obj-a7d89789308d1ab2a3e7b1e50710ebc8.mesh"]
+
+source_file="res://assets/modelos3d/moveis/mesa/mesa_terceiro_andar/mesa_terceiro_andar.obj"
+dest_files=["res://.godot/imported/mesa_terceiro_andar.obj-a7d89789308d1ab2a3e7b1e50710ebc8.mesh", "res://.godot/imported/mesa_terceiro_andar.obj-a7d89789308d1ab2a3e7b1e50710ebc8.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

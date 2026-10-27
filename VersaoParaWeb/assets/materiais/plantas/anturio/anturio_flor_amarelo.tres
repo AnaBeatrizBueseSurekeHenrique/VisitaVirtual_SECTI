@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://bilpvhxijfle2"]
+
+[ext_resource type="Texture2D" uid="uid://ddkrobtq6uj3n" path="res://assets/texturas/paredes/parede_interna/parede_interna_normal.jpg" id="1_j4y3u"]
+
+[resource]
+resource_name = "flor_amarelo"
+cull_mode = 2
+albedo_color = Color(0.90734094, 0.82205206, 0.3885061, 1)
+normal_enabled = true
+normal_texture = ExtResource("1_j4y3u")

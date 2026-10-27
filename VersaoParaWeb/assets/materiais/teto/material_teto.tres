@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://b1kcli2uvui63"]
+
+[resource]
+resource_name = "Material_Teto"
+cull_mode = 2
+albedo_color = Color(0.8810723, 0.8810722, 0.8810722, 1)
+roughness = 0.5
+disable_receive_shadows = true

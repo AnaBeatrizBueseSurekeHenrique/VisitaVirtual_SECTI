@@ -1,0 +1,12 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://dk5gdabm5ppdx"]
+
+[ext_resource type="Texture2D" uid="uid://d3vxleyn88lpd" path="res://assets/texturas/arvore/arvore_normal.jpg" id="4_wca43"]
+
+[resource]
+resource_name = "Material"
+cull_mode = 2
+albedo_color = Color(0.267405, 0.18310812, 0.11807651, 1)
+normal_enabled = true
+normal_texture = ExtResource("4_wca43")
+ao_enabled = true
+texture_filter = 2

@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dw46csvykliny"
+path="res://.godot/imported/banco_terceiro_andar.obj-c3dcab0e315e21ea20b07083db9766e9.mesh"
+
+[deps]
+
+files=["res://.godot/imported/banco_terceiro_andar.obj-c3dcab0e315e21ea20b07083db9766e9.mesh"]
+
+source_file="res://assets/modelos3d/moveis/cadeiras/bancos/banco_terceiro_andar/banco_terceiro_andar.obj"
+dest_files=["res://.godot/imported/banco_terceiro_andar.obj-c3dcab0e315e21ea20b07083db9766e9.mesh", "res://.godot/imported/banco_terceiro_andar.obj-c3dcab0e315e21ea20b07083db9766e9.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

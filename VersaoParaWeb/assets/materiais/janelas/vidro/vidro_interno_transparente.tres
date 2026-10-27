@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://bto2vdsviebeh"]
+
+[resource]
+resource_name = "Vidro..2"
+transparency = 1
+cull_mode = 2
+albedo_color = Color(1, 1, 1, 0.23137255)
+roughness = 0.40506327

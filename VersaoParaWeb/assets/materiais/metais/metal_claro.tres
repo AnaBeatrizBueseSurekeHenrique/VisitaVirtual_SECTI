@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://bpljpcegd3s1s"]
+
+[resource]
+resource_name = "Metal_Claro"
+cull_mode = 2
+disable_fog = true
+albedo_color = Color(0.59728676, 0.59728676, 0.59728676, 1)
+metallic = 0.768519
+roughness = 0.19444445

@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://b237wyt14lgsr"]
+
+[ext_resource type="Texture2D" uid="uid://dqc41tk25tpfn" path="res://assets/texturas/paredes/parede_cozinha/listra_cozinha_cor.jpg" id="1_5d783"]
+
+[resource]
+resource_name = "Parede_Cozinha"
+cull_mode = 2
+albedo_texture = ExtResource("1_5d783")
