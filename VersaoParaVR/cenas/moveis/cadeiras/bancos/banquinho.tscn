@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://blawg14ip1uqr"]
+
+[ext_resource type="ArrayMesh" uid="uid://17qqosni2ndh" path="res://assets/modelos3d/moveis/cadeiras/bancos/banquinho_cozinha/banquinho_cozinha.obj" id="1_x5xk1"]
+[ext_resource type="Material" uid="uid://b1e5yt8cn8yui" path="res://assets/materiais/tecido/tecido_couro.tres" id="2_svpnd"]
+[ext_resource type="Material" uid="uid://dykpgm3oes78y" path="res://assets/materiais/metais/metal_escuro.tres" id="3_gfvuf"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_svpnd"]
+size = Vector3(1.0986328, 1.0698242, 0.79138184)
+
+[node name="Banquinho" type="StaticBody3D" unique_id=448331330]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.031086504, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1761158658]
+mesh = ExtResource("1_x5xk1")
+surface_material_override/0 = ExtResource("2_svpnd")
+surface_material_override/1 = ExtResource("3_gfvuf")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=404038022]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.049316406, 0.5303434, 0.0119018555)
+shape = SubResource("BoxShape3D_svpnd")

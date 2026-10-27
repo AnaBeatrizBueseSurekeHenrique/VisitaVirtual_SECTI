@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://c2hdtcl7etebk"]
+
+[ext_resource type="ArrayMesh" uid="uid://cmx5knvbykjoy" path="res://assets/modelos3d/moveis/armarios/armario_cozinha/armario_cozinha.obj" id="1_m2de8"]
+[ext_resource type="Material" uid="uid://37yklkcw6ems" path="res://assets/materiais/armarios/armario_cozinha.tres" id="2_r7pja"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m2de8"]
+size = Vector3(0.5300293, 3.1254883, 6.38266)
+
+[node name="Armario_Cozinha1" type="StaticBody3D" unique_id=111826152]
+transform = Transform3D(1.1, 0, 0, 0, 1.1, 0, 0, 0, 1.1, 0, 0, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1360214898]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 2, 0.10838617, -0.038601425, 0.7906234)
+mesh = ExtResource("1_m2de8")
+surface_material_override/0 = ExtResource("2_r7pja")
+surface_material_override/1 = ExtResource("2_r7pja")
+surface_material_override/2 = ExtResource("2_r7pja")
+surface_material_override/3 = ExtResource("2_r7pja")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=43658760]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.085815415, 1.5195141, -0.91251326)
+shape = SubResource("BoxShape3D_m2de8")

@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://d03tc123g3pk4"]
+
+[ext_resource type="Script" uid="uid://cr4jqc23klttl" path="res://scripts/componentes/componente_mudar_cena.gd" id="1_kxt2o"]
+
+[node name="Componente_Mudar_Cena" type="Area3D" unique_id=1783618635]
+script = ExtResource("1_kxt2o")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]

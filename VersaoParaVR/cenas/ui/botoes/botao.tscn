@@ -1,0 +1,68 @@
+[gd_scene format=3 uid="uid://cn1dqpapcoq7m"]
+
+[ext_resource type="FontFile" uid="uid://d0g4is27ioqvr" path="res://assets/fontes/quicksand/quicksand_static/quicksand_regular.ttf" id="1_ky37p"]
+[ext_resource type="Script" uid="uid://ddw7d3wk0qkfb" path="res://scripts/ui/botao.gd" id="2_ugu4h"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_afr6p"]
+bg_color = Color(0.1275369, 0.16543484, 0.2832244, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.7666499, 0.33990204, 0.2935986, 1)
+corner_radius_top_left = 24
+corner_radius_top_right = 8
+corner_radius_bottom_right = 24
+corner_radius_bottom_left = 8
+shadow_color = Color(0, 0, 0, 0.5176471)
+shadow_size = 4
+shadow_offset = Vector2(4, 4)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_12vw0"]
+bg_color = Color(0.1275369, 0.16543484, 0.2832244, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.7666499, 0.33990204, 0.2935986, 1)
+corner_radius_top_left = 24
+corner_radius_top_right = 8
+corner_radius_bottom_right = 24
+corner_radius_bottom_left = 8
+shadow_color = Color(0, 0, 0, 0.5176471)
+shadow_size = 4
+shadow_offset = Vector2(4, 4)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dou06"]
+bg_color = Color(0.1275369, 0.16543484, 0.2832244, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.8543964, 0.45565432, 0.34216273, 1)
+corner_radius_top_left = 24
+corner_radius_top_right = 8
+corner_radius_bottom_right = 24
+corner_radius_bottom_left = 8
+shadow_color = Color(0, 0, 0, 0.5176471)
+shadow_size = 4
+shadow_offset = Vector2(4, 4)
+
+[node name="Botao" type="Button" unique_id=1345531605]
+anchors_preset = -1
+anchor_right = 0.9947917
+anchor_bottom = 0.19753087
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.81614286, 0.8414545, 0.889127, 1)
+theme_override_colors/font_pressed_color = Color(0.55711055, 0.59760714, 0.6524427, 1)
+theme_override_colors/font_hover_color = Color(0.6154681, 0.7167629, 0.79939616, 1)
+theme_override_fonts/font = ExtResource("1_ky37p")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_afr6p")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_12vw0")
+theme_override_styles/hover = SubResource("StyleBoxFlat_dou06")
+text = "Teste"
+autowrap_mode = 3
+script = ExtResource("2_ugu4h")
+metadata/_edit_use_anchors_ = true

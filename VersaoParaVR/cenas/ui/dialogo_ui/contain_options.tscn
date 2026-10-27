@@ -1,0 +1,81 @@
+[gd_scene format=3 uid="uid://blgqrwas8cftb"]
+
+[ext_resource type="FontFile" uid="uid://dpwqqlkbb7a41" path="res://assets/fontes/quicksand/quicksand_static/quciksand_bold.ttf" id="1_vbv7g"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_khi73"]
+content_margin_left = 10.0
+content_margin_top = 5.0
+content_margin_right = 10.0
+content_margin_bottom = 5.0
+bg_color = Color(0.12941177, 0.18431373, 0.29411766, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.89950234, 0.5789571, 0.454929, 1)
+corner_radius_top_left = 24
+corner_radius_top_right = 8
+corner_radius_bottom_right = 24
+corner_radius_bottom_left = 8
+shadow_color = Color(0, 0, 0, 0.5176471)
+shadow_size = 4
+shadow_offset = Vector2(4, 4)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_icl5d"]
+content_margin_left = 10.0
+content_margin_top = 5.0
+content_margin_right = 10.0
+content_margin_bottom = 5.0
+bg_color = Color(0.1275369, 0.16543484, 0.2832244, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.7666499, 0.33990204, 0.2935986, 1)
+corner_radius_top_left = 24
+corner_radius_top_right = 8
+corner_radius_bottom_right = 24
+corner_radius_bottom_left = 8
+shadow_color = Color(0, 0, 0, 0.5176471)
+shadow_size = 4
+shadow_offset = Vector2(4, 4)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vbv7g"]
+content_margin_left = 10.0
+content_margin_top = 5.0
+content_margin_right = 10.0
+content_margin_bottom = 5.0
+bg_color = Color(0.1275369, 0.16543484, 0.2832244, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.7666499, 0.33990204, 0.2935986, 1)
+corner_radius_top_left = 24
+corner_radius_top_right = 8
+corner_radius_bottom_right = 24
+corner_radius_bottom_left = 8
+shadow_color = Color(0, 0, 0, 0.5176471)
+shadow_size = 4
+shadow_offset = Vector2(4, 4)
+
+[node name="ContainOptions" type="HBoxContainer" unique_id=1359776436]
+size_flags_vertical = 3
+
+[node name="Button" type="Button" parent="." unique_id=1099646744]
+layout_mode = 2
+size_flags_vertical = 3
+text = "X"
+
+[node name="Texto" type="Button" parent="." unique_id=397789809]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("1_vbv7g")
+theme_override_styles/normal = SubResource("StyleBoxFlat_khi73")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_icl5d")
+theme_override_styles/hover = SubResource("StyleBoxFlat_vbv7g")
+text = "Texto"
+
+[node name="Button3" type="Button" parent="." unique_id=457087601]
+layout_mode = 2
+text = "Y"

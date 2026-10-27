@@ -1,0 +1,87 @@
+[gd_scene format=3 uid="uid://dl8aors02o30g"]
+
+[ext_resource type="Script" uid="uid://ddfqruxil6xth" path="res://scripts/componentes/classe_dialogo.gd" id="1_jfdfx"]
+[ext_resource type="Script" uid="uid://bis7t3vhaqifs" path="res://scripts/componentes/exibir_texto.gd" id="2_l0g3x"]
+[ext_resource type="StyleBox" uid="uid://b8kfend4awttd" path="res://assets/materiais/material_dialogo.tres" id="2_rtct8"]
+[ext_resource type="FontFile" uid="uid://d0g4is27ioqvr" path="res://assets/fontes/quicksand/quicksand_static/quicksand_regular.ttf" id="3_otvh3"]
+[ext_resource type="FontFile" uid="uid://dpwqqlkbb7a41" path="res://assets/fontes/quicksand/quicksand_static/quciksand_bold.ttf" id="4_uokdf"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_r3hbw"]
+viewport_path = NodePath("SubViewportContainer/SubViewport")
+
+[node name="DialogoUI" type="Sprite3D" unique_id=908738410 node_paths=PackedStringArray("_exibir_texto")]
+process_mode = 3
+texture = SubResource("ViewportTexture_r3hbw")
+script = ExtResource("1_jfdfx")
+_exibir_texto = NodePath("SubViewportContainer/SubViewport/Control/MarginContainer2/PanelContainer")
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="." unique_id=221154043]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer" unique_id=353553250]
+transparent_bg = true
+handle_input_locally = false
+size = Vector2i(1000, 200)
+render_target_update_mode = 4
+
+[node name="Control" type="Control" parent="SubViewportContainer/SubViewport" unique_id=177232220]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="MarginContainer2" type="MarginContainer" parent="SubViewportContainer/SubViewport/Control" unique_id=746055889]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="PanelContainer" type="PanelContainer" parent="SubViewportContainer/SubViewport/Control/MarginContainer2" unique_id=1040840324 node_paths=PackedStringArray("_texto")]
+layout_mode = 2
+theme_override_styles/panel = ExtResource("2_rtct8")
+script = ExtResource("2_l0g3x")
+_texto = NodePath("MarginContainer/MarginContainer/VBoxContainer/RichTextLabel")
+
+[node name="MarginContainer" type="MarginContainer" parent="SubViewportContainer/SubViewport/Control/MarginContainer2/PanelContainer" unique_id=1131721243]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="MarginContainer" type="MarginContainer" parent="SubViewportContainer/SubViewport/Control/MarginContainer2/PanelContainer/MarginContainer" unique_id=1169499268]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="SubViewportContainer/SubViewport/Control/MarginContainer2/PanelContainer/MarginContainer/MarginContainer" unique_id=740603913]
+layout_mode = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="SubViewportContainer/SubViewport/Control/MarginContainer2/PanelContainer/MarginContainer/MarginContainer/VBoxContainer" unique_id=955400985]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/normal_font = ExtResource("3_otvh3")
+theme_override_fonts/bold_font = ExtResource("4_uokdf")
+theme_override_font_sizes/normal_font_size = 32
+theme_override_font_sizes/bold_font_size = 32
+theme_override_font_sizes/bold_italics_font_size = 32
+theme_override_font_sizes/italics_font_size = 32
+theme_override_font_sizes/mono_font_size = 32
+bbcode_enabled = true
+text = "Placeholder!!"
+fit_content = true
+
+[node name="ContemBotoes" type="PanelContainer" parent="SubViewportContainer/SubViewport/Control/MarginContainer2/PanelContainer/MarginContainer/MarginContainer/VBoxContainer" unique_id=2091887698]
+visible = false
+layout_mode = 2

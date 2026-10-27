@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://c0xnb46q4hfsm"]
+
+[ext_resource type="ArrayMesh" path="res://assets/modelos3d/moveis/mesa/mesinha_coworking/mesinha.obj" id="1_0n6t8"]
+[ext_resource type="Material" uid="uid://u6olaxedu14t" path="res://assets/materiais/madeiras/madeira_clara.tres" id="2_2weqb"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_2weqb"]
+size = Vector3(0.75286865, 0.57271576, 0.635376)
+
+[node name="Mesinha" type="StaticBody3D" unique_id=1029985142]
+
+[node name="Mesinha" type="MeshInstance3D" parent="." unique_id=1049428986]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.23335409, -0.0069153607, -2.0521598)
+mesh = ExtResource("1_0n6t8")
+surface_material_override/0 = ExtResource("2_2weqb")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=616686644]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.025970459, 0.288265, -0.028320313)
+shape = SubResource("BoxShape3D_2weqb")

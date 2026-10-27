@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://b2nvsbklqjy5x"]
+
+[ext_resource type="ArrayMesh" uid="uid://n7a6tom78o6s" path="res://assets/modelos3d/moveis/moveis_cozinha/pia/pia.obj" id="1_i47ft"]
+[ext_resource type="Material" uid="uid://cgp1x6x01l4t0" path="res://assets/materiais/pia/cinza_pia.tres" id="2_cbuqn"]
+[ext_resource type="Material" uid="uid://dtdibsi136mvg" path="res://assets/materiais/geladeira/escuro_geladeira.tres" id="3_punvo"]
+[ext_resource type="Material" uid="uid://d052ue6853sdm" path="res://assets/materiais/pia/claro_pia.tres" id="4_quosr"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_i47ft"]
+size = Vector3(1.1680908, 2.0205078, 2.8666992)
+
+[node name="Pia_Cozinha" type="StaticBody3D" unique_id=2101577856]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1060934006]
+transform = Transform3D(1, 0, 0, 0, 0.9, 0, 0, 0, 1, 0.688791, 0.026461482, -0.009733856)
+mesh = ExtResource("1_i47ft")
+surface_material_override/0 = ExtResource("2_cbuqn")
+surface_material_override/1 = ExtResource("3_punvo")
+surface_material_override/2 = ExtResource("4_quosr")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=458512700]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.68806744, 1.0333586, -0.0007324219)
+shape = SubResource("BoxShape3D_i47ft")

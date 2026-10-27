@@ -1,0 +1,4 @@
+# Godot 4+ specific ignores
+VersaoParaVR/.godot/
+VersaoParaVR/android/
+VersaoParaVR/addons

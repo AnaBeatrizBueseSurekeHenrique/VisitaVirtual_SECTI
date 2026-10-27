@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://5dps32lw018t"]
+
+[ext_resource type="ArrayMesh" uid="uid://b1iuhpp4xn28c" path="res://assets/modelos3d/moveis/cadeiras/sofas/sofazinho_coworking/sofazinho_coworking.obj" id="1_y113e"]
+[ext_resource type="Material" uid="uid://b1e5yt8cn8yui" path="res://assets/materiais/tecido/tecido_couro.tres" id="2_jkib1"]
+[ext_resource type="Material" uid="uid://u6olaxedu14t" path="res://assets/materiais/madeiras/madeira_clara.tres" id="3_ght0e"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3i4wr"]
+size = Vector3(1, 0.7123871, 1.5415039)
+
+[node name="Sofa_Coworking" type="StaticBody3D" unique_id=1307566476]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 0, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=314428239]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.4518131, 0, 0.028188726)
+mesh = ExtResource("1_y113e")
+surface_material_override/0 = ExtResource("2_jkib1")
+surface_material_override/1 = ExtResource("3_ght0e")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=989586985]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.14591835, 0.35689545, 0.026890988)
+shape = SubResource("BoxShape3D_3i4wr")

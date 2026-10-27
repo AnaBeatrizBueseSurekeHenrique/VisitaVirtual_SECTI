@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://bd3d5mbx8nao6"]
+
+[ext_resource type="ArrayMesh" uid="uid://boqbsrti0k7iw" path="res://assets/modelos3d/moveis/cadeiras/cadeiras/cadeira_cozinha/cadeira_cozinha.obj" id="1_vvyp0"]
+[ext_resource type="Material" uid="uid://dykpgm3oes78y" path="res://assets/materiais/metais/metal_escuro.tres" id="2_vxm2v"]
+[ext_resource type="Material" uid="uid://b1e5yt8cn8yui" path="res://assets/materiais/tecido/tecido_couro.tres" id="3_rokku"]
+[ext_resource type="Material" uid="uid://s1r3afv1311r" path="res://assets/materiais/cinzas/cinza_escuro.tres" id="4_emrsd"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_evutq"]
+size = Vector3(1, 1.2442627, 1)
+
+[node name="Cadeira_Cozinha" type="StaticBody3D" unique_id=1372442940]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=842904276]
+mesh = ExtResource("1_vvyp0")
+surface_material_override/0 = ExtResource("2_vxm2v")
+surface_material_override/1 = ExtResource("3_rokku")
+surface_material_override/2 = ExtResource("4_emrsd")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1240588474]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6054791, 0)
+shape = SubResource("BoxShape3D_evutq")

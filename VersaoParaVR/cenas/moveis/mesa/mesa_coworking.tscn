@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://cxdtf46rk0fch"]
+
+[ext_resource type="ArrayMesh" path="res://assets/modelos3d/moveis/mesa/mesa_coworking/mesa.obj" id="1_q2t5o"]
+[ext_resource type="Material" uid="uid://dykpgm3oes78y" path="res://assets/materiais/metais/metal_escuro.tres" id="2_esd41"]
+[ext_resource type="PackedScene" uid="uid://4ylt24fgbni4" path="res://cenas/moveis/cadeiras/cadeiras/cadeira_preta.tscn" id="2_hiokm"]
+[ext_resource type="Material" uid="uid://u6olaxedu14t" path="res://assets/materiais/madeiras/madeira_clara.tres" id="2_sna3h"]
+[ext_resource type="Material" uid="uid://bpljpcegd3s1s" path="res://assets/materiais/metais/metal_claro.tres" id="4_1su8w"]
+[ext_resource type="Material" uid="uid://cndse6rgkq0ac" path="res://assets/materiais/plastico/cinza_escuro_azulado.tres" id="5_sna3h"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_hiokm"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_yv183"]
+size = Vector3(3.7056274, 1.7771301, 2.4522705)
+
+[node name="Mesa" type="StaticBody3D" unique_id=1155044965]
+physics_material_override = SubResource("PhysicsMaterial_hiokm")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=119265072]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0011348724, 0.017971039, -0.012408122)
+lod_bias = 42.033
+gi_mode = 2
+mesh = ExtResource("1_q2t5o")
+surface_material_override/0 = ExtResource("2_sna3h")
+surface_material_override/1 = ExtResource("2_esd41")
+surface_material_override/2 = ExtResource("4_1su8w")
+surface_material_override/3 = ExtResource("5_sna3h")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=534475589]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.009613037, 0.9091196, -0.78621507)
+shape = SubResource("BoxShape3D_yv183")
+
+[node name="Cadeira" parent="." unique_id=896350430 instance=ExtResource("2_hiokm")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 1.028585, 0, -2.775753)
+
+[node name="Cadeira2" parent="." unique_id=850524486 instance=ExtResource("2_hiokm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.028585, 0, 1.2130294)
+
+[node name="Cadeira3" parent="." unique_id=490624881 instance=ExtResource("2_hiokm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.9296111, 0, 1.2587259)
+
+[node name="Cadeira4" parent="." unique_id=1317954063 instance=ExtResource("2_hiokm")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -0.93, 0, -2.7226706)

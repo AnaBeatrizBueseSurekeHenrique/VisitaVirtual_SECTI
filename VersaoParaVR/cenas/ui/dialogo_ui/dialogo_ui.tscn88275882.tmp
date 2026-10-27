@@ -1,0 +1,96 @@
+[gd_scene format=3 uid="uid://dl8aors02o30g"]
+
+[ext_resource type="Script" uid="uid://ddfqruxil6xth" path="res://scripts/componentes/classe_dialogo.gd" id="1_jfdfx"]
+[ext_resource type="Script" uid="uid://bis7t3vhaqifs" path="res://scripts/componentes/exibir_texto.gd" id="2_l0g3x"]
+[ext_resource type="FontFile" uid="uid://d0g4is27ioqvr" path="res://assets/fontes/quicksand/quicksand_static/quicksand_regular.ttf" id="3_otvh3"]
+[ext_resource type="FontFile" uid="uid://dpwqqlkbb7a41" path="res://assets/fontes/quicksand/quicksand_static/quciksand_bold.ttf" id="4_uokdf"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_at10d"]
+bg_color = Color(0, 0, 0, 0.023529412)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+corner_radius_top_left = 8
+corner_radius_top_right = 42
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 42
+shadow_color = Color(0, 0, 0, 0.23529412)
+shadow_size = 2
+shadow_offset = Vector2(2, 2)
+
+[node name="DialogoUI" type="Control" unique_id=335717215 node_paths=PackedStringArray("_exibir_texto", "panel_botoes")]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -7.0
+offset_top = -14.0
+offset_right = -7.0
+offset_bottom = -14.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_jfdfx")
+_exibir_texto = NodePath("MarginContainer/PanelContainer")
+panel_botoes = NodePath("MarginContainer/PanelContainer/MarginContainer/MarginContainer/VBoxContainer/Container_Button")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=487604409]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = -173.0
+offset_right = 5.0
+offset_bottom = 18.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 0
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer" unique_id=2028188164 node_paths=PackedStringArray("_texto")]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_at10d")
+script = ExtResource("2_l0g3x")
+_texto = NodePath("MarginContainer/MarginContainer/VBoxContainer/RichTextLabel")
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/PanelContainer" unique_id=1131721243]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/PanelContainer/MarginContainer" unique_id=1169499268]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/PanelContainer/MarginContainer/MarginContainer" unique_id=740603913]
+layout_mode = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="MarginContainer/PanelContainer/MarginContainer/MarginContainer/VBoxContainer" unique_id=955400985]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/normal_font = ExtResource("3_otvh3")
+theme_override_fonts/bold_font = ExtResource("4_uokdf")
+theme_override_font_sizes/normal_font_size = 32
+theme_override_font_sizes/bold_font_size = 32
+theme_override_font_sizes/bold_italics_font_size = 32
+theme_override_font_sizes/italics_font_size = 32
+theme_override_font_sizes/mono_font_size = 32
+bbcode_enabled = true
+text = "Texto!"
+fit_content = true
+
+[node name="Container_Button" type="GridContainer" parent="MarginContainer/PanelContainer/MarginContainer/MarginContainer/VBoxContainer" unique_id=1676437675]
+layout_mode = 2
+theme_override_constants/h_separation = 10
+theme_override_constants/v_separation = 15
+columns = 2

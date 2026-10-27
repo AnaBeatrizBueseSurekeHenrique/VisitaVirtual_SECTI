@@ -1,0 +1,147 @@
+[gd_scene format=3 uid="uid://d3b7iqmjgo1iw"]
+
+[ext_resource type="PackedScene" uid="uid://cqbudy7pelce7" path="res://addons/godot-xr-tools/cena_base.tscn" id="1_dtdg3"]
+[ext_resource type="Shader" uid="uid://dr5nhreyb3f4k" path="res://scripts/shaders/ceu.gdshader" id="2_8xkhy"]
+[ext_resource type="Texture2D" uid="uid://dbxn6scl2djrm" path="res://assets/texturas/anturio_folha/ceu.png" id="3_rrkax"]
+[ext_resource type="PackedScene" uid="uid://cqvf1m4ccossx" path="res://cenas/ui/dicas.tscn" id="4_brlo0"]
+[ext_resource type="Material" uid="uid://vgl5dgnnrgeu" path="res://assets/materiais/new_standard_material_3d.tres" id="5_neunr"]
+[ext_resource type="PackedScene" uid="uid://c78tjrtiyqna8" path="res://addons/godot-xr-tools/functions/movement_grapple.tscn" id="6_lvpwe"]
+[ext_resource type="PackedScene" uid="uid://ymykqyx3v1bf" path="res://cenas/componentes/componente_interacao_jogador.tscn" id="7_qhar0"]
+[ext_resource type="PackedScene" uid="uid://c2q5phg8w08o" path="res://addons/godot-xr-tools/functions/movement_jump.tscn" id="8_8himp"]
+[ext_resource type="PackedScene" uid="uid://dl8aors02o30g" path="res://cenas/ui/dialogo_ui/dialogo_ui.tscn" id="9_snpo8"]
+[ext_resource type="PackedScene" uid="uid://umd8y006s5m7" path="res://cenas/globais/transition.tscn" id="10_nna3g"]
+[ext_resource type="PackedScene" uid="uid://vrpkvn0qdl73" path="res://cenas/ui/creditos/creditos.tscn" id="11_neunr"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_pn7v0"]
+shader = ExtResource("2_8xkhy")
+shader_parameter/sky_texture = ExtResource("3_rrkax")
+shader_parameter/power = 0.2
+shader_parameter/scale_a = 0.5
+shader_parameter/scale_b = 0.3
+shader_parameter/speed = 0.2
+shader_parameter/speed_a = Vector2(0.1, 0.1)
+shader_parameter/speed_b = Vector2(0.1, 0.1)
+shader_parameter/density = 0.9
+shader_parameter/grayness = 0.2
+shader_parameter/cloud_light = 1.0
+shader_parameter/cloud_distortion = 0.2
+shader_parameter/sky_color_a0 = Color(0.5, 0.8, 1, 1)
+shader_parameter/sky_color_b0 = Color(0.3, 0.5, 1, 1)
+shader_parameter/sky_color_a1 = Color(0.125, 0.2, 0.25, 1)
+shader_parameter/sky_color_b1 = Color(0.075, 0.125, 0.25, 1)
+shader_parameter/ground_color_a0 = Color(1, 0.8, 0.5, 1)
+shader_parameter/ground_color_b0 = Color(1, 0.5, 0.3, 1)
+shader_parameter/ground_color_a1 = Color(0.25, 0.2, 0.125, 1)
+shader_parameter/ground_color_b1 = Color(0.25, 0.125, 0.075, 1)
+shader_parameter/sun_color_a = Color(1, 0.98, 0.025, 1)
+shader_parameter/sun_color_b = Color(1, 0.5, 0, 1)
+shader_parameter/sun_size = 0.995
+shader_parameter/sun_softness = 0.002
+shader_parameter/sunset_range = Vector2(-0.1, 0.3)
+
+[sub_resource type="Sky" id="Sky_jtb87"]
+sky_material = SubResource("ShaderMaterial_pn7v0")
+
+[sub_resource type="Environment" id="Environment_r3sgw"]
+background_mode = 2
+sky = SubResource("Sky_jtb87")
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_dtdg3"]
+viewport_path = NodePath("SubViewportContainer/SubViewport")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_sn4jb"]
+size = Vector3(1, 1.9697876, 1)
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_8xkhy"]
+viewport_path = NodePath("SubViewportContainer/SubViewport")
+
+[sub_resource type="BoxMesh" id="BoxMesh_neunr"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_neunr"]
+size = Vector3(1.054596, 1, 1)
+
+[node name="SceneBase2" unique_id=2140041542 instance=ExtResource("1_dtdg3")]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." index="0" unique_id=807931234]
+environment = SubResource("Environment_r3sgw")
+
+[node name="XROrigin3D" parent="." index="1" unique_id=1209220601]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.1228695, 1.6573579, 6.1363153)
+
+[node name="Dicas" parent="XROrigin3D" index="0" unique_id=394757736 instance=ExtResource("4_brlo0")]
+transform = Transform3D(0.99676317, 0, -0.080390155, 0, 1, 0, 0.080390155, 0, 0.99676317, 0.009063721, 1.5443151, -2.7944906)
+visible = false
+texture = SubResource("ViewportTexture_dtdg3")
+
+[node name="XRCamera3D" parent="XROrigin3D" index="1" unique_id=1515073703]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.3572917, 0)
+script = null
+
+[node name="PlayerBody" parent="XROrigin3D" index="2" unique_id=1008909181]
+collision_mask = 1021
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="XROrigin3D/PlayerBody" index="0" unique_id=114160238]
+transform = Transform3D(1, 0, -1.0058457e-07, 0, 1, 0, 1.0058457e-07, 0, 1, 0, 0, 0)
+shape = SubResource("BoxShape3D_sn4jb")
+
+[node name="LeftHand" parent="XROrigin3D" index="3" unique_id=1944024741]
+process_mode = 3
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, -1.603487, -0.5)
+
+[node name="LeftHand" parent="XROrigin3D/LeftHand" index="0" unique_id=1872738402]
+hand_material_override = ExtResource("5_neunr")
+
+[node name="MovementGrapple" parent="XROrigin3D/LeftHand/LeftHand" index="2" unique_id=914594603 node_paths=PackedStringArray("componenteInteracao", "hud") instance=ExtResource("6_lvpwe")]
+process_mode = 3
+visible = true
+fim = true
+componenteInteracao = NodePath("Componente_Interacao")
+hud = NodePath("../../../DialogoUI")
+
+[node name="Componente_Interacao" parent="XROrigin3D/LeftHand/LeftHand/MovementGrapple" index="3" unique_id=1386826011 instance=ExtResource("7_qhar0")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0.46665668, 1.2151875, -0.053845227)
+
+[node name="MovementJump" parent="XROrigin3D/LeftHand/LeftHand" index="3" unique_id=497615815 instance=ExtResource("8_8himp")]
+jump_button_action = "ax_button"
+
+[node name="RightHand" parent="XROrigin3D" index="4" unique_id=2110793396]
+process_mode = 3
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, -1.603487, -0.5)
+pose = &"default"
+
+[node name="RightHand" parent="XROrigin3D/RightHand" index="0" unique_id=519307758]
+hand_material_override = ExtResource("5_neunr")
+
+[node name="MovementDirect" parent="XROrigin3D/RightHand/RightHand" index="2" unique_id=1163848476]
+enabled = false
+
+[node name="MovementTurn" parent="XROrigin3D/RightHand/RightHand" index="3" unique_id=209344041]
+enabled = false
+
+[node name="DialogoUI" parent="XROrigin3D" index="5" unique_id=834063049 node_paths=PackedStringArray("transition") instance=ExtResource("9_snpo8")]
+process_mode = 0
+transform = Transform3D(0.49999997, 0, 5.5879354e-09, 0, 0.441, 0, -1.4901161e-08, 0, 0.18999998, 0.052908897, -0.19800878, -2.1251607)
+visible = false
+texture = SubResource("ViewportTexture_8xkhy")
+transition = NodePath("../Transition")
+
+[node name="Transition" parent="XROrigin3D" index="6" unique_id=1397401020 instance=ExtResource("10_nna3g")]
+transform = Transform3D(0.9999993, 0, 0, 0, 1, 0, 0, 0, 0.9999993, -0.006368637, 0, -0.10586786)
+
+[node name="Creditos" parent="." index="2" unique_id=1914632334 instance=ExtResource("11_neunr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.10574, 2.9922194, 0)
+
+[node name="CollisionShape3D" type="MeshInstance3D" parent="." index="3" unique_id=1386050986]
+transform = Transform3D(5.193543, 0, 0, 0, 1, 0, 0, 0, 3.7847304, -11.29348, -0.07839966, 6.301101)
+mesh = SubResource("BoxMesh_neunr")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="CollisionShape3D" index="0" unique_id=200137363]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CollisionShape3D/StaticBody3D" index="0" unique_id=1020226558]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.022933722, 0, 0)
+shape = SubResource("BoxShape3D_neunr")
+
+[connection signal="button_pressed" from="XROrigin3D/LeftHand" to="XROrigin3D/LeftHand" method="_on_button_pressed"]
+[connection signal="input_float_changed" from="XROrigin3D/LeftHand" to="XROrigin3D/LeftHand" method="_on_input_float_changed"]
+[connection signal="button_pressed" from="XROrigin3D/RightHand" to="XROrigin3D/RightHand" method="_on_button_pressed"]
+[connection signal="input_float_changed" from="XROrigin3D/RightHand" to="XROrigin3D/RightHand" method="_on_input_float_changed"]

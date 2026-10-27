@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://bt621ee1nfu6e"]
+
+[ext_resource type="Script" uid="uid://bej7tyq1xa6ad" path="res://scripts/interacao/interacao_dialogo.gd" id="1_cxrac"]
+[ext_resource type="PackedScene" uid="uid://cdx2o7axmy05w" path="res://cenas/componentes/interacoes.tscn" id="1_k36n8"]
+[ext_resource type="PackedScene" uid="uid://bkgin7ij1xa3w" path="res://assets/modelos3d/moveis/lobo.glb" id="3_hriso"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bw8nf"]
+size = Vector3(2.0064468, 1.621582, 2.0047302)
+
+[node name="Interacao_Dialogo" type="StaticBody3D" unique_id=377357338]
+script = ExtResource("1_cxrac")
+
+[node name="Interacoes" parent="." unique_id=1052273376 instance=ExtResource("1_k36n8")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Interacoes" unique_id=251459931]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0046807826, 0.8327637, 0.0020599365)
+shape = SubResource("BoxShape3D_bw8nf")
+disabled = true
+
+[node name="SpotLight3D" type="SpotLight3D" parent="." unique_id=1386977642]
+transform = Transform3D(1, 0, 0, 0, -0.032108556, 0.9994844, 0, -0.9994844, -0.032108556, 0, 3.194954, 0)
+light_energy = 4.341
+spot_range = 3.167809
+spot_angle = 11.027808
+
+[node name="lobo" parent="." unique_id=834391365 instance=ExtResource("3_hriso")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+
+[connection signal="area_entered" from="Interacoes" to="." method="_on_interacoes_area_entered"]
+[connection signal="area_exited" from="Interacoes" to="." method="_on_interacoes_area_exited"]

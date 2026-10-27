@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://gd661rmgvvjm"]
+
+[ext_resource type="ArrayMesh" uid="uid://dw46csvykliny" path="res://assets/modelos3d/moveis/cadeiras/bancos/banco_terceiro_andar/banco_terceiro_andar.obj" id="1_wkx8d"]
+[ext_resource type="Texture2D" uid="uid://b4x1gkc3id2ph" path="res://assets/texturas/plastico/plastico_normal.jpg" id="2_sv8s4"]
+[ext_resource type="Texture2D" uid="uid://6xe2l2c0tnhp" path="res://assets/texturas/plastico/plastico_rugosidade.jpg" id="3_peq6g"]
+[ext_resource type="Material" uid="uid://u6olaxedu14t" path="res://assets/materiais/madeiras/madeira_clara.tres" id="4_peq6g"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_udktr"]
+resource_name = "Cinza_Escuro"
+cull_mode = 2
+albedo_color = Color(0, 0, 0, 1)
+roughness_texture = ExtResource("3_peq6g")
+normal_enabled = true
+normal_texture = ExtResource("2_sv8s4")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_yo31x"]
+size = Vector3(0.65130615, 0.8149414, 0.51220703)
+
+[node name="BancoTerceiroAndar" type="StaticBody3D" unique_id=1678849058]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1148168632]
+mesh = ExtResource("1_wkx8d")
+surface_material_override/0 = SubResource("StandardMaterial3D_udktr")
+surface_material_override/1 = ExtResource("4_peq6g")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=254403328]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.031829834, 0.43041992, -0.012451172)
+shape = SubResource("BoxShape3D_yo31x")

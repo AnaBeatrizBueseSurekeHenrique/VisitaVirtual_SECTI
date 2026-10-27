@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://ti8vuwn0fb7d"]
+
+[ext_resource type="Script" uid="uid://3idb4urb0nee" path="res://scripts/npc/npc.gd" id="1_t3edj"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_20qa1"]
+size = Vector3(1, 2.4577942, 1)
+
+[node name="CharacterBody3D" type="CharacterBody3D" unique_id=2049872822 node_paths=PackedStringArray("dialogo")]
+physics_interpolation_mode = 1
+collision_layer = 2
+collision_mask = 2
+floor_constant_speed = true
+floor_block_on_wall = false
+floor_max_angle = 3.1415927
+floor_snap_length = 1.0
+script = ExtResource("1_t3edj")
+dialogo = NodePath("")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=931598946]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2475431, 0)
+shape = SubResource("BoxShape3D_20qa1")

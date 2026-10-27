@@ -1,0 +1,4 @@
+[gd_scene format=3 uid="uid://dv67il4hpg48u"]
+
+[node name="hud" type="CanvasLayer" unique_id=1287318431]
+process_mode = 3

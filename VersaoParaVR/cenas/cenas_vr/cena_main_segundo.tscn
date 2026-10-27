@@ -1,0 +1,119 @@
+[gd_scene format=3 uid="uid://dnycvx1tht3gy"]
+
+[ext_resource type="PackedScene" uid="uid://cqbudy7pelce7" path="res://addons/godot-xr-tools/cena_base.tscn" id="1_kcy1v"]
+[ext_resource type="Material" uid="uid://vgl5dgnnrgeu" path="res://assets/materiais/new_standard_material_3d.tres" id="2_2l5k4"]
+[ext_resource type="PackedScene" uid="uid://c78tjrtiyqna8" path="res://addons/godot-xr-tools/functions/movement_grapple.tscn" id="3_o2cf4"]
+[ext_resource type="PackedScene" uid="uid://ymykqyx3v1bf" path="res://cenas/componentes/componente_interacao_jogador.tscn" id="4_2l5k4"]
+[ext_resource type="PackedScene" uid="uid://c2q5phg8w08o" path="res://addons/godot-xr-tools/functions/movement_jump.tscn" id="5_xwu8k"]
+[ext_resource type="Script" uid="uid://daoyotj4orlky" path="res://addons/godot-xr-tools/functions/movement_back.gd" id="6_s2mef"]
+[ext_resource type="PackedScene" uid="uid://dl8aors02o30g" path="res://cenas/ui/dialogo_ui/dialogo_ui.tscn" id="7_bqed0"]
+[ext_resource type="PackedScene" uid="uid://bo8phjsx306hm" path="res://cenas/salas/sala_segundo_andar.tscn" id="8_kcy1v"]
+[ext_resource type="PackedScene" uid="uid://cqvf1m4ccossx" path="res://cenas/ui/dicas.tscn" id="9_f71lb"]
+[ext_resource type="PackedScene" uid="uid://umd8y006s5m7" path="res://cenas/globais/transition.tscn" id="9_o2cf4"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_ow2so"]
+viewport_path = NodePath("SubViewportContainer/SubViewport")
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_glvdd"]
+viewport_path = NodePath("SubViewportContainer/SubViewport")
+
+[node name="SceneBase" unique_id=2140041542 instance=ExtResource("1_kcy1v")]
+
+[node name="XROrigin3D" parent="." index="0" unique_id=1209220601]
+transform = Transform3D(-0.99932706, 0, 0.036678724, 0, 1, 0, -0.036678724, 0, -0.99932706, 13.361195, 3.305098, -6.3506165)
+
+[node name="XRCamera3D" parent="XROrigin3D" index="0" unique_id=1515073703]
+transform = Transform3D(1.0000001, 0, -3.7252903e-09, 0, 1, 0, 3.7252903e-09, 0, 1.0000001, 0, -0.66313744, 0)
+current = true
+
+[node name="LeftHand" parent="XROrigin3D" index="2" unique_id=1944024741]
+process_mode = 3
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, -1.603487, -0.5)
+
+[node name="LeftHand" parent="XROrigin3D/LeftHand" index="0" unique_id=1872738402]
+hand_material_override = ExtResource("2_2l5k4")
+
+[node name="MovementGrapple" parent="XROrigin3D/LeftHand/LeftHand" index="2" unique_id=914594603 node_paths=PackedStringArray("componenteInteracao", "hud") instance=ExtResource("3_o2cf4")]
+process_mode = 3
+visible = true
+fim = null
+componenteInteracao = NodePath("Componente_Interacao")
+hud = NodePath("../../../DialogoUI")
+
+[node name="Componente_Interacao" parent="XROrigin3D/LeftHand/LeftHand/MovementGrapple" index="3" unique_id=1386826011 node_paths=PackedStringArray("hud") instance=ExtResource("4_2l5k4")]
+transform = Transform3D(1, 0, -3.7252903e-09, 0, 1, 0, 3.7252903e-09, 0, 1, 0, 0.7339897, 0)
+hud = NodePath("../../../../DialogoUI")
+
+[node name="MovementJump" parent="XROrigin3D/LeftHand/LeftHand" index="3" unique_id=1611430478 node_paths=PackedStringArray("hud") instance=ExtResource("5_xwu8k")]
+hud = NodePath("../../../DialogoUI")
+jump_button_action = "ax_button"
+
+[node name="MovementBack" parent="XROrigin3D/LeftHand/LeftHand" index="4" unique_id=1762202479 node_paths=PackedStringArray("hud") instance=ExtResource("5_xwu8k")]
+script = ExtResource("6_s2mef")
+hud = NodePath("../../../DialogoUI")
+order = 19
+jump_button_action = "by_button"
+
+[node name="RightHand" parent="XROrigin3D" index="3" unique_id=2110793396]
+process_mode = 3
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, -1.603487, -0.5)
+pose = &"default"
+
+[node name="RightHand" parent="XROrigin3D/RightHand" index="0" unique_id=519307758]
+hand_material_override = ExtResource("2_2l5k4")
+
+[node name="DialogoUI" parent="XROrigin3D" index="4" unique_id=834063049 instance=ExtResource("7_bqed0")]
+process_mode = 0
+transform = Transform3D(0.5, 0, 5.5879354e-09, 0, 0.441, 0, -1.4901161e-08, 0, 0.19, 0.052908897, 0.56361103, -2.1251607)
+visible = false
+texture = SubResource("ViewportTexture_ow2so")
+
+[node name="Dicas" parent="XROrigin3D" index="5" unique_id=394757736 instance=ExtResource("9_f71lb")]
+transform = Transform3D(0.9996011, 0, -0.028287768, 0, 1, 0, 0.028287768, 0, 0.9996011, -0.53007126, 0.59800076, -2.8877687)
+visible = false
+texture = SubResource("ViewportTexture_glvdd")
+
+[node name="Transition" parent="XROrigin3D" index="6" unique_id=1397401020 instance=ExtResource("9_o2cf4")]
+transform = Transform3D(1, 0, -3.7252903e-09, 0, 1, 0, 3.7252903e-09, 0, 1, -0.0072841644, 0, -0.1984539)
+
+[node name="SalaSegundoAndar" parent="." index="1" unique_id=2116364423 instance=ExtResource("8_kcy1v")]
+
+[node name="Intro_Andar" parent="SalaSegundoAndar" index="39" unique_id=377357338 node_paths=PackedStringArray("hud", "dicas")]
+hud = NodePath("../../XROrigin3D/DialogoUI")
+dicas = NodePath("../../XROrigin3D/Dicas")
+_array_dialogue = [{
+"_dialog_max": 7,
+"_dialog_min": 0
+}]
+
+[node name="Intro_60" parent="SalaSegundoAndar" index="40" unique_id=922416968 node_paths=PackedStringArray("hud", "dicas")]
+transform = Transform3D(-0.9994961, 0, -0.03174216, 0, 1, 0, 0.03174216, 0, -0.9994961, 13.1881275, 1.2929801, -0.445)
+hud = NodePath("../../XROrigin3D/DialogoUI")
+dicas = NodePath("../../XROrigin3D/Dicas")
+
+[node name="Intro_Guarabot" parent="SalaSegundoAndar" index="41" unique_id=917207189 node_paths=PackedStringArray("hud", "dicas")]
+transform = Transform3D(-0.9987735, 0, -0.049512073, 0, 1, 0, 0.049512073, 0, -0.9987735, 14.513324, 1.2929801, 3.597417)
+hud = NodePath("../../XROrigin3D/DialogoUI")
+dicas = NodePath("../../XROrigin3D/Dicas")
+
+[node name="Intro_Podcast" parent="SalaSegundoAndar" index="42" unique_id=1659302638 node_paths=PackedStringArray("hud", "dicas")]
+transform = Transform3D(0.066953085, 0, -0.9977561, 0, 1, 0, 0.9977561, 0, 0.066953085, 17.656216, 1.2929801, -10.576017)
+hud = NodePath("../../XROrigin3D/DialogoUI")
+dicas = NodePath("../../XROrigin3D/Dicas")
+
+[node name="Intro_Rota" parent="SalaSegundoAndar" index="43" unique_id=328848029 node_paths=PackedStringArray("hud", "dicas")]
+transform = Transform3D(-0.9999836, 0, 0.0057245498, 0, 1, 0, -0.0057245498, 0, -0.9999836, 8.737555, 1.2929801, 5.6643047)
+hud = NodePath("../../XROrigin3D/DialogoUI")
+dicas = NodePath("../../XROrigin3D/Dicas")
+
+[node name="Intro_Andar3" parent="SalaSegundoAndar" index="44" unique_id=526327626 node_paths=PackedStringArray("hud", "dicas")]
+hud = NodePath("../../XROrigin3D/DialogoUI")
+dicas = NodePath("../../XROrigin3D/Dicas")
+
+[connection signal="button_pressed" from="XROrigin3D/LeftHand" to="XROrigin3D/LeftHand" method="_on_button_pressed"]
+[connection signal="input_float_changed" from="XROrigin3D/LeftHand" to="XROrigin3D/LeftHand" method="_on_input_float_changed"]
+[connection signal="button_pressed" from="XROrigin3D/RightHand" to="XROrigin3D/RightHand" method="_on_button_pressed"]
+[connection signal="input_float_changed" from="XROrigin3D/RightHand" to="XROrigin3D/RightHand" method="_on_input_float_changed"]
+
+[editable path="XROrigin3D/LeftHand/LeftHand/MovementGrapple/Componente_Interacao"]
+[editable path="SalaSegundoAndar"]

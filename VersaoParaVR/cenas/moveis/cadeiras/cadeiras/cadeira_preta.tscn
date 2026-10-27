@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://4ylt24fgbni4"]
+
+[ext_resource type="ArrayMesh" uid="uid://djglj74j8ldru" path="res://assets/modelos3d/moveis/cadeiras/cadeiras/cadeira_coworking/cadeira_coworking.obj" id="1_tv3qo"]
+[ext_resource type="Material" uid="uid://cndse6rgkq0ac" path="res://assets/materiais/plastico/cinza_escuro_azulado.tres" id="2_sv4bu"]
+[ext_resource type="Material" uid="uid://dykpgm3oes78y" path="res://assets/materiais/metais/metal_escuro.tres" id="3_1qyqj"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_sv4bu"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1qyqj"]
+size = Vector3(1, 1.1765442, 1.1043701)
+
+[node name="Cadeira_Preta" type="StaticBody3D" unique_id=896350430]
+physics_material_override = SubResource("PhysicsMaterial_sv4bu")
+
+[node name="Cadeira" type="MeshInstance3D" parent="." unique_id=850524486]
+cast_shadow = 2
+gi_mode = 2
+mesh = ExtResource("1_tv3qo")
+surface_material_override/0 = ExtResource("2_sv4bu")
+surface_material_override/1 = ExtResource("3_1qyqj")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=393705327]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.58932567, 0.05218506)
+shape = SubResource("BoxShape3D_1qyqj")

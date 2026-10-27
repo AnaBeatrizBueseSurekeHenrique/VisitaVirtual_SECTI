@@ -1,0 +1,694 @@
+[gd_scene format=3 uid="uid://vrpkvn0qdl73"]
+
+[ext_resource type="Script" uid="uid://d1dknkove5b3j" path="res://scripts/ui/creditos/creditos.gd" id="1_2ny56"]
+[ext_resource type="FontFile" uid="uid://d4n3pxlb7g7bk" path="res://assets/fontes/geistpixel/geitspixel.ttf" id="3_khhy3"]
+[ext_resource type="FontFile" uid="uid://d0g4is27ioqvr" path="res://assets/fontes/quicksand/quicksand_static/quicksand_regular.ttf" id="4_swy5q"]
+[ext_resource type="FontFile" uid="uid://c0qwpilioxg37" path="res://assets/fontes/vt323/vt323.ttf" id="5_154rs"]
+[ext_resource type="FontFile" uid="uid://4adxti7h7fg0" path="res://assets/fontes/quicksand/quicksand_static/quicksand_light.ttf" id="5_gcux1"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_cysqe"]
+viewport_path = NodePath("SubViewportContainer/SubViewport")
+
+[sub_resource type="Gradient" id="Gradient_ibsrl"]
+offsets = PackedFloat32Array(0.26321587, 0.8623348, 1)
+colors = PackedColorArray(0.019607844, 0.11764706, 0.33333334, 1, 0.8039216, 0.41568628, 0.14901961, 1, 0.96127456, 0.5400513, 3.85046e-07, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_hedb7"]
+gradient = SubResource("Gradient_ibsrl")
+fill_to = Vector2(0.582906, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ifwgb"]
+texture = SubResource("GradientTexture2D_hedb7")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2ny56"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_bottom = 10
+border_color = Color(0, 0, 0, 0.5058824)
+border_blend = true
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vgj1t"]
+bg_color = Color(0.16350216, 0.16350222, 0.16350207, 0.37254903)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1, 1, 1, 0.476)
+corner_radius_top_left = 16
+corner_radius_top_right = 8
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ab7aq"]
+bg_color = Color(0.16409835, 0.16409835, 0.16409835, 0.69500005)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1, 1, 1, 0.28100002)
+corner_radius_top_left = 16
+corner_radius_top_right = 8
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 8
+
+[node name="Creditos" type="Node3D" unique_id=1127765419]
+script = ExtResource("1_2ny56")
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=2077872006]
+texture = SubResource("ViewportTexture_cysqe")
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="." unique_id=1075593122]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer" unique_id=213087177]
+transparent_bg = true
+handle_input_locally = false
+size = Vector2i(1264, 804)
+render_target_update_mode = 4
+
+[node name="PanelContainer2" type="PanelContainer" parent="SubViewportContainer/SubViewport" unique_id=989652816]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -2.5
+offset_right = -5.0
+offset_bottom = -2.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_ifwgb")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="SubViewportContainer/SubViewport/PanelContainer2" unique_id=1621807026]
+layout_mode = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="SubViewportContainer/SubViewport/PanelContainer2/VBoxContainer" unique_id=1442542686]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="SubViewportContainer/SubViewport/PanelContainer2/VBoxContainer/CenterContainer" unique_id=1742659718]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="SubViewportContainer/SubViewport/PanelContainer2/VBoxContainer/CenterContainer/MarginContainer" unique_id=1152613887]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="SubViewportContainer/SubViewport/PanelContainer2/VBoxContainer/CenterContainer/MarginContainer/VBoxContainer" unique_id=1338709438]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_khhy3")
+theme_override_font_sizes/font_size = 96
+theme_override_styles/normal = SubResource("StyleBoxFlat_2ny56")
+text = "VISITA VIRTUAL: SECTI"
+horizontal_alignment = 1
+
+[node name="Scroll" type="ScrollContainer" parent="SubViewportContainer/SubViewport/PanelContainer2/VBoxContainer/CenterContainer/MarginContainer/VBoxContainer" unique_id=1475096619]
+custom_minimum_size = Vector2(0, 400)
+layout_mode = 2
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="SubViewportContainer/SubViewport/PanelContainer2/VBoxContainer/CenterContainer/MarginContainer/VBoxContainer/Scroll" unique_id=1105511565]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 20
+
+[node name="Label4" type="Label" parent="SubViewportContainer/SubViewport/PanelContainer2/VBoxContainer/CenterContainer/MarginContainer/VBoxContainer/Scroll/VBoxContainer" unique_id=10981768]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_swy5q")
+theme_override_font_sizes/font_size = 32
+text = "Texturas utilizadas:
+Samambaia - Edward Joseph Lowe (Obtida por meio de rawpixel.com)
+Folha de Antúrio - Heinrich Wilhelm Schott (Obtida por meio de rawpixel.com)
+Céu - Screaming Brain Studios
+Texturas Gerais: cc0-textures.com"
+horizontal_alignment = 1
+
+[node name="Label5" type="Label" parent="SubViewportContainer/SubViewport/PanelContainer2/VBoxContainer/CenterContainer/MarginContainer/VBoxContainer/Scroll/VBoxContainer" unique_id=948973969]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_swy5q")
+theme_override_font_sizes/font_size = 32
+text = "Shaders utilizados:
+Céu: Extention of Sky++ (sorta) by Ansol - SEED
+Câmera: Shader: Colours Correction/Grading - lil_sue
+Barra de Carregamento: Pill Slider - Seed
+Fundo Animado: Animated Pattern Background - HexagonNico"
+horizontal_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="SubViewportContainer/SubViewport/PanelContainer2/VBoxContainer/CenterContainer/MarginContainer/VBoxContainer/Scroll/VBoxContainer" unique_id=980761055]
+layout_mode = 2
+
+[node name="Label3" type="Label" parent="SubViewportContainer/SubViewport/PanelContainer2/VBoxContainer/CenterContainer/MarginContainer/VBoxContainer/Scroll/VBoxContainer/VBoxContainer" unique_id=224177161]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_swy5q")
+theme_override_font_sizes/font_size = 32
+text = "Fontes utilizadas: "
+horizontal_alignment = 1
+
+[node name="GeistPixel" type="HBoxContainer" parent="SubViewportContainer/SubViewport/PanelContainer2/VBoxContainer/CenterContainer/MarginContainer/VBoxContainer/Scroll/VBoxContainer/VBoxContainer" unique_id=1595117680]
+layout_mode = 2
+alignment = 1
+
+[node name="GeistPixel" type="Button" parent="SubViewportContainer/SubViewport/PanelContainer2/VBoxContainer/CenterContainer/MarginContainer/VBoxContainer/Scroll/VBoxContainer/VBoxContainer/GeistPixel" unique_id=837520985]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("5_gcux1")
+theme_override_font_sizes/font_size = 32
+text = "GeistPixel"
+
+[node name="Label4" type="Label" parent="SubViewportContainer/SubViewport/PanelContainer2/VBoxContainer/CenterContainer/MarginContainer/VBoxContainer/Scroll/VBoxContainer/VBoxContainer/GeistPixel" unique_id=1450579445]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_swy5q")
+theme_override_font_sizes/font_size = 32
+text = " -  Andrés Briganti, Evil Rabbit, Guillermo Rauch "
+horizontal_alignment = 1
+
+[node name="Passero" type="HBoxContainer" parent="SubViewportContainer/SubViewport/PanelContainer2/VBoxContainer/CenterContainer/MarginContainer/VBoxContainer/Scroll/VBoxContainer/VBoxContainer" unique_id=319875689]
+layout_mode = 2
+alignment = 1
+
+[node name="Passero" type="Button" parent="SubViewportContainer/SubViewport/PanelContainer2/VBoxContainer/CenterContainer/MarginContainer/VBoxContainer/Scroll/VBoxContainer/VBoxContainer/Passero" unique_id=267666235]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("5_gcux1")
+theme_override_font_sizes/font_size = 32
+text = "Passero One"
+
+[node name="Label4" type="Label" parent="SubViewportContainer/SubViewport/PanelContainer2/VBoxContainer/CenterContainer/MarginContainer/VBoxContainer/Scroll/VBoxContainer/VBoxContainer/Passero" unique_id=1726708795]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_swy5q")
+theme_override_font_sizes/font_size = 32
+text = "- Viktoriya Grabowska "
+horizontal_alignment = 1
+
+[node name="Quicksand" type="HBoxContainer" parent="SubViewportContainer/SubViewport/PanelContainer2/VBoxContainer/CenterContainer/MarginContainer/VBoxContainer/Scroll/VBoxContainer/VBoxContainer" unique_id=1816095168]
+layout_mode = 2
+alignment = 1
+
+[node name="Quicksand" type="Button" parent="SubViewportContainer/SubViewport/PanelContainer2/VBoxContainer/CenterContainer/MarginContainer/VBoxContainer/Scroll/VBoxContainer/VBoxContainer/Quicksand" unique_id=942604522]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("5_gcux1")
+theme_override_font_sizes/font_size = 32
+text = "Quicksand"
+
+[node name="Label4" type="Label" parent="SubViewportContainer/SubViewport/PanelContainer2/VBoxContainer/CenterContainer/MarginContainer/VBoxContainer/Scroll/VBoxContainer/VBoxContainer/Quicksand" unique_id=705520316]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_swy5q")
+theme_override_font_sizes/font_size = 32
+text = "- Andrew Paglinawan "
+horizontal_alignment = 1
+
+[node name="VT323" type="HBoxContainer" parent="SubViewportContainer/SubViewport/PanelContainer2/VBoxContainer/CenterContainer/MarginContainer/VBoxContainer/Scroll/VBoxContainer/VBoxContainer" unique_id=1482268030]
+layout_mode = 2
+alignment = 1
+
+[node name="vt323" type="Button" parent="SubViewportContainer/SubViewport/PanelContainer2/VBoxContainer/CenterContainer/MarginContainer/VBoxContainer/Scroll/VBoxContainer/VBoxContainer/VT323" unique_id=1199539951]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("5_gcux1")
+theme_override_font_sizes/font_size = 32
+text = "VT323"
+
+[node name="Label4" type="Label" parent="SubViewportContainer/SubViewport/PanelContainer2/VBoxContainer/CenterContainer/MarginContainer/VBoxContainer/Scroll/VBoxContainer/VBoxContainer/VT323" unique_id=41582507]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_swy5q")
+theme_override_font_sizes/font_size = 32
+text = "- Peter Hull"
+horizontal_alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="SubViewportContainer/SubViewport/PanelContainer2/VBoxContainer" unique_id=520804877]
+layout_mode = 2
+theme_override_constants/margin_left = 75
+theme_override_constants/margin_right = 75
+theme_override_constants/margin_bottom = 25
+
+[node name="Button" type="Button" parent="SubViewportContainer/SubViewport/PanelContainer2/VBoxContainer/MarginContainer" unique_id=1201026952]
+layout_mode = 2
+size_flags_vertical = 8
+theme_override_colors/font_pressed_color = Color(0.6849659, 0.7090574, 0.7259378, 1)
+theme_override_fonts/font = ExtResource("5_154rs")
+theme_override_font_sizes/font_size = 64
+theme_override_styles/normal = SubResource("StyleBoxFlat_vgj1t")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ab7aq")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ab7aq")
+text = "Para reiniciar, aperte o trigger!"
+
+[node name="Licencas" type="VBoxContainer" parent="SubViewportContainer/SubViewport/PanelContainer2" unique_id=263236797]
+visible = false
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="SubViewportContainer/SubViewport/PanelContainer2/Licencas" unique_id=1544517731]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_khhy3")
+theme_override_font_sizes/font_size = 55
+text = "Esta fonte está sobre a seguinte licença"
+horizontal_alignment = 1
+
+[node name="Geistpixel" type="ScrollContainer" parent="SubViewportContainer/SubViewport/PanelContainer2/Licencas" unique_id=1914641]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label3" type="Label" parent="SubViewportContainer/SubViewport/PanelContainer2/Licencas/Geistpixel" unique_id=1957644116]
+custom_minimum_size = Vector2(0, 400)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("4_swy5q")
+theme_override_font_sizes/font_size = 24
+text = "Copyright 2026 The Geist Project Authors (https://github.com/vercel/geist-font)
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is copied below, and is also available with a FAQ at:
+https://openfontlicense.org
+
+
+-----------------------------------------------------------
+SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
+-----------------------------------------------------------
+
+PREAMBLE
+The goals of the Open Font License (OFL) are to stimulate worldwide
+development of collaborative font projects, to support the font creation
+efforts of academic and linguistic communities, and to provide a free and
+open framework in which fonts may be shared and improved in partnership
+with others.
+
+The OFL allows the licensed fonts to be used, studied, modified and
+redistributed freely as long as they are not sold by themselves. The
+fonts, including any derivative works, can be bundled, embedded, 
+redistributed and/or sold with any software provided that any reserved
+names are not used by derivative works. The fonts and derivatives,
+however, cannot be released under any other type of license. The
+requirement for fonts to remain under this license does not apply
+to any document created using the fonts or their derivatives.
+
+DEFINITIONS
+\"Font Software\" refers to the set of files released by the Copyright
+Holder(s) under this license and clearly marked as such. This may
+include source files, build scripts and documentation.
+
+\"Reserved Font Name\" refers to any names specified as such after the
+copyright statement(s).
+
+\"Original Version\" refers to the collection of Font Software components as
+distributed by the Copyright Holder(s).
+
+\"Modified Version\" refers to any derivative made by adding to, deleting,
+or substituting -- in part or in whole -- any of the components of the
+Original Version, by changing formats or by porting the Font Software to a
+new environment.
+
+\"Author\" refers to any designer, engineer, programmer, technical
+writer or other person who contributed to the Font Software.
+
+PERMISSION & CONDITIONS
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of the Font Software, to use, study, copy, merge, embed, modify,
+redistribute, and sell modified and unmodified copies of the Font
+Software, subject to the following conditions:
+
+1) Neither the Font Software nor any of its individual components,
+in Original or Modified Versions, may be sold by itself.
+
+2) Original or Modified Versions of the Font Software may be bundled,
+redistributed and/or sold with any software, provided that each copy
+contains the above copyright notice and this license. These can be
+included either as stand-alone text files, human-readable headers or
+in the appropriate machine-readable metadata fields within text or
+binary files as long as those fields can be easily viewed by the user.
+
+3) No Modified Version of the Font Software may use the Reserved Font
+Name(s) unless explicit written permission is granted by the corresponding
+Copyright Holder. This restriction only applies to the primary font name as
+presented to the users.
+
+4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font
+Software shall not be used to promote, endorse or advertise any
+Modified Version, except to acknowledge the contribution(s) of the
+Copyright Holder(s) and the Author(s) or with their explicit written
+permission.
+
+5) The Font Software, modified or unmodified, in part or in whole,
+must be distributed entirely under this license, and must not be
+distributed under any other license. The requirement for fonts to
+remain under this license does not apply to any document created
+using the Font Software.
+
+TERMINATION
+This license becomes null and void if any of the above conditions are
+not met.
+
+DISCLAIMER
+THE FONT SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT
+OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE
+COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL
+DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
+OTHER DEALINGS IN THE FONT SOFTWARE.
+"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="Passero" type="ScrollContainer" parent="SubViewportContainer/SubViewport/PanelContainer2/Licencas" unique_id=1828723299]
+visible = false
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label3" type="Label" parent="SubViewportContainer/SubViewport/PanelContainer2/Licencas/Passero" unique_id=1988455449]
+custom_minimum_size = Vector2(0, 400)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("4_swy5q")
+theme_override_font_sizes/font_size = 24
+text = "Copyright (c) 2011 by Sorkin Type Co (www.sorkintype.com),
+with Reserved Font Name \"Passero\".
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is copied below, and is also available with a FAQ at:
+https://openfontlicense.org
+
+
+-----------------------------------------------------------
+SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
+-----------------------------------------------------------
+
+PREAMBLE
+The goals of the Open Font License (OFL) are to stimulate worldwide
+development of collaborative font projects, to support the font creation
+efforts of academic and linguistic communities, and to provide a free and
+open framework in which fonts may be shared and improved in partnership
+with others.
+
+The OFL allows the licensed fonts to be used, studied, modified and
+redistributed freely as long as they are not sold by themselves. The
+fonts, including any derivative works, can be bundled, embedded, 
+redistributed and/or sold with any software provided that any reserved
+names are not used by derivative works. The fonts and derivatives,
+however, cannot be released under any other type of license. The
+requirement for fonts to remain under this license does not apply
+to any document created using the fonts or their derivatives.
+
+DEFINITIONS
+\"Font Software\" refers to the set of files released by the Copyright
+Holder(s) under this license and clearly marked as such. This may
+include source files, build scripts and documentation.
+
+\"Reserved Font Name\" refers to any names specified as such after the
+copyright statement(s).
+
+\"Original Version\" refers to the collection of Font Software components as
+distributed by the Copyright Holder(s).
+
+\"Modified Version\" refers to any derivative made by adding to, deleting,
+or substituting -- in part or in whole -- any of the components of the
+Original Version, by changing formats or by porting the Font Software to a
+new environment.
+
+\"Author\" refers to any designer, engineer, programmer, technical
+writer or other person who contributed to the Font Software.
+
+PERMISSION & CONDITIONS
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of the Font Software, to use, study, copy, merge, embed, modify,
+redistribute, and sell modified and unmodified copies of the Font
+Software, subject to the following conditions:
+
+1) Neither the Font Software nor any of its individual components,
+in Original or Modified Versions, may be sold by itself.
+
+2) Original or Modified Versions of the Font Software may be bundled,
+redistributed and/or sold with any software, provided that each copy
+contains the above copyright notice and this license. These can be
+included either as stand-alone text files, human-readable headers or
+in the appropriate machine-readable metadata fields within text or
+binary files as long as those fields can be easily viewed by the user.
+
+3) No Modified Version of the Font Software may use the Reserved Font
+Name(s) unless explicit written permission is granted by the corresponding
+Copyright Holder. This restriction only applies to the primary font name as
+presented to the users.
+
+4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font
+Software shall not be used to promote, endorse or advertise any
+Modified Version, except to acknowledge the contribution(s) of the
+Copyright Holder(s) and the Author(s) or with their explicit written
+permission.
+
+5) The Font Software, modified or unmodified, in part or in whole,
+must be distributed entirely under this license, and must not be
+distributed under any other license. The requirement for fonts to
+remain under this license does not apply to any document created
+using the Font Software.
+
+TERMINATION
+This license becomes null and void if any of the above conditions are
+not met.
+
+DISCLAIMER
+THE FONT SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT
+OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE
+COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL
+DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
+OTHER DEALINGS IN THE FONT SOFTWARE.
+"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="QuickSand" type="ScrollContainer" parent="SubViewportContainer/SubViewport/PanelContainer2/Licencas" unique_id=1730441658]
+visible = false
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label3" type="Label" parent="SubViewportContainer/SubViewport/PanelContainer2/Licencas/QuickSand" unique_id=1303380797]
+custom_minimum_size = Vector2(0, 400)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("4_swy5q")
+theme_override_font_sizes/font_size = 24
+text = "Copyright 2011 The Quicksand Project Authors (https://github.com/andrew-paglinawan/QuicksandFamily), with Reserved Font Name “Quicksand”.
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is copied below, and is also available with a FAQ at:
+https://openfontlicense.org
+
+
+-----------------------------------------------------------
+SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
+-----------------------------------------------------------
+
+PREAMBLE
+The goals of the Open Font License (OFL) are to stimulate worldwide
+development of collaborative font projects, to support the font creation
+efforts of academic and linguistic communities, and to provide a free and
+open framework in which fonts may be shared and improved in partnership
+with others.
+
+The OFL allows the licensed fonts to be used, studied, modified and
+redistributed freely as long as they are not sold by themselves. The
+fonts, including any derivative works, can be bundled, embedded, 
+redistributed and/or sold with any software provided that any reserved
+names are not used by derivative works. The fonts and derivatives,
+however, cannot be released under any other type of license. The
+requirement for fonts to remain under this license does not apply
+to any document created using the fonts or their derivatives.
+
+DEFINITIONS
+\"Font Software\" refers to the set of files released by the Copyright
+Holder(s) under this license and clearly marked as such. This may
+include source files, build scripts and documentation.
+
+\"Reserved Font Name\" refers to any names specified as such after the
+copyright statement(s).
+
+\"Original Version\" refers to the collection of Font Software components as
+distributed by the Copyright Holder(s).
+
+\"Modified Version\" refers to any derivative made by adding to, deleting,
+or substituting -- in part or in whole -- any of the components of the
+Original Version, by changing formats or by porting the Font Software to a
+new environment.
+
+\"Author\" refers to any designer, engineer, programmer, technical
+writer or other person who contributed to the Font Software.
+
+PERMISSION & CONDITIONS
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of the Font Software, to use, study, copy, merge, embed, modify,
+redistribute, and sell modified and unmodified copies of the Font
+Software, subject to the following conditions:
+
+1) Neither the Font Software nor any of its individual components,
+in Original or Modified Versions, may be sold by itself.
+
+2) Original or Modified Versions of the Font Software may be bundled,
+redistributed and/or sold with any software, provided that each copy
+contains the above copyright notice and this license. These can be
+included either as stand-alone text files, human-readable headers or
+in the appropriate machine-readable metadata fields within text or
+binary files as long as those fields can be easily viewed by the user.
+
+3) No Modified Version of the Font Software may use the Reserved Font
+Name(s) unless explicit written permission is granted by the corresponding
+Copyright Holder. This restriction only applies to the primary font name as
+presented to the users.
+
+4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font
+Software shall not be used to promote, endorse or advertise any
+Modified Version, except to acknowledge the contribution(s) of the
+Copyright Holder(s) and the Author(s) or with their explicit written
+permission.
+
+5) The Font Software, modified or unmodified, in part or in whole,
+must be distributed entirely under this license, and must not be
+distributed under any other license. The requirement for fonts to
+remain under this license does not apply to any document created
+using the Font Software.
+
+TERMINATION
+This license becomes null and void if any of the above conditions are
+not met.
+
+DISCLAIMER
+THE FONT SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT
+OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE
+COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL
+DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
+OTHER DEALINGS IN THE FONT SOFTWARE.
+"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="Vt323" type="ScrollContainer" parent="SubViewportContainer/SubViewport/PanelContainer2/Licencas" unique_id=583143613]
+visible = false
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label3" type="Label" parent="SubViewportContainer/SubViewport/PanelContainer2/Licencas/Vt323" unique_id=2118461100]
+custom_minimum_size = Vector2(0, 400)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("4_swy5q")
+theme_override_font_sizes/font_size = 24
+text = "Copyright 2011, The VT323 Project Authors (peter.hull@oikoi.com)
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is copied below, and is also available with a FAQ at:
+https://openfontlicense.org
+
+
+-----------------------------------------------------------
+SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
+-----------------------------------------------------------
+
+PREAMBLE
+The goals of the Open Font License (OFL) are to stimulate worldwide
+development of collaborative font projects, to support the font creation
+efforts of academic and linguistic communities, and to provide a free and
+open framework in which fonts may be shared and improved in partnership
+with others.
+
+The OFL allows the licensed fonts to be used, studied, modified and
+redistributed freely as long as they are not sold by themselves. The
+fonts, including any derivative works, can be bundled, embedded, 
+redistributed and/or sold with any software provided that any reserved
+names are not used by derivative works. The fonts and derivatives,
+however, cannot be released under any other type of license. The
+requirement for fonts to remain under this license does not apply
+to any document created using the fonts or their derivatives.
+
+DEFINITIONS
+\"Font Software\" refers to the set of files released by the Copyright
+Holder(s) under this license and clearly marked as such. This may
+include source files, build scripts and documentation.
+
+\"Reserved Font Name\" refers to any names specified as such after the
+copyright statement(s).
+
+\"Original Version\" refers to the collection of Font Software components as
+distributed by the Copyright Holder(s).
+
+\"Modified Version\" refers to any derivative made by adding to, deleting,
+or substituting -- in part or in whole -- any of the components of the
+Original Version, by changing formats or by porting the Font Software to a
+new environment.
+
+\"Author\" refers to any designer, engineer, programmer, technical
+writer or other person who contributed to the Font Software.
+
+PERMISSION & CONDITIONS
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of the Font Software, to use, study, copy, merge, embed, modify,
+redistribute, and sell modified and unmodified copies of the Font
+Software, subject to the following conditions:
+
+1) Neither the Font Software nor any of its individual components,
+in Original or Modified Versions, may be sold by itself.
+
+2) Original or Modified Versions of the Font Software may be bundled,
+redistributed and/or sold with any software, provided that each copy
+contains the above copyright notice and this license. These can be
+included either as stand-alone text files, human-readable headers or
+in the appropriate machine-readable metadata fields within text or
+binary files as long as those fields can be easily viewed by the user.
+
+3) No Modified Version of the Font Software may use the Reserved Font
+Name(s) unless explicit written permission is granted by the corresponding
+Copyright Holder. This restriction only applies to the primary font name as
+presented to the users.
+
+4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font
+Software shall not be used to promote, endorse or advertise any
+Modified Version, except to acknowledge the contribution(s) of the
+Copyright Holder(s) and the Author(s) or with their explicit written
+permission.
+
+5) The Font Software, modified or unmodified, in part or in whole,
+must be distributed entirely under this license, and must not be
+distributed under any other license. The requirement for fonts to
+remain under this license does not apply to any document created
+using the Font Software.
+
+TERMINATION
+This license becomes null and void if any of the above conditions are
+not met.
+
+DISCLAIMER
+THE FONT SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT
+OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE
+COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL
+DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
+OTHER DEALINGS IN THE FONT SOFTWARE.
+"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="SubViewportContainer/SubViewport/PanelContainer2/Licencas" unique_id=13400380]
+layout_mode = 2
+theme_override_constants/margin_left = 75
+theme_override_constants/margin_right = 75
+theme_override_constants/margin_bottom = 25
+
+[node name="ButtonVoltar" type="Button" parent="SubViewportContainer/SubViewport/PanelContainer2/Licencas/MarginContainer" unique_id=960825338]
+layout_mode = 2
+size_flags_vertical = 8
+theme_override_colors/font_pressed_color = Color(0.6849659, 0.7090574, 0.7259378, 1)
+theme_override_fonts/font = ExtResource("5_154rs")
+theme_override_font_sizes/font_size = 64
+theme_override_styles/normal = SubResource("StyleBoxFlat_vgj1t")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ab7aq")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ab7aq")
+text = "Voltar"
+
+[connection signal="button_up" from="SubViewportContainer/SubViewport/PanelContainer2/VBoxContainer/MarginContainer/Button" to="." method="_on_button_button_up"]

@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://b4582dpy3fkkt"]
+
+[ext_resource type="ArrayMesh" uid="uid://cumoica1eoa2i" path="res://assets/modelos3d/moveis/cadeiras/bancos/banco_madeira/banco_madeira.obj" id="1_a5o0e"]
+[ext_resource type="Texture2D" uid="uid://nfp0cmln2trq" path="res://assets/texturas/madeiras/madeira_mesa/madeira_mesa_cor.png" id="2_qykyr"]
+[ext_resource type="Texture2D" uid="uid://denab18j3ss6" path="res://assets/texturas/madeiras/madeira_mesa/madeira_mesa_normal.png" id="3_pbrrj"]
+[ext_resource type="Texture2D" uid="uid://d03t4q7skib2m" path="res://assets/texturas/madeiras/madeira_mesa/madeira_mesa_rugosidade.png" id="4_8jtqf"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mx8wd"]
+cull_mode = 2
+albedo_texture = ExtResource("2_qykyr")
+roughness_texture = ExtResource("4_8jtqf")
+normal_enabled = true
+normal_texture = ExtResource("3_pbrrj")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8jtqf"]
+size = Vector3(2.2426758, 1, 3.8654175)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_pbrrj"]
+size = Vector3(0.33587646, 0.51953125, 3.6850586)
+
+[node name="Banco_Churrasqueira" type="StaticBody3D" unique_id=725135385]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=182276555]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 0, 0, 0)
+mesh = ExtResource("1_a5o0e")
+surface_material_override/0 = SubResource("StandardMaterial3D_mx8wd")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=341919174]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.004638672, 0.5818421, -0.003326416)
+shape = SubResource("BoxShape3D_8jtqf")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." unique_id=1349390209]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3793406, 0.27734375, 0.041259766)
+shape = SubResource("BoxShape3D_pbrrj")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="." unique_id=259979053]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.381802, 0.27734375, 0.041259766)
+shape = SubResource("BoxShape3D_pbrrj")

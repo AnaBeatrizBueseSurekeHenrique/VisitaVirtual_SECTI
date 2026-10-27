@@ -1,0 +1,104 @@
+[gd_scene format=3 uid="uid://cmdxygdw2sg8o"]
+
+[ext_resource type="PackedScene" path="res://addons/godot-xr-tools/cena_base.tscn" id="1_lenfn"]
+[ext_resource type="PackedScene" uid="uid://cvp3gwvy0h3mx" path="res://cenas/salas/externo.tscn" id="2_0pkfj"]
+[ext_resource type="PackedScene" uid="uid://ymykqyx3v1bf" path="res://cenas/componentes/componente_interacao_jogador.tscn" id="2_fvspn"]
+[ext_resource type="Script" uid="uid://bx6hxjpie1xa2" path="res://right_hand.gd" id="2_xbk0d"]
+[ext_resource type="PackedScene" uid="uid://dv67il4hpg48u" path="res://cenas/ui/hud.tscn" id="3_yl1l0"]
+[ext_resource type="Script" uid="uid://0fbe6hmsvkwx" path="res://cenas/salas/externo.gd" id="5_wk413"]
+[ext_resource type="Shader" uid="uid://dr5nhreyb3f4k" path="res://ceu.gdshader" id="6_sn4jb"]
+[ext_resource type="Texture2D" uid="uid://dbxn6scl2djrm" path="res://assets/texturas/anturio_folha/ceu.png" id="7_wk413"]
+
+[sub_resource type="TextMesh" id="TextMesh_skgyw"]
+text = "TESTE!!"
+
+[sub_resource type="TextMesh" id="TextMesh_xbk0d"]
+text = "TESTE!!"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_pn7v0"]
+shader = ExtResource("6_sn4jb")
+shader_parameter/sky_texture = ExtResource("7_wk413")
+shader_parameter/power = 0.2
+shader_parameter/scale_a = 0.5
+shader_parameter/scale_b = 0.3
+shader_parameter/speed = 0.2
+shader_parameter/speed_a = Vector2(0.1, 0.1)
+shader_parameter/speed_b = Vector2(0.1, 0.1)
+shader_parameter/density = 0.9
+shader_parameter/grayness = 0.2
+shader_parameter/cloud_light = 1.0
+shader_parameter/cloud_distortion = 0.2
+shader_parameter/sky_color_a0 = Color(0.5, 0.8, 1, 1)
+shader_parameter/sky_color_b0 = Color(0.3, 0.5, 1, 1)
+shader_parameter/sky_color_a1 = Color(0.125, 0.2, 0.25, 1)
+shader_parameter/sky_color_b1 = Color(0.075, 0.125, 0.25, 1)
+shader_parameter/ground_color_a0 = Color(1, 0.8, 0.5, 1)
+shader_parameter/ground_color_b0 = Color(1, 0.5, 0.3, 1)
+shader_parameter/ground_color_a1 = Color(0.25, 0.2, 0.125, 1)
+shader_parameter/ground_color_b1 = Color(0.25, 0.125, 0.075, 1)
+shader_parameter/sun_color_a = Color(1, 0.98, 0.025, 1)
+shader_parameter/sun_color_b = Color(1, 0.5, 0, 1)
+shader_parameter/sun_size = 0.995
+shader_parameter/sun_softness = 0.002
+shader_parameter/sunset_range = Vector2(-0.1, 0.3)
+
+[sub_resource type="Sky" id="Sky_jtb87"]
+sky_material = SubResource("ShaderMaterial_pn7v0")
+
+[sub_resource type="Environment" id="Environment_r3sgw"]
+background_mode = 2
+sky = SubResource("Sky_jtb87")
+
+[sub_resource type="TextMesh" id="TextMesh_wk413"]
+text = "TESTE!!"
+
+[node name="SceneBase" unique_id=2140041542 instance=ExtResource("1_lenfn")]
+
+[node name="XROrigin3D" parent="." index="0" unique_id=1209220601]
+transform = Transform3D(-0.99819297, 0, 0.060090385, 0, 1, 0, -0.060090385, 0, -0.99819297, -10.812622, 1.6573579, -3.150319)
+
+[node name="XRCamera3D" parent="XROrigin3D" index="0" unique_id=1515073703]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.3572917, 0)
+script = null
+
+[node name="LeftHand" parent="XROrigin3D" index="2" unique_id=1944024741 node_paths=PackedStringArray("text_mesh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, -1.603487, -0.5)
+script = ExtResource("2_xbk0d")
+text_mesh = NodePath("../../MeshInstance3D")
+
+[node name="Componente_Interacao" parent="XROrigin3D" index="3" unique_id=1386826011 instance=ExtResource("2_fvspn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8038831, 0)
+
+[node name="RightHand" parent="XROrigin3D" index="4" unique_id=2110793396 node_paths=PackedStringArray("text_mesh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, -1.603487, -0.5)
+pose = &"default"
+script = ExtResource("2_xbk0d")
+text_mesh = NodePath("../../MeshInstance3D2")
+
+[node name="hud" type="CanvasLayer" parent="." index="1" unique_id=471665740]
+
+[node name="Cena_De_Teste" parent="." index="2" unique_id=870400790 node_paths=PackedStringArray("text_mesh") instance=ExtResource("2_0pkfj")]
+script = ExtResource("5_wk413")
+text_mesh = NodePath("../MeshInstance3D3")
+
+[node name="hud2" parent="." index="3" unique_id=1287318431 instance=ExtResource("3_yl1l0")]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." index="4" unique_id=477673630]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -10.100781, 1.0833552, -0.5)
+mesh = SubResource("TextMesh_skgyw")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="." index="5" unique_id=970797706]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -10.100781, 1.852741, -0.5)
+mesh = SubResource("TextMesh_xbk0d")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." index="6" unique_id=807931234]
+environment = SubResource("Environment_r3sgw")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="." index="7" unique_id=138932640]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -10.100781, 2.2609606, -0.5)
+mesh = SubResource("TextMesh_wk413")
+
+[connection signal="button_pressed" from="XROrigin3D/LeftHand" to="XROrigin3D/LeftHand" method="_on_button_pressed"]
+[connection signal="input_float_changed" from="XROrigin3D/LeftHand" to="XROrigin3D/LeftHand" method="_on_input_float_changed"]
+[connection signal="button_pressed" from="XROrigin3D/RightHand" to="XROrigin3D/RightHand" method="_on_button_pressed"]
+[connection signal="input_float_changed" from="XROrigin3D/RightHand" to="XROrigin3D/RightHand" method="_on_input_float_changed"]
