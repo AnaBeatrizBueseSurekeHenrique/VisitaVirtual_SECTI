@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://ddc7dar1xxova"]
+
+[resource]
+resource_name = "Vidro"
+cull_mode = 2
+albedo_color = Color(0.7547592, 0.94897836, 0.991203, 1)
+emission_energy_multiplier = 3.5
+rim = 0.15
+rim_tint = 1.0
+disable_receive_shadows = true

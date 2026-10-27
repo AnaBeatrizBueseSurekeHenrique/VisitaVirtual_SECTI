@@ -1,0 +1,14 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cht3um6gysxqd"]
+
+[ext_resource type="Texture2D" uid="uid://g4nf25cq2kql" path="res://assets/texturas/bamboo/bamboo_cor.png" id="1_qdd1r"]
+[ext_resource type="Texture2D" uid="uid://cw42c4oj7rhnw" path="res://assets/texturas/bamboo/bamboo_oclusao_ambiente.png" id="2_5ieli"]
+[ext_resource type="Texture2D" uid="uid://csole8ygdkuop" path="res://assets/texturas/bamboo/bamboo_normal.png" id="3_bj71c"]
+[ext_resource type="Texture2D" uid="uid://nr6rplpvpxao" path="res://assets/texturas/bamboo/bamboo_rugosidade.png" id="4_h7cny"]
+
+[resource]
+albedo_texture = ExtResource("1_qdd1r")
+roughness_texture = ExtResource("4_h7cny")
+normal_enabled = true
+normal_texture = ExtResource("3_bj71c")
+ao_enabled = true
+ao_texture = ExtResource("2_5ieli")

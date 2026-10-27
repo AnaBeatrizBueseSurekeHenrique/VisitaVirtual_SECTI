@@ -1,0 +1,19 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://u6olaxedu14t"]
+
+[ext_resource type="Texture2D" uid="uid://bvav7wgp1b0t1" path="res://assets/texturas/madeiras/madeira_clara/madeira_clara_cor_base.png" id="1_wicel"]
+[ext_resource type="Texture2D" uid="uid://bcm3lu071fx83" path="res://assets/texturas/madeiras/madeira_clara/madeira_clara_oclusao_ambiente.png" id="2_gob1g"]
+[ext_resource type="Texture2D" uid="uid://b52w6siccnwbv" path="res://assets/texturas/madeiras/madeira_clara/madeira_clara_metal.png" id="3_ymoud"]
+[ext_resource type="Texture2D" uid="uid://chmkvqd7lu14a" path="res://assets/texturas/madeiras/madeira_clara/madeira_clara_normal.png" id="4_s0kur"]
+[ext_resource type="Texture2D" uid="uid://bgnsjerj1x7df" path="res://assets/texturas/madeiras/madeira_clara/madeira_clara_rugosidade.png" id="5_5pyr2"]
+
+[resource]
+resource_name = "Madeira"
+cull_mode = 2
+albedo_texture = ExtResource("1_wicel")
+metallic = 1.0
+metallic_texture = ExtResource("3_ymoud")
+roughness_texture = ExtResource("5_5pyr2")
+normal_enabled = true
+normal_texture = ExtResource("4_s0kur")
+ao_enabled = true
+ao_texture = ExtResource("2_gob1g")

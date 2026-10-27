@@ -1,0 +1,17 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://4gpy8mmxvjd1"]
+
+[ext_resource type="Texture2D" uid="uid://cpp3xlhr8iuj" path="res://assets/texturas/grama/grama_cor.jpg" id="1_7ocxo"]
+[ext_resource type="Texture2D" uid="uid://cx8s0ed4q7lt8" path="res://assets/texturas/grama/grama_oclusao_ambiente.jpg" id="2_vn07q"]
+[ext_resource type="Texture2D" uid="uid://of3tsi7ghhpo" path="res://assets/texturas/grama/grama_metal.jpg" id="3_aws74"]
+[ext_resource type="Texture2D" uid="uid://buhydbcor8ygh" path="res://assets/texturas/grama/grama_normal.jpg" id="4_1k2bf"]
+[ext_resource type="Texture2D" uid="uid://ddarjkla2tm3m" path="res://assets/texturas/grama/grama_rugosidade.jpg" id="5_ptb41"]
+
+[resource]
+albedo_texture = ExtResource("1_7ocxo")
+metallic = 1.0
+metallic_texture = ExtResource("3_aws74")
+roughness_texture = ExtResource("5_ptb41")
+normal_enabled = true
+normal_texture = ExtResource("4_1k2bf")
+ao_enabled = true
+ao_texture = ExtResource("2_vn07q")

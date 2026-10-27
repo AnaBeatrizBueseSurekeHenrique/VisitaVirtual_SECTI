@@ -1,0 +1,23 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://b1e5yt8cn8yui"]
+
+[ext_resource type="Texture2D" uid="uid://bqkhcf3puikej" path="res://assets/texturas/tecido/tecido_couro/tecido_couro_opacidade.jpg" id="1_jnx3c"]
+[ext_resource type="Texture2D" uid="uid://c36irl6exetl" path="res://assets/texturas/tecido/tecido_couro/tecido_couro_oclusao_ambiente.jpg" id="2_6x5f5"]
+[ext_resource type="Texture2D" uid="uid://c6uosqfe5sh31" path="res://assets/texturas/tecido/tecido_couro/tecido_couro_metal.jpg" id="3_am0jc"]
+[ext_resource type="Texture2D" uid="uid://dghkp4i7lgpbm" path="res://assets/texturas/tecido/tecido_couro/tecido_couro_normal.jpg" id="4_h7g5l"]
+[ext_resource type="Texture2D" uid="uid://dur5oqrhrw0ru" path="res://assets/texturas/tecido/tecido_couro/tecido_couro_rugosidade.jpg" id="5_4gpk7"]
+
+[resource]
+resource_name = "Cadeira_Sofá"
+transparency = 2
+alpha_scissor_threshold = 0.5
+alpha_antialiasing_mode = 0
+cull_mode = 2
+albedo_color = Color(0.11691416, 0.15036058, 0.18412653, 1)
+albedo_texture = ExtResource("1_jnx3c")
+metallic = 1.0
+metallic_texture = ExtResource("3_am0jc")
+roughness_texture = ExtResource("5_4gpk7")
+normal_enabled = true
+normal_texture = ExtResource("4_h7g5l")
+ao_enabled = true
+ao_texture = ExtResource("2_6x5f5")

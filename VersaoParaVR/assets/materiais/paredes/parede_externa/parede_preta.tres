@@ -1,0 +1,13 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://dyt8mhpl12wqc"]
+
+[ext_resource type="Texture2D" uid="uid://dxoqedp8cm235" path="res://assets/texturas/paredes/parede_externa/parede_externa_normal.png" id="1_6dk3v"]
+[ext_resource type="Texture2D" uid="uid://dt6eee6wpbcpc" path="res://assets/texturas/paredes/parede_externa/parede_externa_rugosidade.png" id="2_3a10l"]
+
+[resource]
+resource_name = "Parede_Preta"
+cull_mode = 2
+disable_fog = true
+albedo_color = Color(0.10224319, 0.10224321, 0.10224321, 1)
+roughness_texture = ExtResource("2_3a10l")
+normal_enabled = true
+normal_texture = ExtResource("1_6dk3v")

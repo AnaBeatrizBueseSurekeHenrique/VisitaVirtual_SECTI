@@ -1,0 +1,14 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://o4vpxrcx07c2"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_7a7qj"]
+load_path = "res://.godot/imported/aco_normal.jpg-f5d7b4ede7f7f93e4b50a571f3e5cc75.s3tc.ctex"
+
+[resource]
+resource_name = "Teto_Azul"
+cull_mode = 2
+disable_fog = true
+albedo_color = Color(0.25135827, 0.32199484, 1, 1)
+metallic = 1.0
+roughness = 0.85
+normal_enabled = true
+normal_texture = SubResource("CompressedTexture2D_7a7qj")
