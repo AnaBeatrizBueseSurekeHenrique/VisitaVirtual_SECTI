@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://dtt02mrowxlpc"]
+
+[ext_resource type="ArrayMesh" uid="uid://dobxsl38j50b3" path="res://assets/modelos3d/moveis/estantes/estante_plantas/estante_plantas.obj" id="1_mkawa"]
+[ext_resource type="Texture2D" uid="uid://bvav7wgp1b0t1" path="res://assets/Texturas/madeiras/madeira_clara/madeira_clara_cor_base.png" id="2_kj7d3"]
+[ext_resource type="Texture2D" uid="uid://chmkvqd7lu14a" path="res://assets/Texturas/madeiras/madeira_clara/madeira_clara_normal.png" id="3_q6yop"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ny1gk"]
+resource_name = "Madeira"
+cull_mode = 2
+albedo_texture = ExtResource("2_kj7d3")
+roughness = 0.5
+normal_enabled = true
+normal_texture = ExtResource("3_q6yop")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tkt2a"]
+size = Vector3(0.8928375, 0.9836426, 1.1519775)
+
+[node name="StaticBody3D" type="StaticBody3D" unique_id=318523021]
+
+[node name="EstantePlantas" type="MeshInstance3D" parent="." unique_id=2098746678]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.2045414, 0, 0.63334876)
+lod_bias = 128.0
+gi_mode = 2
+mesh = ExtResource("1_mkawa")
+surface_material_override/0 = SubResource("StandardMaterial3D_ny1gk")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=524470342]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.08028412, 0.49890137, -0.1437378)
+shape = SubResource("BoxShape3D_tkt2a")

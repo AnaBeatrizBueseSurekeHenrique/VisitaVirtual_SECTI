@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://bsea45mq3fp65"]
+
+[ext_resource type="ArrayMesh" uid="uid://owqxn7dd7sqm" path="res://assets/modelos3d/moveis/estantes/estante_impressao/estante_impressao.obj" id="1_vxc6y"]
+[ext_resource type="Material" uid="uid://u6olaxedu14t" path="res://assets/materiais/madeiras/madeira_clara.tres" id="2_gar1i"]
+[ext_resource type="Material" uid="uid://bpljpcegd3s1s" path="res://assets/materiais/metais/metal_claro.tres" id="3_gge5f"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_o8a5h"]
+size = Vector3(3.1413574, 1.2399902, 1)
+
+[node name="EstanteImpressao" type="StaticBody3D" unique_id=283666411]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1687214271]
+mesh = ExtResource("1_vxc6y")
+surface_material_override/0 = ExtResource("2_gar1i")
+surface_material_override/1 = ExtResource("3_gge5f")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=712406146]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.009887695, 0.6230725, 0)
+shape = SubResource("BoxShape3D_o8a5h")

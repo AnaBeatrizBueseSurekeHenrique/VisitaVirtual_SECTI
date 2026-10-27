@@ -1,0 +1,65 @@
+[gd_scene format=3 uid="uid://bxhx4ppxv7vow"]
+
+[ext_resource type="ArrayMesh" uid="uid://c5h0qlud6rbc1" path="res://assets/modelos3d/moveis/escadas/escadas.obj" id="1_r5fwt"]
+[ext_resource type="PackedScene" uid="uid://d03tc123g3pk4" path="res://cenas/componentes/componente_mudar_cena.tscn" id="2_28bad"]
+[ext_resource type="Material" uid="uid://dyt8mhpl12wqc" path="res://assets/materiais/paredes/parede_externa/parede_preta.tres" id="8_jwjh4"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_docb0"]
+resource_name = "Metal_Claro"
+cull_mode = 2
+albedo_color = Color(0.846616, 0.846616, 0.8466159, 1)
+metallic = 0.42
+metallic_specular = 1.0
+roughness = 0.55
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_u63pf"]
+points = PackedVector3Array(5.7, 0, 1.1, 5.7, 0, -2.3, -0.5, 3, -1, -0.5, 3, 1.1, -2.6, 3, -1, -2.6, 3, 1.1, 2.5, 0, 1.1, 2.5, 0, -2.3, -2.5, 2.6, 0, -1, 2.6, 0)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_28bad"]
+points = PackedVector3Array(-2.5, 3, -1, -2.5, 5.5, -6, -0.35, 3, -1, -0.35, 5.5, -6)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_docb0"]
+size = Vector3(3.1465302, 3.4168553, 0.7484894)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_docb0"]
+points = PackedVector3Array(4.3, 1.5, -2.1, 4.3, 0.6, -2.1, -0.3, 3, -1.1, -0.3, 3.5, -1.1)
+
+[node name="Escada" type="StaticBody3D" unique_id=521130504]
+
+[node name="Escadas" type="MeshInstance3D" parent="." unique_id=1027165030]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 0.99999994, 0, -1, 0, -4.371139e-08, 0, 4.3368354, 0)
+mesh = ExtResource("1_r5fwt")
+surface_material_override/3 = SubResource("StandardMaterial3D_docb0")
+surface_material_override/4 = SubResource("StandardMaterial3D_docb0")
+surface_material_override/5 = SubResource("StandardMaterial3D_docb0")
+surface_material_override/6 = ExtResource("8_jwjh4")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=461333866]
+shape = SubResource("ConvexPolygonShape3D_u63pf")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." unique_id=171328392]
+shape = SubResource("ConvexPolygonShape3D_28bad")
+debug_color = Color(0.62681234, 0.53167784, 0, 0.41960785)
+
+[node name="Componente_Mudar_Cena" parent="." unique_id=1783618635 instance=ExtResource("2_28bad")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0.29077435, 4.8443356, -3.1328895)
+caminho_cena = "res://cenas/salas/sala_segundo_andar.tscn"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Componente_Mudar_Cena" unique_id=1446271721]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5644324, -3.13343, 3.8850954)
+shape = SubResource("BoxShape3D_docb0")
+debug_color = Color(0, 0.642951, 0.31711304, 0.24300002)
+
+[node name="Componente_Mudar_Cena2" parent="." unique_id=376052795 instance=ExtResource("2_28bad")]
+transform = Transform3D(0.9985937, 0, 0.053015757, 0, 1, 0, -0.053015757, 0, 0.9985937, 1.8099043, 6.8091965, -2.8370104)
+caminho_cena = "res://cenas/salas/andar_interno.tscn"
+numero_jogador = 1
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Componente_Mudar_Cena2" unique_id=261673603]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.0215626, -1.7466865, -0.79212224)
+shape = SubResource("BoxShape3D_docb0")
+debug_color = Color(0, 0.642951, 0.31711304, 0.24300002)
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="." unique_id=328697234]
+shape = SubResource("ConvexPolygonShape3D_docb0")
+debug_color = Color(0.9697797, 0, 0.46224964, 0.41960785)

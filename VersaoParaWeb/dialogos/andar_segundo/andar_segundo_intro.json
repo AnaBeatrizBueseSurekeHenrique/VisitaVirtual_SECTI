@@ -1,0 +1,49 @@
+{
+	"falas": [
+		{
+			"dialogo": "Boas vindas ao segundo andar da SECTI!"
+		},
+		{
+			"dialogo": "Sinta-se livre para explorar o lugar!"
+		},
+		{
+			"dialogo": "Quando quiser, pode acessar o segundo andar subindo a escada!"
+		},
+		{
+			"dialogo": "Também pode voltar ao primeiro andar usando a escada!"
+		},
+		{
+			"dialogo": "Fale comigo de novo caso quiser uma explicação mais a fundo dos projetos aqui!"
+		},
+		{
+			"dialogo": "PERGUNTA",
+			"texto": "Qual projeto você gostaria de conhecer?",
+			"opcoes": [
+				{
+					"texto": "60+",
+					"acao": "muda_falante",
+					"id": 0
+				},
+				{
+					"texto": "Guarabot",
+					"acao": "muda_falante",
+					"id": 1
+				},
+				{
+					"texto": "Podcast",
+					"acao": "muda_falante",
+					"id": 2
+				},
+				{
+					"texto": "Rota da Ideação",
+					"acao": "muda_falante",
+					"id": 3
+				}
+			
+			]
+		},
+		{
+			"dialogo": "Certo, me siga!"
+		}
+	]
+}

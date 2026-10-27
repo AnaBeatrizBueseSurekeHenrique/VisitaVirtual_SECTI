@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://decrai5ryw2ju"]
+
+[ext_resource type="ArrayMesh" uid="uid://dim2gl5rcsllb" path="res://assets/modelos3d/moveis/mesa/mesa_3/mesa_3.obj" id="1_68pug"]
+[ext_resource type="PackedScene" uid="uid://7iv0fbghukcq" path="res://cenas/moveis/cadeiras/cadeiras/cadeira2.tscn" id="2_6q4qo"]
+[ext_resource type="PackedScene" uid="uid://1fcbdmwmwllu" path="res://cenas/moveis/computador/computador.tscn" id="3_6q4qo"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ki13d"]
+size = Vector3(3.4616241, 1, 1.7816162)
+
+[node name="Mesa_Terceiro_Andar" type="StaticBody3D" unique_id=417594902]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=208757432]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.19471121, 0.7124493, -0.2756958)
+shape = SubResource("BoxShape3D_ki13d")
+
+[node name="Cadeira" parent="." unique_id=238080776 instance=ExtResource("2_6q4qo")]
+transform = Transform3D(-3.4969112e-08, 0, 0.8, 0, 0.8, 0, -0.8, 0, -3.4969112e-08, -0.013489753, 0, 0.7974801)
+
+[node name="Computador2" parent="." unique_id=527874400 instance=ExtResource("3_6q4qo")]
+transform = Transform3D(-0.8, 0, -1.2079664e-07, 0, 0.8, 0, 1.2079664e-07, 0, -0.8, 0.0040428936, 1.1594223, -0.018253367)
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="." unique_id=1634313115]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4001875, -0.065308064, 0)
+mesh = ExtResource("1_68pug")

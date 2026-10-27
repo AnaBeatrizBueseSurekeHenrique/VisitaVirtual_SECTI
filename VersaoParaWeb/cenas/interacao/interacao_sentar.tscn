@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://c7ht4lhg4bgeg"]
+
+[ext_resource type="Script" uid="uid://60xwwlce0jmr" path="res://scripts/interacao/interacao_sentar.gd" id="1_wj2en"]
+[ext_resource type="PackedScene" uid="uid://cdx2o7axmy05w" path="res://cenas/componentes/interacoes.tscn" id="2_m21nn"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_v5wof"]
+size = Vector3(1.5229225, 1, 1.5684509)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m21nn"]
+size = Vector3(1, 0.24771118, 1)
+
+[node name="sentar_interact" type="StaticBody3D" unique_id=513480590]
+script = ExtResource("1_wj2en")
+
+[node name="Interacoes" parent="." unique_id=1052273376 instance=ExtResource("2_m21nn")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Interacoes" unique_id=1165825191]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.014917374, 0, -0.13624573)
+shape = SubResource("BoxShape3D_v5wof")
+debug_color = Color(0.34409294, 0.62131935, 0, 0.924)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=501897956]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.2556305, 0)
+shape = SubResource("BoxShape3D_m21nn")
+
+[connection signal="area_entered" from="Interacoes" to="." method="_on_interacoes_area_entered"]
+[connection signal="area_exited" from="Interacoes" to="." method="_on_interacoes_area_exited"]

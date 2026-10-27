@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://t8lqnb3u082n"]
+
+[ext_resource type="ArrayMesh" uid="uid://de0gg5mjul0t4" path="res://assets/modelos3d/moveis/cadeiras/sofas/sofazinho_segundo_andar/sofazinho_segundo_andar.obj" id="1_l851c"]
+[ext_resource type="Material" uid="uid://b1e5yt8cn8yui" path="res://assets/materiais/tecido/tecido_couro.tres" id="2_sc55h"]
+[ext_resource type="Material" uid="uid://u6olaxedu14t" path="res://assets/materiais/madeiras/madeira_clara.tres" id="3_iutm3"]
+[ext_resource type="PackedScene" uid="uid://c7ht4lhg4bgeg" path="res://cenas/interacao/interacao_sentar.tscn" id="4_sseqk"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_boyjt"]
+size = Vector3(1.803833, 1.0531006, 1.649353)
+
+[node name="StaticBody3D" type="StaticBody3D" unique_id=141155857]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1169875429]
+mesh = ExtResource("1_l851c")
+surface_material_override/0 = ExtResource("2_sc55h")
+surface_material_override/1 = ExtResource("3_iutm3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1177451481]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.016052246, 0.52264404, -0.066986084)
+shape = SubResource("BoxShape3D_boyjt")
+
+[node name="sentar_interact" parent="." unique_id=513480590 instance=ExtResource("4_sseqk")]
+transform = Transform3D(1.6456711, 0, 0, 0, 1, 0, 0, 0, 1, -0.05637765, 1.2966863, 0)
+
+[node name="Marker3D" type="Marker3D" parent="sentar_interact" unique_id=1723973660]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3355677, 0)

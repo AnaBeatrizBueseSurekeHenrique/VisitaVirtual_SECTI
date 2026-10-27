@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://65xdktgn4o6a"]
+
+[ext_resource type="ArrayMesh" uid="uid://66kvttxd0725" path="res://assets/modelos3d/moveis/cadeiras/sofas/sofa/sofa_tecido.obj" id="1_fhuk2"]
+[ext_resource type="Material" uid="uid://6kdy07y3atfi" path="res://assets/materiais/tecido/sofa_tecido.tres" id="2_hlehl"]
+[ext_resource type="Material" uid="uid://u6olaxedu14t" path="res://assets/materiais/madeiras/madeira_clara.tres" id="3_hlehl"]
+[ext_resource type="PackedScene" uid="uid://c7ht4lhg4bgeg" path="res://cenas/interacao/interacao_sentar.tscn" id="4_qj80n"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4mfys"]
+size = Vector3(3.9091187, 0.6972656, 1.4034424)
+
+[node name="StaticBody3D" type="StaticBody3D" unique_id=1568942895]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=2068799163]
+mesh = ExtResource("1_fhuk2")
+surface_material_override/0 = ExtResource("2_hlehl")
+surface_material_override/1 = ExtResource("3_hlehl")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=604440603]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.025787354, 0.35010612, 0.029724121)
+shape = SubResource("BoxShape3D_4mfys")
+
+[node name="sentar_interact" parent="." unique_id=513480590 instance=ExtResource("4_qj80n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.087534, 0.68877155, 0)
+
+[node name="Marker3D" type="Marker3D" parent="sentar_interact" unique_id=1373529382]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.12687898, 0.18729746, 0)
+
+[node name="sentar_interact2" parent="." unique_id=920445864 instance=ExtResource("4_qj80n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1962876, 0.68877155, 0)
+
+[node name="Marker3D" type="Marker3D" parent="sentar_interact2" unique_id=202194833]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.12687898, 0.18729746, 0)
+
+[node name="sentar_interact3" parent="." unique_id=1764365527 instance=ExtResource("4_qj80n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.11479545, 0.68877155, 0)
+
+[node name="Marker3D" type="Marker3D" parent="sentar_interact3" unique_id=227241676]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.12687898, 0.18729746, 0)

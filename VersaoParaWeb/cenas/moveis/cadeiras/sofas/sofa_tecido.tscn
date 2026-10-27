@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://cume5lbilboy5"]
+
+[ext_resource type="ArrayMesh" uid="uid://cnyn6raawvuho" path="res://assets/modelos3d/moveis/cadeiras/sofas/sofa_tecido_segundo_andar/sofazinho_tecido_segundo_andar.obj" id="1_xpsuh"]
+[ext_resource type="Material" uid="uid://6kdy07y3atfi" path="res://assets/materiais/tecido/sofa_tecido.tres" id="2_ma54a"]
+[ext_resource type="PackedScene" uid="uid://c7ht4lhg4bgeg" path="res://cenas/interacao/interacao_sentar.tscn" id="2_qes41"]
+[ext_resource type="Material" uid="uid://bpljpcegd3s1s" path="res://assets/materiais/metais/metal_claro.tres" id="3_eygjm"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ma54a"]
+size = Vector3(1.9816895, 1.0394897, 2.2475586)
+
+[node name="Sofa_Tecido" type="StaticBody3D" unique_id=190431996]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=62166047]
+mesh = ExtResource("1_xpsuh")
+surface_material_override/0 = ExtResource("2_ma54a")
+surface_material_override/1 = ExtResource("3_eygjm")
+surface_material_override/2 = ExtResource("3_eygjm")
+surface_material_override/3 = ExtResource("3_eygjm")
+surface_material_override/4 = ExtResource("3_eygjm")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1212790011]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.020629883, 0.5237732, -0.18432617)
+shape = SubResource("BoxShape3D_ma54a")
+
+[node name="sentar_interact" parent="." unique_id=513480590 instance=ExtResource("2_qes41")]
+transform = Transform3D(1.7161825, 0, 0, 0, 1, 0, 0, 0, 1.6421676, 0, 1.3316184, 0)
+
+[node name="Marker3D" type="Marker3D" parent="sentar_interact" unique_id=1363094108]

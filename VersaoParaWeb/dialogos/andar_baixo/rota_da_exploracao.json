@@ -1,0 +1,47 @@
+{
+	"falas":[
+		{
+			"dialogo": "Dentre seus projetos, a SECTI possui a Rota da Exploração, uma imersão prática no universo da tecnologia!"
+		},
+			{
+			"dialogo": "PERGUNTA",
+			"texto": "Tem alguma dúvida sobre este projeto?",
+			"opcoes":
+				[
+					{
+						"texto": "O que é a Rota da Exploração?",
+						"acao": "pula",
+						"id": 2
+					},
+					{	
+						"texto": "Quero saber sobre os outros projetos, tchau!",
+						"acao": "muda_falante",
+						"id": 0
+					}
+				
+				]
+			},
+			{
+				"dialogo": "É um projeto voltado ao público que realiza visitas técnicas à SECTI!"
+			},
+            {
+                "dialogo": "Muito mais do que apenas um passeio para conhecer nossa infraestrutura, os visitantes vivenciam uma experiência mão na massa:"
+            },
+			{
+				"dialogo": "VOLTA",
+				"texto": "Eles podem testar e experimentar de perto nossas tecnologias, incluindo kits de robótica, circuitos de eletrônica, óculos de realidade virtual e impressoras 3D.",
+				"volta": 1
+			},
+			{
+				"dialogo": "PERGUNTA",
+				"texto": "",
+				"opcoes":
+					[
+						{
+							"texto": "Tchau!",
+							"acao": "pular_fim"
+						}
+					]
+			}
+	]
+}

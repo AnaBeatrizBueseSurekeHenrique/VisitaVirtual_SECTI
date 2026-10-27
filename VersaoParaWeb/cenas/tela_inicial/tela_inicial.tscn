@@ -1,0 +1,114 @@
+[gd_scene format=3 uid="uid://ci6kwkx1x6tlj"]
+
+[ext_resource type="Script" uid="uid://dmoao7ufbenlp" path="res://scripts/ui/tela_inicial.gd" id="1_3a3gw"]
+[ext_resource type="Material" uid="uid://xq17n2d4dmsp" path="res://new_shader_material.tres" id="2_7e2g1"]
+[ext_resource type="FontFile" uid="uid://c0qwpilioxg37" path="res://assets/fontes/vt323/vt323.ttf" id="4_ab7aq"]
+[ext_resource type="FontFile" uid="uid://d0g4is27ioqvr" path="res://assets/fontes/quicksand/quicksand_static/quicksand_regular.ttf" id="4_q53aj"]
+[ext_resource type="FontFile" uid="uid://d4n3pxlb7g7bk" path="res://assets/fontes/geistpixel/geitspixel.ttf" id="5_l0qsa"]
+
+[sub_resource type="Gradient" id="Gradient_ibsrl"]
+offsets = PackedFloat32Array(0.26321587, 0.8623348, 1)
+colors = PackedColorArray(0.019607844, 0.11764706, 0.33333334, 1, 0.8039216, 0.41568628, 0.14901961, 1, 0.96127456, 0.5400513, 3.85046e-07, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_hedb7"]
+gradient = SubResource("Gradient_ibsrl")
+fill_to = Vector2(0.582906, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ifwgb"]
+texture = SubResource("GradientTexture2D_hedb7")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vgj1t"]
+bg_color = Color(0.16350216, 0.16350222, 0.16350207, 0.37254903)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1, 1, 1, 0.476)
+corner_radius_top_left = 16
+corner_radius_top_right = 8
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ab7aq"]
+bg_color = Color(0.16409835, 0.16409835, 0.16409835, 0.69500005)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(1, 1, 1, 0.28100002)
+corner_radius_top_left = 16
+corner_radius_top_right = 8
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 8
+
+[node name="CenaInicial" type="Control" unique_id=1914632334]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3a3gw")
+
+[node name="PanelContainer2" type="PanelContainer" parent="." unique_id=989652816]
+material = ExtResource("2_7e2g1")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_ifwgb")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer2" unique_id=1621807026]
+layout_mode = 2
+alignment = 1
+
+[node name="Control2" type="Control" parent="PanelContainer2/VBoxContainer" unique_id=1557339341]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="CenterContainer" type="CenterContainer" parent="PanelContainer2/VBoxContainer" unique_id=1442542686]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer2/VBoxContainer/CenterContainer" unique_id=1152613887]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PanelContainer2/VBoxContainer/CenterContainer/VBoxContainer" unique_id=1338709438]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("5_l0qsa")
+theme_override_font_sizes/font_size = 96
+text = "VISITA VIRTUAL: SECTI"
+horizontal_alignment = 1
+
+[node name="Label3" type="Label" parent="PanelContainer2/VBoxContainer/CenterContainer/VBoxContainer" unique_id=512666298]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_q53aj")
+theme_override_font_sizes/font_size = 32
+text = "Secretaria de Ciência, Tecnologia e Inovação de Guarapuava"
+horizontal_alignment = 1
+
+[node name="Control" type="Control" parent="PanelContainer2/VBoxContainer" unique_id=1533195687]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer2/VBoxContainer" unique_id=520804877]
+layout_mode = 2
+theme_override_constants/margin_left = 75
+theme_override_constants/margin_right = 75
+theme_override_constants/margin_bottom = 25
+
+[node name="Button" type="Button" parent="PanelContainer2/VBoxContainer/MarginContainer" unique_id=1201026952]
+layout_mode = 2
+size_flags_vertical = 8
+theme_override_colors/font_pressed_color = Color(0.6849659, 0.7090574, 0.7259378, 1)
+theme_override_fonts/font = ExtResource("4_ab7aq")
+theme_override_font_sizes/font_size = 64
+theme_override_styles/normal = SubResource("StyleBoxFlat_vgj1t")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ab7aq")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ab7aq")
+text = "Iniciar"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1648120176]
+
+[connection signal="pressed" from="PanelContainer2/VBoxContainer/MarginContainer/Button" to="." method="_on_button_pressed"]

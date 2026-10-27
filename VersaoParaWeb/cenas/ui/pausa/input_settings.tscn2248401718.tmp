@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://du0qmugd05xoi"]
+
+[ext_resource type="PackedScene" uid="uid://bcw8gd2dj7glx" path="res://cenas/ui/pausa/input_button.tscn" id="1_uvcje"]
+[ext_resource type="Script" uid="uid://663e4ujyak1s" path="res://cenas/ui/pausa/input_settings.gd" id="1_wim4n"]
+
+[node name="InputSettings" type="MarginContainer" unique_id=1638145391]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+script = ExtResource("1_wim4n")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=330856576]
+layout_mode = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer" unique_id=639975365]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ListaAcoes" type="VBoxContainer" parent="VBoxContainer/ScrollContainer" unique_id=1017010873]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="InputButton" parent="VBoxContainer/ScrollContainer/ListaAcoes" unique_id=835102418 instance=ExtResource("1_uvcje")]
+layout_mode = 2
+
+[node name="ResetButton" type="Button" parent="VBoxContainer" unique_id=1515827652]
+layout_mode = 2
+text = "Resetar"
+
+[connection signal="button_up" from="VBoxContainer/ResetButton" to="." method="_on_reset_button_button_up"]

@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://681b4p5gfso1"]
+
+[ext_resource type="FontFile" uid="uid://d0g4is27ioqvr" path="res://assets/fontes/quicksand/quicksand_static/quicksand_regular.ttf" id="1_38u6o"]
+[ext_resource type="FontFile" uid="uid://d4n3pxlb7g7bk" path="res://assets/fontes/geistpixel/geitspixel.ttf" id="2_fhwdt"]
+
+[node name="HBoxContainer" type="HBoxContainer" unique_id=559266668]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 31.0
+grow_horizontal = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="LinkButton" type="LinkButton" parent="." unique_id=1565846864]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+theme_override_constants/outline_size = 0
+theme_override_fonts/font = ExtResource("1_38u6o")
+theme_override_font_sizes/font_size = 24
+text = "    Aqui    "
+uri = "https://secti.guarapuava.pr.gov.br/coworking/"
+
+[node name="Control" type="Control" parent="." unique_id=970685103]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Button" type="Button" parent="." unique_id=13105745]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("2_fhwdt")
+theme_override_font_sizes/font_size = 32
+text = "Continuar"

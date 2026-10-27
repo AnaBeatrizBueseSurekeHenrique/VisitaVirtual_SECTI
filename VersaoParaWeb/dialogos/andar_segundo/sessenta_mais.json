@@ -1,0 +1,69 @@
+{
+	"falas":[
+		{
+			"dialogo": "Olá! Dentre seus projetos, a SECTI possui o projeto 60+: Inclusão Digital, conectando gerações!"
+		}, 
+		{
+			"dialogo": "PERGUNTA",
+			"texto": "Tem alguma dúvida sobre este projeto?",
+			"opcoes":
+				[
+					{
+						"texto": "O que é o projeto 60+?",
+						"acao": "pula",
+						"id": 2
+					},
+					{
+						"texto": "Que temas são abordados?",
+						"acao": "pula",
+						"id": 4
+					},
+					{
+						"texto": "O que é preciso para poder participar?",
+						"acao": "pula",
+						"id": 6
+					},
+			
+					{
+						"texto": "Quero saber sobre os outros projetos, tchau!",
+						"acao": "muda_falante",
+						"id": 0
+					}
+				]
+		},
+		{
+			"dialogo": "Uma iniciativa que busca promover a inclusão digital de pessoas com 60 anos ou mais."
+		},
+		{
+			"dialogo": "VOLTA",
+			"texto": "Isto é feito buscando promover a autonomia, facilidade de acesso a serviços digitais e maior segurança no acesso ao ambiente online!",
+			"volta":1 	
+		},
+	
+		{
+			"dialogo": "São abordados temas como uso básico de celulares, como utilizar serviços públicos digitais, que nem o GOV BR!"
+		},
+		{
+			"dialogo": "VOLTA",
+			"texto": "Além disso, também é falado sobre segurança da informação, uso de aplicativos bancários e como realizar compras online de forma segura!",
+			"volta": 1
+		},
+		{
+			"dialogo": "VOLTA",
+			"texto": "O inscrito deve ter 60 anos ou mais, e também deve trazer o próprio celular para as aulas!",
+			"volta":1
+		},
+		
+		{
+			"dialogo": "PERGUNTA",
+			"texto": "",
+			"opcoes":
+				[
+					{
+						"texto": "Tchau!",
+						"acao": "pular_fim"
+					}
+				]
+		}
+	]
+}

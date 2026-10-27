@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://bcw8gd2dj7glx"]
+
+[ext_resource type="FontFile" uid="uid://d4n3pxlb7g7bk" path="res://assets/fontes/geistpixel/geitspixel.ttf" id="1_e7moj"]
+[ext_resource type="FontFile" uid="uid://c0qwpilioxg37" path="res://assets/fontes/vt323/vt323.ttf" id="2_lt2tf"]
+
+[node name="InputButton" type="Button" unique_id=835102418]
+custom_minimum_size = Vector2(0, 50)
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 52.0
+grow_horizontal = 2
+size_flags_horizontal = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1614543631]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -16.0
+offset_bottom = 16.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer" unique_id=1473705126]
+layout_mode = 2
+
+[node name="LabelAction" type="Label" parent="MarginContainer/HBoxContainer" unique_id=305451342]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_e7moj")
+text = "Nome Ação"
+
+[node name="Space" type="Control" parent="MarginContainer/HBoxContainer" unique_id=1841466244]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="InputAction" type="Label" parent="MarginContainer/HBoxContainer" unique_id=777440904]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_lt2tf")
+text = "Input"

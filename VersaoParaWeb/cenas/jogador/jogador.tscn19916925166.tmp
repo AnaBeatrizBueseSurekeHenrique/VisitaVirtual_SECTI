@@ -1,0 +1,102 @@
+[gd_scene format=3 uid="uid://wx1irfc2ynfc"]
+
+[ext_resource type="Script" uid="uid://cdd4dp63qt8k8" path="res://scripts/jogador/jogador.gd" id="1_3cmmd"]
+[ext_resource type="PackedScene" uid="uid://boffqdec2e83b" path="res://cenas/componentes/componente_interacao_jogador.tscn" id="3_o6h1i"]
+[ext_resource type="Shader" uid="uid://c1kwuocq6fwj2" path="res://scripts/shaders/jogador/jogador.gdshader" id="3_xipyl"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0eqma"]
+size = Vector3(0.80182266, 2.2197266, 0.7938957)
+
+[sub_resource type="Shader" id="Shader_0eqma"]
+code = "shader_type spatial;
+
+void vertex() {
+	// Called for every vertex the material is visible on.
+}
+
+void fragment() {
+	// Called for every pixel the material is visible on.
+}
+
+//void light() {
+//	// Called for every pixel for every light affecting the material.
+//	// Uncomment to replace the default light processing function with this one.
+//}
+"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_o6h1i"]
+render_priority = 0
+shader = SubResource("Shader_0eqma")
+
+[sub_resource type="BoxMesh" id="BoxMesh_0eqma"]
+size = Vector3(0.8, 2.2, 0.8)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_xipyl"]
+shader = ExtResource("3_xipyl")
+shader_parameter/master_hue = -2.29999735205675
+shader_parameter/shadow_hue = -38.69999789446044
+shader_parameter/low_mid_hue = -7.099997423582522
+shader_parameter/mid_hue = 0.0
+shader_parameter/up_mid_hue = 0.0
+shader_parameter/high_hue = 0.0
+shader_parameter/master_sat = 1.1450000543875
+shader_parameter/shadow_sat = 1.0
+shader_parameter/low_mid_sat = 1.0
+shader_parameter/mid_sat = 1.0
+shader_parameter/up_mid_sat = 1.0
+shader_parameter/high_sat = 1.0
+shader_parameter/master_val = 1.1910000565725
+shader_parameter/shadow_val = 0.0
+shader_parameter/low_mid_val = 0.0
+shader_parameter/mid_val = 0.0
+shader_parameter/up_mid_val = 0.0
+shader_parameter/high_val = 0.0
+shader_parameter/contrast = 1.0530002400175
+shader_parameter/pivot = 0.5
+shader_parameter/enable_colour_splash = false
+shader_parameter/primary_hue = 0.0
+shader_parameter/primary_range = 0.12
+shader_parameter/primary_strength = 1.4
+shader_parameter/enable_secondary = false
+shader_parameter/secondary_hue = 240.0
+shader_parameter/secondary_range = 0.1
+shader_parameter/secondary_strength = 0.7
+shader_parameter/desat_outside = 0.95
+shader_parameter/monochrome_mode = false
+shader_parameter/tint_strength = 0.0
+shader_parameter/tint_color = Color(1.2, 1, 0.8, 1)
+
+[node name="Jogador" type="CharacterBody3D" unique_id=1503693800]
+script = ExtResource("1_3cmmd")
+
+[node name="Colisao" type="CollisionShape3D" parent="." unique_id=216728142]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0009200573, 1.1128633, -0.02108574)
+shape = SubResource("BoxShape3D_0eqma")
+debug_color = Color(2.8878452e-07, 0.65000904, 0.1534692, 0.41960785)
+
+[node name="Forma_Personagem" type="MeshInstance3D" parent="." unique_id=803302708]
+transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 1, 0, 1.1193895, 0)
+material_override = SubResource("ShaderMaterial_o6h1i")
+cast_shadow = 0
+mesh = SubResource("BoxMesh_0eqma")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1621657887]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16801035, 1.798142, 0.2777232)
+current = true
+far = 60.0
+
+[node name="Componente_Interacao" parent="." unique_id=1386826011 instance=ExtResource("3_o6h1i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.88213027, 0)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1554420980]
+
+[node name="PanelContainer" type="PanelContainer" parent="CanvasLayer" unique_id=1570763560]
+material = SubResource("ShaderMaterial_xipyl")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[connection signal="ready" from="." to="." method="_on_ready"]

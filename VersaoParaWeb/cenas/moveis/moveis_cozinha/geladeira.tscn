@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://dnmcneha6qwpf"]
+
+[ext_resource type="ArrayMesh" uid="uid://c8poqt51dv35e" path="res://assets/modelos3d/moveis/moveis_cozinha/geladeira/geladeira.obj" id="1_pv0uc"]
+[ext_resource type="Material" uid="uid://b1kcli2uvui63" path="res://assets/materiais/teto/material_teto.tres" id="2_pv0uc"]
+[ext_resource type="Material" uid="uid://b1e5yt8cn8yui" path="res://assets/materiais/tecido/tecido_couro.tres" id="3_2ukwm"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m6ho5"]
+size = Vector3(1.137207, 3.4796143, 1)
+
+[node name="Geladeira" type="StaticBody3D" unique_id=1013701939]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=386763333]
+mesh = ExtResource("1_pv0uc")
+surface_material_override/0 = ExtResource("2_pv0uc")
+surface_material_override/1 = ExtResource("3_2ukwm")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1374802225]
+transform = Transform3D(1, 0, 1.4901161e-08, 0, 1, 0, -1.4901161e-08, 0, 1, 0.14570141, 1.732999, -1.70985e-10)
+shape = SubResource("BoxShape3D_m6ho5")

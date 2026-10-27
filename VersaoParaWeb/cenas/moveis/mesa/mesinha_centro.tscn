@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://cf5wuyqf617xg"]
+
+[ext_resource type="ArrayMesh" uid="uid://bg4tb15ulfhqi" path="res://assets/modelos3d/moveis/mesa/mesinha_centro/mesinha_centro.obj" id="1_b8ds5"]
+[ext_resource type="Material" uid="uid://d052ue6853sdm" path="res://assets/materiais/pia/claro_pia.tres" id="2_2hnyg"]
+[ext_resource type="PackedScene" uid="uid://4ylt24fgbni4" path="res://cenas/moveis/cadeiras/cadeiras/cadeira_preta.tscn" id="2_ovh1f"]
+[ext_resource type="Material" uid="uid://bpljpcegd3s1s" path="res://assets/materiais/metais/metal_claro.tres" id="3_k7uu8"]
+[ext_resource type="Material" uid="uid://u6olaxedu14t" path="res://assets/materiais/madeiras/madeira_clara.tres" id="4_b6b7h"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_408lm"]
+size = Vector3(1.666153, 1.4688721, 2.2142181)
+
+[node name="Mesinha_Centro" type="StaticBody3D" unique_id=710704517]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=661245767]
+transform = Transform3D(0.7883509, 0, 0, 0, 1, 0, 0, 0, 0.7373571, 0, 0, 0.7239107)
+mesh = ExtResource("1_b8ds5")
+surface_material_override/0 = ExtResource("2_2hnyg")
+surface_material_override/1 = ExtResource("3_k7uu8")
+surface_material_override/2 = ExtResource("4_b6b7h")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1260544615]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.025230408, 0.75592947, -0.24209237)
+shape = SubResource("BoxShape3D_408lm")
+
+[node name="Cadeira_Preta" parent="." unique_id=896350430 instance=ExtResource("2_ovh1f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.8694881)
+
+[node name="Cadeira_Preta2" parent="." unique_id=2145973901 instance=ExtResource("2_ovh1f")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0.9484252, 0, 0.0057085752)
+
+[node name="Cadeira_Preta3" parent="." unique_id=1104244573 instance=ExtResource("2_ovh1f")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, -1.4243097)
+
+[node name="Cadeira_Preta4" parent="." unique_id=104875709 instance=ExtResource("2_ovh1f")]
+transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, -0.780687, 0, -0.09493899)

@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://d3f3vxe76vv01"]
+
+[ext_resource type="ArrayMesh" uid="uid://bg4tb15ulfhqi" path="res://assets/modelos3d/moveis/mesa/mesinha_centro/mesinha_centro.obj" id="1_b8ds5"]
+[ext_resource type="PackedScene" uid="uid://4ylt24fgbni4" path="res://cenas/moveis/cadeiras/cadeiras/cadeira_preta.tscn" id="2_ovh1f"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_408lm"]
+size = Vector3(2.038147, 1.4688721, 3.0414429)
+
+[node name="Mesinha_Centro" type="StaticBody3D" unique_id=710704517]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=661245767]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.1223134)
+mesh = ExtResource("1_b8ds5")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1260544615]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0082092285, 0.75592947, -0.19320679)
+shape = SubResource("BoxShape3D_408lm")
+
+[node name="Cadeira_Preta" parent="." unique_id=896350430 instance=ExtResource("2_ovh1f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.5845648)
+
+[node name="Cadeira_Preta2" parent="." unique_id=2145973901 instance=ExtResource("2_ovh1f")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 1.205635, 0, -0.20740688)
+
+[node name="Cadeira_Preta3" parent="." unique_id=1104244573 instance=ExtResource("2_ovh1f")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, -1.4137644)
+
+[node name="Cadeira_Preta4" parent="." unique_id=104875709 instance=ExtResource("2_ovh1f")]
+transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, -1.0155312, 0, -0.20740688)

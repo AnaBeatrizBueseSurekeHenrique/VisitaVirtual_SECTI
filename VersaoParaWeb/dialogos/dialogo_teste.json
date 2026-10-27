@@ -1,0 +1,30 @@
+{
+	"falas":[
+		{
+			"dialogo": "Olá, tudo bem?"
+		},
+		{
+			"dialogo": "Boas vindas à Secretaria de Ciência, Tecnologia e Inovação!"
+		},
+		{
+			"dialogo": "Um orgão que busca impulsionar o desenvolvimento tecnológico e empreendedor aqui de Guarapuava!"
+		},
+		{
+			"dialogo": "Oferencendo capacitações profissionais, espaços de conexão..."
+		},
+		{
+			"dialogo": "Gostaria de receber um tour por este local e conhecer esse ambiente?"
+		},
+		{
+			"dialogo": "Se sim, me siga!"
+		},
+		{
+			"dialogo": "MUDA_CENA",
+			"texto": "Vamos começar pela andar de baixo! Entre!",
+			"cena": "res://cenas/salas/andar_interno.tscn",
+			"jogador_pos": 0
+		}
+	
+		
+	]
+}

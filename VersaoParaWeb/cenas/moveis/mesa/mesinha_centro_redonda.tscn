@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://dm1lbywy7u5lr"]
+
+[ext_resource type="ArrayMesh" uid="uid://cdmioflyjglbb" path="res://assets/modelos3d/moveis/mesa/mesa_redonda/mesa_redonda.obj" id="1_ca0qg"]
+[ext_resource type="Material" uid="uid://2ik3c4l81vfc" path="res://assets/materiais/janelas/vidro/vidro_branco.tres" id="2_ca0qg"]
+[ext_resource type="Material" uid="uid://u6olaxedu14t" path="res://assets/materiais/madeiras/madeira_clara.tres" id="3_ca0qg"]
+[ext_resource type="PackedScene" uid="uid://4ylt24fgbni4" path="res://cenas/moveis/cadeiras/cadeiras/cadeira_preta.tscn" id="4_ca0qg"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qa1fo"]
+size = Vector3(2.5611877, 1.5131836, 2.4945679)
+
+[node name="MesinhaCentro" type="StaticBody3D" unique_id=1822671761]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=949187998]
+transform = Transform3D(0.7677381, 0, 0, 0, 1, 0, 0, 0, 0.73976505, 0.24861145, 0.007620096, 0.7407285)
+mesh = ExtResource("1_ca0qg")
+surface_material_override/0 = ExtResource("2_ca0qg")
+surface_material_override/1 = ExtResource("3_ca0qg")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=629930335]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.26844788, 0.6960449, -0.18057644)
+shape = SubResource("BoxShape3D_qa1fo")
+
+[node name="Cadeira_Preta" parent="." unique_id=896350430 instance=ExtResource("4_ca0qg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.20699024, 0, 0.9663081)
+
+[node name="Cadeira_Preta2" parent="." unique_id=32652795 instance=ExtResource("4_ca0qg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0.20699024, 0, -1.4900675)

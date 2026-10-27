@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://ootf2mdrpsrp"]
+
+[ext_resource type="ArrayMesh" uid="uid://cj7u7n820qook" path="res://assets/modelos3d/moveis/mesa/mesa_cozinha/mesa_cozinha.obj" id="1_wls7n"]
+[ext_resource type="PackedScene" uid="uid://bd3d5mbx8nao6" path="res://cenas/moveis/cadeiras/cadeiras/cadeira_cozinha.tscn" id="2_hhmpk"]
+[ext_resource type="Material" uid="uid://u6olaxedu14t" path="res://assets/materiais/madeiras/madeira_clara.tres" id="2_ujs7w"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_hhmpk"]
+size = Vector3(2.2148438, 1.6796875, 4.43042)
+
+[node name="Mesa_Cozinha" type="StaticBody3D" unique_id=337077348]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1522279895]
+mesh = ExtResource("1_wls7n")
+surface_material_override/1 = ExtResource("2_ujs7w")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2136519554]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.052734375, 0.843817, 0.020385742)
+shape = SubResource("BoxShape3D_hhmpk")
+
+[node name="Cadeira_Cozinha" parent="." unique_id=1372442940 instance=ExtResource("2_hhmpk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.052734375, -0.04783261, 2.6472945)
+
+[node name="Cadeira_Cozinha2" parent="." unique_id=366738176 instance=ExtResource("2_hhmpk")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -0.052734375, -0.04783261, -2.8377738)
+
+[node name="Cadeira_Cozinha3" parent="." unique_id=1089457510 instance=ExtResource("2_hhmpk")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 1.2402978, -0.04783261, -1.2318852)
+
+[node name="Cadeira_Cozinha4" parent="." unique_id=1020736812 instance=ExtResource("2_hhmpk")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 1.2402978, -0.04783261, 0.050369978)
+
+[node name="Cadeira_Cozinha5" parent="." unique_id=1264923608 instance=ExtResource("2_hhmpk")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 1.2402978, -0.04783261, 1.3176763)
+
+[node name="Cadeira_Cozinha6" parent="." unique_id=1148996808 instance=ExtResource("2_hhmpk")]
+transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, -1.3968744, -0.04783261, -1.2318852)
+
+[node name="Cadeira_Cozinha7" parent="." unique_id=465392369 instance=ExtResource("2_hhmpk")]
+transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, -1.3968744, -0.04783261, 0.050369978)
+
+[node name="Cadeira_Cozinha8" parent="." unique_id=586256182 instance=ExtResource("2_hhmpk")]
+transform = Transform3D(1.1924881e-08, 0, -1, 0, 1, 0, 1, 0, 1.1924881e-08, -1.3968744, -0.04783261, 1.3176763)

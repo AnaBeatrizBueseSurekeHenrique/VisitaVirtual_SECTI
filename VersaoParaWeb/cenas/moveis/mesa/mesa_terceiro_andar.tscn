@@ -1,0 +1,65 @@
+[gd_scene format=3 uid="uid://gi52ovuwuok1"]
+
+[ext_resource type="ArrayMesh" uid="uid://cd4qgfi0dkxyv" path="res://assets/modelos3d/moveis/mesa/mesa_terceiro_andar/mesa_terceiro_andar.obj" id="1_5olh2"]
+[ext_resource type="PackedScene" uid="uid://7iv0fbghukcq" path="res://cenas/moveis/cadeiras/cadeiras/cadeira2.tscn" id="2_0bre8"]
+[ext_resource type="Material" uid="uid://u6olaxedu14t" path="res://assets/materiais/madeiras/madeira_clara.tres" id="2_m28eg"]
+[ext_resource type="PackedScene" uid="uid://1fcbdmwmwllu" path="res://cenas/moveis/computador/computador.tscn" id="3_jhih4"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jhih4"]
+size = Vector3(0.72802734, 1.227478, 5.8610687)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m28eg"]
+size = Vector3(0.72802734, 1.0001717, 4.9537582)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0bre8"]
+size = Vector3(0.72802734, 1.0441284, 4.645935)
+
+[node name="Mesa_TerceiroAndar" type="StaticBody3D" unique_id=1495369457]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=844323459]
+mesh = ExtResource("1_5olh2")
+surface_material_override/0 = ExtResource("2_m28eg")
+surface_material_override/2 = ExtResource("2_m28eg")
+surface_material_override/4 = ExtResource("2_m28eg")
+
+[node name="Cadeira" parent="." unique_id=238080776 instance=ExtResource("2_0bre8")]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -1.8400333, 0, 0)
+
+[node name="Cadeira2" parent="." unique_id=1561747450 instance=ExtResource("2_0bre8")]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -1.8400333, 0, -2.5486937)
+
+[node name="Cadeira3" parent="." unique_id=1718977792 instance=ExtResource("2_0bre8")]
+transform = Transform3D(-0.8, 0, -6.9938224e-08, 0, 0.8, 0, 6.9938224e-08, 0, -0.8, 3.8764465, 0, -0.89458525)
+
+[node name="Cadeira4" parent="." unique_id=1507933751 instance=ExtResource("2_0bre8")]
+transform = Transform3D(-3.4969112e-08, 0, 0.8, 0, 0.8, 0, -0.8, 0, -3.4969112e-08, 0.26504683, 0, 2.5658164)
+
+[node name="Cadeira5" parent="." unique_id=1485571303 instance=ExtResource("2_0bre8")]
+transform = Transform3D(-3.4969112e-08, 0, 0.8, 0, 0.8, 0, -0.8, 0, -3.4969112e-08, 1.8424084, 0, 2.451479)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1290308405]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.048194, 0.5814514, -1.5116043)
+shape = SubResource("BoxShape3D_jhih4")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." unique_id=895199879]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 1.0552881, 0.65395546, 1.7202083)
+shape = SubResource("BoxShape3D_m28eg")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="." unique_id=1597871151]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 3.1697917, 0.67593384, -0.30516684)
+shape = SubResource("BoxShape3D_0bre8")
+
+[node name="Computador" parent="." unique_id=559932370 instance=ExtResource("3_jhih4")]
+transform = Transform3D(-0.8, 0, 1.2079664e-07, 0, 0.8, 0, -1.2079664e-07, 0, -0.8, 0.18871246, 1.1093194, 1.7959793)
+
+[node name="Computador2" parent="." unique_id=407591694 instance=ExtResource("3_jhih4")]
+transform = Transform3D(-0.8, 0, 1.2079664e-07, 0, 0.8, 0, -1.2079664e-07, 0, -0.8, 1.8094622, 1.1215111, 1.8255692)
+
+[node name="Computador3" parent="." unique_id=57762255 instance=ExtResource("3_jhih4")]
+transform = Transform3D(-3.4969112e-08, 0, 0.8, 0, 0.8, 0, -0.8, 0, -3.4969112e-08, -0.97400755, 1.0473578, 0.030585289)
+
+[node name="Computador4" parent="." unique_id=655722732 instance=ExtResource("3_jhih4")]
+transform = Transform3D(-3.4969112e-08, 0, 0.8, 0, 0.8, 0, -0.8, 0, -3.4969112e-08, -0.97400767, 1.0643611, -2.3110557)
+
+[node name="Computador5" parent="." unique_id=132347995 instance=ExtResource("3_jhih4")]
+transform = Transform3D(-3.4969112e-08, 0, -0.8, 0, 0.8, 0, 0.8, 0, -3.4969112e-08, 3.084266, 1.0505718, -0.8687082)

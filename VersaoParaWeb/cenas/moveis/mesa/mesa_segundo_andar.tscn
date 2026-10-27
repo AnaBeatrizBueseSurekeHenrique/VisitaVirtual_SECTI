@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://c7vhppgt557d6"]
+
+[ext_resource type="ArrayMesh" uid="uid://dim2gl5rcsllb" path="res://assets/modelos3d/moveis/mesa/mesa_3/mesa_3.obj" id="1_5ddhb"]
+[ext_resource type="PackedScene" uid="uid://7iv0fbghukcq" path="res://cenas/moveis/cadeiras/cadeiras/cadeira2.tscn" id="2_opv70"]
+[ext_resource type="PackedScene" uid="uid://1fcbdmwmwllu" path="res://cenas/moveis/computador/computador.tscn" id="3_s4687"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_s4687"]
+size = Vector3(3.4042358, 1.2301941, 1.7252197)
+
+[node name="Mesa_Segundo_Andar" type="StaticBody3D" unique_id=164432998]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1961158518]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0655337, 0)
+mesh = ExtResource("1_5ddhb")
+
+[node name="Cadeira" parent="." unique_id=238080776 instance=ExtResource("2_opv70")]
+transform = Transform3D(-3.4969112e-08, 0, 0.8, 0, 0.8, 0, -0.8, 0, -3.4969112e-08, -1.1661295, 0, 0.7743316)
+
+[node name="Cadeira2" parent="." unique_id=1660314360 instance=ExtResource("2_opv70")]
+transform = Transform3D(-3.4969112e-08, 0, 0.8, 0, 0.8, 0, -0.8, 0, -3.4969112e-08, -1.1661295, 0, 0.7743316)
+
+[node name="Cadeira3" parent="." unique_id=859868703 instance=ExtResource("2_opv70")]
+transform = Transform3D(-3.4969112e-08, 0, 0.8, 0, 0.8, 0, -0.8, 0, -3.4969112e-08, 0.11650109, 0, 0.77433157)
+
+[node name="Cadeira4" parent="." unique_id=882620283 instance=ExtResource("2_opv70")]
+transform = Transform3D(-3.4969112e-08, 0, 0.8, 0, 0.8, 0, -0.8, 0, -3.4969112e-08, 1.2265822, 0, 0.7743315)
+
+[node name="Computador" parent="." unique_id=559932370 instance=ExtResource("3_s4687")]
+transform = Transform3D(-0.7, 0, -6.119594e-08, 0, 0.7, 0, 6.119594e-08, 0, -0.7, -0.9866767, 1.1719719, 0)
+
+[node name="Computador2" parent="." unique_id=2072214068 instance=ExtResource("3_s4687")]
+transform = Transform3D(-0.7, 0, -1.0569706e-07, 0, 0.7, 0, 1.0569706e-07, 0, -0.7, 0.28767037, 1.1719719, -1.1140696e-07)
+
+[node name="Computador3" parent="." unique_id=1408871694 instance=ExtResource("3_s4687")]
+transform = Transform3D(-0.7, 0, -1.0569706e-07, 0, 0.7, 0, 1.0569706e-07, 0, -0.7, 1.4420409, 1.1719719, -2.1232525e-07)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=61104188]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.20498657, 0.6445465, -0.28729248)
+shape = SubResource("BoxShape3D_s4687")

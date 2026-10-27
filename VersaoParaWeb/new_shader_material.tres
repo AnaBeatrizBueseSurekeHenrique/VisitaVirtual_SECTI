@@ -1,0 +1,12 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://xq17n2d4dmsp"]
+
+[ext_resource type="Shader" uid="uid://n7hv6myi6vm2" path="res://scripts/shaders/ui/padrao_tela.gdshader" id="1_cabul"]
+[ext_resource type="Texture2D" uid="uid://dndkh284ytuf7" path="res://assets/texturas/paredes/parede_interna/parede_interna_circulo.jpg" id="2_4v1gg"]
+
+[resource]
+shader = ExtResource("1_cabul")
+shader_parameter/pattern = ExtResource("2_4v1gg")
+shader_parameter/pattern_color = Color(0.075866885, 0.33620566, 0.31146872, 1)
+shader_parameter/tiling = 90.0
+shader_parameter/speed = Vector2(0.1, 0.5)
+shader_parameter/rotation = -0.27318519655015017

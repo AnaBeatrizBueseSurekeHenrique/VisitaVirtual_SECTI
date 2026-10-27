@@ -1,0 +1,68 @@
+{
+	"falas":[
+		{
+			"dialogo": "Dentre seus projetos, a SECTI possui o Inova3D, tecnologia de impressão 3D impulsionando negócios e novas ideias!"
+		},
+			{
+			"dialogo": "PERGUNTA",
+			"texto": "Tem alguma dúvida sobre este projeto?",
+			"opcoes":
+				[
+					{
+						"texto": "O que é o Inova 3D?",
+						"acao": "pula",
+						"id": 2
+					},
+					{
+						"texto": "Quem é o público-alvo deste projeto?",
+						"acao": "pula",
+						"id": 3
+					},
+					{
+						"texto": "O que é abordado neste projeto?",
+						"acao": "pula",
+						"id":5
+					},
+					{	
+						"texto": "Quero saber sobre os outros projetos, tchau!",
+						"acao": "muda_falante",
+						"id": 0
+					}
+				
+				]
+			},
+			{
+				"dialogo": "VOLTA",
+				"texto": "Um programa completo focado na aplicação prática da manufatura aditiva e do design digital para o mercado!",
+				"volta": 1
+			},
+			{
+				"dialogo": "Este projeto foi pensado tanto para empreendedores que já tem um negócio, e que buscam inovar no desenvolvimento e prototipagem de produtos,"
+			},
+			{
+				"dialogo": "VOLTA",
+				"texto": "Quanto para pessoas que desejam empreender do zero usando a tecnologia 3D!",
+				"volta":1
+			},
+
+			{
+				"dialogo": "Neste projeto, é abordado tanto do conhecimento técnico em modelagem e impressão 3D,"
+			},
+			{
+				"dialogo": "VOLTA",
+				"texto": "Até a precificação estratégica de peças, garantindo a viabilidade e lucratividade de seu negócio!",
+				"volta": 1
+			},
+			{
+				"dialogo": "PERGUNTA",
+				"texto": "",
+				"opcoes":
+					[
+						{
+							"texto": "Tchau!",
+							"acao": "pular_fim"
+						}
+					]
+			}
+	]
+}

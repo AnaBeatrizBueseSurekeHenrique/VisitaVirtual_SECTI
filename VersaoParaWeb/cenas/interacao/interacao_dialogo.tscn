@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://bt621ee1nfu6e"]
+
+[ext_resource type="Script" uid="uid://bs2e1fqndmh4t" path="res://scripts/interacao/interacao_dialogo.gd" id="1_cxrac"]
+[ext_resource type="PackedScene" uid="uid://cdx2o7axmy05w" path="res://cenas/componentes/interacoes.tscn" id="1_k36n8"]
+[ext_resource type="PackedScene" uid="uid://crvss8508qbwb" path="res://cenas/salas/lobo.glb" id="2_hriso"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bw8nf"]
+size = Vector3(2.0064468, 1.621582, 2.0047302)
+
+[node name="Interacao_Dialogo" type="StaticBody3D" unique_id=377357338]
+script = ExtResource("1_cxrac")
+
+[node name="lobo" parent="." unique_id=1018433458 instance=ExtResource("2_hriso")]
+transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 0, 0, 0)
+
+[node name="Interacoes" parent="." unique_id=1052273376 instance=ExtResource("1_k36n8")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Interacoes" unique_id=251459931]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0046807826, 0.8327637, 0.0020599365)
+shape = SubResource("BoxShape3D_bw8nf")
+disabled = true
+
+[connection signal="area_entered" from="Interacoes" to="." method="_on_interacoes_area_entered"]
+[connection signal="area_exited" from="Interacoes" to="." method="_on_interacoes_area_exited"]

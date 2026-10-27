@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://d35ek0luuw80p"]
+
+[ext_resource type="ArrayMesh" uid="uid://cuyu1g4427660" path="res://assets/modelos3d/moveis/mesa/mesa_1/mesa1.obj" id="1_qag6i"]
+[ext_resource type="PackedScene" uid="uid://kdtnwoifs46g" path="res://cenas/moveis/cadeiras/cadeiras/cadeira1.tscn" id="2_v2dx4"]
+[ext_resource type="Material" uid="uid://u6olaxedu14t" path="res://assets/materiais/madeiras/madeira_clara.tres" id="2_wl5w0"]
+[ext_resource type="PackedScene" uid="uid://1fcbdmwmwllu" path="res://cenas/moveis/computador/computador.tscn" id="3_0f3cb"]
+[ext_resource type="Material" uid="uid://s1r3afv1311r" path="res://assets/materiais/cinzas/cinza_escuro.tres" id="3_6s7x0"]
+[ext_resource type="Material" uid="uid://bpljpcegd3s1s" path="res://assets/materiais/metais/metal_claro.tres" id="4_unptu"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8rasu"]
+size = Vector3(3.4736862, 1.1622925, 3.8232727)
+
+[node name="Mesa1" type="StaticBody3D" unique_id=258074199]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=197252809]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.06412685, 0)
+mesh = ExtResource("1_qag6i")
+surface_material_override/0 = ExtResource("2_wl5w0")
+surface_material_override/1 = ExtResource("3_6s7x0")
+surface_material_override/2 = ExtResource("4_unptu")
+surface_material_override/3 = ExtResource("4_unptu")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1834995696]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0021247864, 0.6203308, 0.3368683)
+shape = SubResource("BoxShape3D_8rasu")
+
+[node name="StaticBody3D" parent="." unique_id=1673356647 instance=ExtResource("2_v2dx4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.2659073)
+
+[node name="StaticBody3D4" parent="." unique_id=380644242 instance=ExtResource("2_v2dx4")]
+transform = Transform3D(-0.99999994, 0, -8.742277e-08, 0, 1, 0, 8.742277e-08, 0, -0.99999994, 0, 0, -2.067288)
+
+[node name="Computador" parent="." unique_id=559932370 instance=ExtResource("3_0f3cb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1812376, -1.3107383)
+
+[node name="Computador2" parent="." unique_id=329092904 instance=ExtResource("3_0f3cb")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 1.1812376, 0.9868331)

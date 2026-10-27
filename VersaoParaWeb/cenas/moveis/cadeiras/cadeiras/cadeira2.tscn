@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://7iv0fbghukcq"]
+
+[ext_resource type="ArrayMesh" uid="uid://c0c1p1q7judh6" path="res://assets/modelos3d/moveis/cadeiras/cadeiras/cadeira_mesas_metal/cadeira2.obj" id="1_yqgja"]
+[ext_resource type="Material" uid="uid://cndse6rgkq0ac" path="res://assets/materiais/plastico/cinza_escuro_azulado.tres" id="2_7ydyo"]
+[ext_resource type="PackedScene" uid="uid://c7ht4lhg4bgeg" path="res://Cenas/Interação/interacao_sentar.tscn" id="2_jbeap"]
+[ext_resource type="Material" uid="uid://bpljpcegd3s1s" path="res://assets/materiais/metais/metal_claro.tres" id="3_ofkg5"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_nijd6"]
+size = Vector3(1, 1.1937866, 1)
+
+[node name="Cadeira" type="StaticBody3D" unique_id=238080776]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=260399519]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.7287195, 0, 0)
+mesh = ExtResource("1_yqgja")
+surface_material_override/0 = ExtResource("2_7ydyo")
+surface_material_override/1 = ExtResource("3_ofkg5")
+surface_material_override/2 = ExtResource("3_ofkg5")
+surface_material_override/3 = ExtResource("3_ofkg5")
+surface_material_override/4 = ExtResource("3_ofkg5")
+surface_material_override/5 = ExtResource("3_ofkg5")
+surface_material_override/6 = ExtResource("3_ofkg5")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1163292635]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6217346, 0)
+visible = false
+shape = SubResource("BoxShape3D_nijd6")
+
+[node name="sentar_interact" parent="." unique_id=513480590 instance=ExtResource("2_jbeap")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.982471, 0.15021724)
+
+[node name="Marker3D" type="Marker3D" parent="sentar_interact" unique_id=501036758]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2808572, 0)

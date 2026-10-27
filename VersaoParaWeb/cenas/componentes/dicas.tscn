@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://c7xkl3pb1ncq4"]
+
+[ext_resource type="Script" uid="uid://cab01ccg1ddlw" path="res://scripts/ui/dicas.gd" id="1_7s8tq"]
+
+[node name="Area3D" type="Area3D" unique_id=813920392]
+script = ExtResource("1_7s8tq")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="area_exited" from="." to="." method="_on_area_exited"]

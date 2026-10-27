@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://dcnpoiema7gp"]
+
+[ext_resource type="ArrayMesh" uid="uid://ch53jefnmoy37" path="res://assets/modelos3d/moveis/mesa/mesa_impressão3d/mesa3d.obj" id="1_64h73"]
+[ext_resource type="Material" uid="uid://u6olaxedu14t" path="res://assets/materiais/madeiras/madeira_clara.tres" id="2_ftxba"]
+[ext_resource type="Material" uid="uid://s1r3afv1311r" path="res://assets/materiais/cinzas/cinza_escuro.tres" id="3_2f0jr"]
+[ext_resource type="Material" uid="uid://dykpgm3oes78y" path="res://assets/materiais/metais/metal_escuro.tres" id="4_3il32"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lbihk"]
+size = Vector3(5.088501, 1.1879883, 1)
+
+[node name="MesaImpressao" type="StaticBody3D" unique_id=350865485]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=433450676]
+mesh = ExtResource("1_64h73")
+surface_material_override/0 = ExtResource("2_ftxba")
+surface_material_override/1 = ExtResource("3_2f0jr")
+surface_material_override/2 = ExtResource("4_3il32")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1683634057]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.08380127, 0.5881711, 0.70453095)
+shape = SubResource("BoxShape3D_lbihk")

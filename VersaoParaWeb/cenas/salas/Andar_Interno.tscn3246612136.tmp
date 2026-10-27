@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://bk4uiiyuwumc0"]
+
+[ext_resource type="PackedScene" uid="uid://wx1irfc2ynfc" path="res://Cenas/Jogador/jogador.tscn" id="1_eprkg"]
+[ext_resource type="PackedScene" uid="uid://4ylt24fgbni4" path="res://Cenas/Cadeiras/Cadeira_Preta.tscn" id="3_nmpew"]
+[ext_resource type="PackedScene" uid="uid://c7ht4lhg4bgeg" path="res://Cenas/Interação/sentar_interact.tscn" id="3_r71pv"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_eprkg"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_eprkg"]
+size = Vector3(34.33278, 1, 26.949097)
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_eprkg"]
+sky_top_color = Color(0.18627581, 0.477342, 0.656803, 1)
+
+[sub_resource type="Sky" id="Sky_sunb0"]
+sky_material = SubResource("ProceduralSkyMaterial_eprkg")
+
+[sub_resource type="Environment" id="Environment_r71pv"]
+background_mode = 2
+sky = SubResource("Sky_sunb0")
+
+[sub_resource type="PlaceholderMesh" id="PlaceholderMesh_hecd6"]
+
+[node name="Andar_Interno" type="Node3D" unique_id=362840914]
+
+[node name="Jogador" parent="." unique_id=1503693800 instance=ExtResource("1_eprkg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.3885803, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1277428224]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D" unique_id=161868156]
+transform = Transform3D(17.363888, 0, 0, 0, 1.0000002, 0, 0, 0, 13.505165, 0, 0, 0)
+mesh = SubResource("PlaneMesh_eprkg")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1225439955]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.09467316, 0, -6.1035156e-05)
+shape = SubResource("BoxShape3D_eprkg")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1686678852]
+environment = SubResource("Environment_r71pv")
+
+[node name="sentar_interact" parent="." unique_id=513480590 instance=ExtResource("3_r71pv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.277882, 0.6351538, 0)
+mesh = SubResource("PlaceholderMesh_hecd6")
+array = Array[Material]([])
+
+[node name="MeshInstance3D" parent="sentar_interact" unique_id=850524486 instance=ExtResource("3_nmpew")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.49256945, 0)

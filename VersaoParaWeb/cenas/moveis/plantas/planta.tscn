@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://dqxk130r7wmmn"]
+
+[ext_resource type="ArrayMesh" uid="uid://b2ln36x3mfy1h" path="res://assets/modelos3d/moveis/plantas/arvore/planta1.obj" id="1_it7vk"]
+[ext_resource type="Material" uid="uid://cya13tg0m5o7f" path="res://assets/materiais/plantas/arvore/folha.tres" id="2_6lfje"]
+[ext_resource type="Texture2D" uid="uid://d3vxleyn88lpd" path="res://assets/texturas/arvore/arvore_normal.jpg" id="6_d3leu"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r2i7y"]
+resource_name = "Cinza_Luz"
+cull_mode = 2
+albedo_color = Color(0.31626555, 0.22685096, 0.13546687, 1)
+normal_enabled = true
+normal_texture = ExtResource("6_d3leu")
+ao_enabled = true
+
+[node name="Planta" type="MeshInstance3D" unique_id=140167737]
+mesh = ExtResource("1_it7vk")
+surface_material_override/0 = ExtResource("2_6lfje")
+surface_material_override/1 = SubResource("StandardMaterial3D_r2i7y")

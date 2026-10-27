@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://cri4stprxudfj"]
+
+[ext_resource type="ArrayMesh" uid="uid://dl4ejace2h5ps" path="res://assets/modelos3d/moveis/cadeiras/sofas/sofa/sofa.obj" id="1_cyfbq"]
+[ext_resource type="Material" uid="uid://b1e5yt8cn8yui" path="res://assets/materiais/tecido/tecido_couro.tres" id="2_6gydb"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_cwbrp"]
+size = Vector3(3.9450684, 0.8372803, 1.4804077)
+
+[node name="Sofa" type="StaticBody3D" unique_id=938660422]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1489783009]
+mesh = ExtResource("1_cyfbq")
+surface_material_override/0 = ExtResource("2_6gydb")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1417690217]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.009155273, 0.45032316, 0.039031982)
+visible = false
+shape = SubResource("BoxShape3D_cwbrp")

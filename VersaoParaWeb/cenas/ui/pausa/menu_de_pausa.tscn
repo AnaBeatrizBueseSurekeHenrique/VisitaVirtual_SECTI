@@ -1,0 +1,212 @@
+[gd_scene format=3 uid="uid://dd8cumsuth5rt"]
+
+[ext_resource type="Script" uid="uid://b8i4ktymfbxqt" path="res://scripts/ui/menu_de_pausa.gd" id="1_n07i8"]
+[ext_resource type="PackedScene" uid="uid://du0qmugd05xoi" path="res://cenas/ui/pausa/input_settings.tscn" id="2_g623f"]
+[ext_resource type="FontFile" uid="uid://d4n3pxlb7g7bk" path="res://assets/fontes/geistpixel/geitspixel.ttf" id="3_oc3i6"]
+[ext_resource type="StyleBox" uid="uid://cm5d8mw6cy8u7" path="res://cenas/ui/pausa/botao_pausa.tres" id="5_n3gjc"]
+[ext_resource type="FontFile" uid="uid://c0qwpilioxg37" path="res://assets/fontes/vt323/vt323.ttf" id="6_33ft2"]
+[ext_resource type="Shader" uid="uid://bqbcxulssuq0q" path="res://scripts/shaders/ui/dialogo_ui.gdshader" id="7_n07i8"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_0kaeq"]
+shader = ExtResource("7_n07i8")
+shader_parameter/blur_amount = 2.5
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_oc3i6"]
+shader = ExtResource("7_n07i8")
+shader_parameter/blur_amount = 2.5
+
+[sub_resource type="Gradient" id="Gradient_deaqj"]
+offsets = PackedFloat32Array(0.26321587, 0.8623348, 1)
+colors = PackedColorArray(0.019607844, 0.11764706, 0.33333334, 1, 0.8039216, 0.41568628, 0.14901961, 1, 0.96127456, 0.5400513, 3.85046e-07, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_a551i"]
+gradient = SubResource("Gradient_deaqj")
+fill_to = Vector2(0.582906, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_84pwq"]
+texture = SubResource("GradientTexture2D_a551i")
+
+[node name="Pausa" type="PanelContainer" unique_id=202362364]
+process_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_n07i8")
+
+[node name="Controles" type="PanelContainer" parent="." unique_id=1272834556]
+visible = false
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Controles" unique_id=1065027519]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Controles/MarginContainer" unique_id=1633976671]
+layout_mode = 2
+
+[node name="InputSettings" parent="Controles/MarginContainer/VBoxContainer" unique_id=1638145391 instance=ExtResource("2_g623f")]
+layout_mode = 2
+
+[node name="Retornar_Controles" type="Button" parent="Controles/MarginContainer/VBoxContainer" unique_id=152344656]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_oc3i6")
+theme_override_font_sizes/font_size = 32
+text = "Retornar"
+
+[node name="Configs" type="PanelContainer" parent="." unique_id=1020345287]
+process_mode = 3
+material = SubResource("ShaderMaterial_0kaeq")
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Configs" unique_id=1131620550]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="Configuracoes" type="VBoxContainer" parent="Configs/MarginContainer" unique_id=1231752145]
+layout_mode = 2
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="Control2" type="Control" parent="Configs/MarginContainer/Configuracoes" unique_id=1845236444]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Titulo" type="Label" parent="Configs/MarginContainer/Configuracoes" unique_id=73211129]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_oc3i6")
+theme_override_font_sizes/font_size = 128
+text = "Configurações"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Configs/MarginContainer/Configuracoes" unique_id=1346750081]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="Label" type="Label" parent="Configs/MarginContainer/Configuracoes/HBoxContainer" unique_id=1605031717]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_oc3i6")
+text = "FOV"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Configs/MarginContainer/Configuracoes/HBoxContainer" unique_id=600483972]
+layout_mode = 2
+size_flags_horizontal = 3
+alignment = 2
+
+[node name="FOV_Slider" type="HSlider" parent="Configs/MarginContainer/Configuracoes/HBoxContainer/HBoxContainer" unique_id=654653013]
+layout_mode = 2
+size_flags_horizontal = 3
+min_value = 1.0
+max_value = 150.0
+step = 0.1
+value = 1.0
+
+[node name="FOV_number" type="LineEdit" parent="Configs/MarginContainer/Configuracoes/HBoxContainer/HBoxContainer" unique_id=8177500]
+layout_mode = 2
+placeholder_text = "12"
+max_length = 3
+virtual_keyboard_type = 2
+
+[node name="Mouse" type="HBoxContainer" parent="Configs/MarginContainer/Configuracoes" unique_id=782701181]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="Label" type="Label" parent="Configs/MarginContainer/Configuracoes/Mouse" unique_id=2139059731]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_oc3i6")
+text = "Sensibilidade do mouse"
+
+[node name="Mouse_Slider" type="HSlider" parent="Configs/MarginContainer/Configuracoes/Mouse" unique_id=998822941]
+layout_mode = 2
+size_flags_horizontal = 3
+min_value = 0.1
+max_value = 2.0
+step = 0.1
+value = 1.0
+
+[node name="Mouse_number" type="LineEdit" parent="Configs/MarginContainer/Configuracoes/Mouse" unique_id=1323632524]
+layout_mode = 2
+placeholder_text = "12"
+max_length = 3
+virtual_keyboard_type = 2
+
+[node name="Control" type="Control" parent="Configs/MarginContainer/Configuracoes" unique_id=239610269]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Configs/MarginContainer/Configuracoes" unique_id=1085929867]
+layout_mode = 2
+theme_override_constants/separation = 50
+
+[node name="Controles" type="Button" parent="Configs/MarginContainer/Configuracoes/HBoxContainer2" unique_id=1580832953]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("6_33ft2")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = ExtResource("5_n3gjc")
+text = "Controles"
+
+[node name="RetornarConfig" type="Button" parent="Configs/MarginContainer/Configuracoes/HBoxContainer2" unique_id=1363562591]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("6_33ft2")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = ExtResource("5_n3gjc")
+text = "Retornar"
+
+[node name="Pausa" type="PanelContainer" parent="." unique_id=1213818324]
+visible = false
+material = SubResource("ShaderMaterial_oc3i6")
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_84pwq")
+
+[node name="CenterContainer" type="CenterContainer" parent="Pausa" unique_id=850276101]
+layout_mode = 2
+
+[node name="Configurações" type="VBoxContainer" parent="Pausa/CenterContainer" unique_id=2030933096]
+layout_mode = 2
+alignment = 1
+
+[node name="Configurações" type="VBoxContainer" parent="Pausa/CenterContainer/Configurações" unique_id=63233134]
+layout_mode = 2
+alignment = 1
+
+[node name="Titulo" type="Label" parent="Pausa/CenterContainer/Configurações/Configurações" unique_id=1621206833]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_oc3i6")
+theme_override_font_sizes/font_size = 128
+text = "Pausado"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Pausa/CenterContainer/Configurações/Configurações" unique_id=1294556639]
+layout_mode = 2
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="Configuracoes" type="Button" parent="Pausa/CenterContainer/Configurações/Configurações/HBoxContainer" unique_id=366618272]
+layout_mode = 2
+text = "Configurações"
+
+[node name="Retornar" type="Button" parent="Pausa/CenterContainer/Configurações/Configurações/HBoxContainer" unique_id=1985179905]
+layout_mode = 2
+text = "Retornar"
+
+[connection signal="button_up" from="Controles/MarginContainer/VBoxContainer/Retornar_Controles" to="." method="_on_retornar_controles_button_up"]
+[connection signal="value_changed" from="Configs/MarginContainer/Configuracoes/HBoxContainer/HBoxContainer/FOV_Slider" to="." method="_on_fov_slider_value_changed"]
+[connection signal="text_changed" from="Configs/MarginContainer/Configuracoes/HBoxContainer/HBoxContainer/FOV_number" to="." method="_on_fov_number_text_changed"]
+[connection signal="text_submitted" from="Configs/MarginContainer/Configuracoes/HBoxContainer/HBoxContainer/FOV_number" to="." method="_on_fov_number_text_submitted"]
+[connection signal="value_changed" from="Configs/MarginContainer/Configuracoes/Mouse/Mouse_Slider" to="." method="_on_mouse_slider_value_changed"]
+[connection signal="text_submitted" from="Configs/MarginContainer/Configuracoes/Mouse/Mouse_number" to="." method="_on_mouse_number_text_submitted"]
+[connection signal="button_up" from="Configs/MarginContainer/Configuracoes/HBoxContainer2/Controles" to="." method="_on_controles_button_up"]
+[connection signal="button_up" from="Configs/MarginContainer/Configuracoes/HBoxContainer2/RetornarConfig" to="." method="_on_retornar_config_button_up"]
+[connection signal="button_up" from="Pausa/CenterContainer/Configurações/Configurações/HBoxContainer/Configuracoes" to="." method="_on_configuracoes_button_up"]
+[connection signal="button_up" from="Pausa/CenterContainer/Configurações/Configurações/HBoxContainer/Retornar" to="." method="_on_retornar_button_up"]

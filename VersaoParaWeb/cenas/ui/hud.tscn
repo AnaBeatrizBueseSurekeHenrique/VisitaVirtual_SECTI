@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dtgdiu806jpen"]
+
+[ext_resource type="PackedScene" uid="uid://dd8cumsuth5rt" path="res://cenas/ui/pausa/menu_de_pausa.tscn" id="1_stylc"]
+
+[node name="hud" type="CanvasLayer" unique_id=1287318431]
+process_mode = 3
+
+[node name="Pausa" parent="." unique_id=202362364 instance=ExtResource("1_stylc")]
+visible = false

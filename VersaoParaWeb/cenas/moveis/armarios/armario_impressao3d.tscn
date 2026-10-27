@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://b76ce4q7d6brs"]
+
+[ext_resource type="ArrayMesh" uid="uid://c5i1bvy22xww" path="res://assets/modelos3d/moveis/armarios/armarios_impressao3d/armario3d.obj" id="1_d0eq2"]
+[ext_resource type="Material" uid="uid://s1r3afv1311r" path="res://assets/materiais/cinzas/cinza_escuro.tres" id="2_abtxg"]
+[ext_resource type="ArrayMesh" uid="uid://dcas5vkounx0g" path="res://assets/modelos3d/moveis/moveis_impressao3d/maquina_impressao3d/maquina3d.obj" id="2_klfq2"]
+[ext_resource type="Material" uid="uid://bpljpcegd3s1s" path="res://assets/materiais/metais/metal_claro.tres" id="3_wjc0l"]
+[ext_resource type="Material" uid="uid://u6olaxedu14t" path="res://assets/materiais/madeiras/madeira_clara.tres" id="4_uu1t6"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_d0eq2"]
+size = Vector3(4.680649, 1.288147, 1.2165222)
+
+[node name="armarioimpressao3d" type="StaticBody3D" unique_id=2129602940]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=816652018]
+mesh = ExtResource("1_d0eq2")
+surface_material_override/0 = ExtResource("2_abtxg")
+surface_material_override/1 = ExtResource("3_wjc0l")
+surface_material_override/2 = ExtResource("4_uu1t6")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=57328209]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.268569, 0.64225614, -0.007522583)
+shape = SubResource("BoxShape3D_d0eq2")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="." unique_id=704031182]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.01809144, 0)
+mesh = ExtResource("2_klfq2")
+surface_material_override/1 = ExtResource("3_wjc0l")
