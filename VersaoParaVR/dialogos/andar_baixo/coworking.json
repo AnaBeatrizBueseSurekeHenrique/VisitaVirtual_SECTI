@@ -1,0 +1,133 @@
+{
+	"falas":[
+		{
+			"dialogo": "Olá! Boas vindas ao espaço de Coworking!"
+		}, 
+		{
+			"dialogo": "PERGUNTA",
+			"texto": "Tem alguma dúvida sobre este projeto?",
+			"opcoes":
+				[
+					{
+						"texto": "O que é coworking?",
+						"acao": "pula",
+						"id": 18
+					},
+					{
+						"texto": "Qual seu custo?",
+						"acao": "avancar"
+					},
+					{
+						"texto": "Quais os compromissos para o uso deste espaço?",
+						"acao": "pula",
+						"id": 3
+					},
+					{
+						"texto": "Quais normas para seu uso?",
+						"acao": "pula",
+						"id": 12
+					},
+					{
+						"texto": "Como faço para utilizá-lo?",
+						"acao": "pula",
+						"id": 15
+					},
+					{
+						"texto": "Esse espaço possui locais para reuniões privadas?",
+						"acao": "pula",
+						"id": 20
+					},
+					{
+						"texto": "Quero saber sobre os outros projetos, tchau!",
+						"acao": "muda_falante",
+						"id": 0
+					}
+				]
+		},
+		{
+			"dialogo": "VOLTA",
+			"texto": "Nenhum! Este projeto é público e gratuito!",
+			"volta": 1	
+		},
+		{
+			"dialogo": "Existem três compromissos que você deve realizar:"
+		},
+		{
+			"dialogo": "Em primeiro lugar, o compromisso de capacitação:"
+		},
+		{
+			"dialogo": "Você deve realizar, ou participar, de cursos ou workshops da Secretária de Ciência Tecnologia e Inovação!"
+		},
+		{
+			"dialogo": "O próximo compromisso é o compromisso de mentoria:"
+		},
+		{
+			"dialogo": "Você deve auxiliar na orientação de novos empreendedores e estudantes locais."
+		},
+		{
+			"dialogo": "Além disso: o compromisso de engajamento."
+		},
+		{
+			"dialogo": "Você deve participar ativamente dos eventos de inovação!"
+		},
+		{
+			"dialogo": "E, por último, há o compromisso de disseminação de conhecimento:"
+		},
+		{
+			"dialogo": "VOLTA",
+			"texto": "Você deve auxiliar no desenvolvimento de iniciativas inovadoras, e projetos com impacto social!",
+			"volta": 1
+		},
+
+		{
+			"dialogo": "Você apenas pode utilizar este espaço para atividades de inovação."
+		},
+		{
+			"dialogo": "Além disso, o comércio varejista de balcão ou estocagem de mercadorias é vedado."
+		},
+		{
+			"dialogo": "VOLTA",
+			"texto": "E por fim, você deve zelar pelo patrimônio, utilizando o equipamento e infraestrutura de forma responsável!",
+			"volta": 1
+		},
+	
+		{
+			"dialogo": "Para utilizar este espaço, é necessário realizar um agendamento!"
+		},
+		{
+			"dialogo": "Para mais informações, acesse https://secti.guarapuava.pr.gov.br/coworking/",
+		},
+		{
+			"dialogo": "VOLTA",
+			"texto": "Lá você pode realizar um agendamento, além de verificar outras informações!",
+			"volta": 1
+		},
+		{
+			"dialogo": "Um escritório de trabalho compartilhado por várias empresas e pessoas!"
+		},
+		{
+			"dialogo": "VOLTA",
+			"texto": "Ele propõe que diversas pessoas possam trabalhar em um lugar em comum!",
+			"volta": 1
+		},
+		{
+			"dialogo": "Sim! O prédio da Secretaria possui salas privativas equipadas com TV, quadro branco e capacidade para até 8 pessoas."
+		},
+		{
+			"dialogo": "VOLTA",
+			"texto": "Para seu uso, é necessário realizar agendamento do uso da sala!",
+			"volta": 16
+		},
+		{
+			"dialogo": "PERGUNTA",
+			"texto": "",
+			"opcoes":
+				[
+					{
+						"texto": "Tchau!",
+						"acao": "pular_fim"
+					}
+				]
+		}
+	]
+}

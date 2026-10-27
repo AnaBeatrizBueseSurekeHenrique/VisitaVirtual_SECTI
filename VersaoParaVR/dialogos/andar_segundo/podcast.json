@@ -1,0 +1,65 @@
+{
+	"falas":[
+		{
+			"dialogo": "Olá! Boas vindas ao espaço de podcast!"
+		}, 
+		{
+			"dialogo": "PERGUNTA",
+			"texto": "Tem alguma dúvida sobre este projeto?",
+			"opcoes":
+				[
+					{
+						"texto": "O que é esse lugar?",
+						"acao": "pula",
+						"id": 2
+					},
+					{
+						"texto": "Como posso reservar esse espaço?",					
+						"acao": "pula",
+						"id": 4
+					},
+					{
+						"texto": "Quero saber sobre os outros projetos, tchau!",
+						"acao": "muda_falante",
+						"id": 0
+					}
+					
+				
+				]
+		},
+		{
+			
+			"dialogo": "É um estúdio ideal para gravações de podcast!"
+		},
+		{	
+			"dialogo": "VOLTA",
+			"texto": "Ele é isolado acusticamente, possui microfones profissionais, e tem interface de aúdio para até 3 pessoas!",
+			"volta": 1
+		},
+		{
+			"dialogo": "Você pode reservar este espaço por meio do site de Coworking da Secretaria!"
+		},
+		{
+			"dialogo": "LINK",
+			"link": "https://secti.guarapuava.pr.gov.br/coworking/",
+			"texto": "Para mais informações, acesse aqui!"
+		},
+		{
+			"dialogo": "VOLTA",
+			"texto": "Lá você pode realizar um agendamento, além de verificar outras informações!",
+			"volta": 1
+		},
+		{
+			"dialogo": "PERGUNTA",
+			"texto": "",
+			"opcoes":
+				[
+					{
+						"texto": "Tchau!",
+						"acao": "pular_fim"
+					}
+				]
+		}
+	
+	]
+}
