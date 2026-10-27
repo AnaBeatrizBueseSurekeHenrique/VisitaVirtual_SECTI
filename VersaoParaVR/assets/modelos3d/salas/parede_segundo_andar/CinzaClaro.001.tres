@@ -1,0 +1,19 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://d1vep8bolcc6j"]
+
+[ext_resource type="Texture2D" uid="uid://be8yo6ftj22w7" path="res://assets/texturas/chao/chao_lajotas/chao_lajotas_cor.png" id="1_73uw6"]
+[ext_resource type="Texture2D" uid="uid://clbsue5yyj825" path="res://assets/texturas/chao/chao_lajotas/chao_lajotas_oclusao_ambiente.png" id="2_50kpu"]
+[ext_resource type="Texture2D" uid="uid://dq8f00hl0csyn" path="res://assets/texturas/chao/chao_lajotas/chao_lajotas_metal.png" id="3_bkiuw"]
+[ext_resource type="Texture2D" uid="uid://bno6djgdx8hw2" path="res://assets/texturas/chao/chao_lajotas/chao_lajotas_normal.png" id="4_5nsxe"]
+[ext_resource type="Texture2D" uid="uid://bh5b6bni7qgcf" path="res://assets/texturas/chao/chao_lajotas/chao_lajotas_rugosidade.png" id="5_3mg5i"]
+
+[resource]
+resource_name = "CinzaClaro.001"
+cull_mode = 2
+albedo_texture = ExtResource("1_73uw6")
+metallic = 1.0
+metallic_texture = ExtResource("3_bkiuw")
+roughness_texture = ExtResource("5_3mg5i")
+normal_enabled = true
+normal_texture = ExtResource("4_5nsxe")
+ao_enabled = true
+ao_texture = ExtResource("2_50kpu")

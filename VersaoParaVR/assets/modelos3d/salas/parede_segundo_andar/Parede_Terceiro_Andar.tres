@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://bbqxwswoyhtgq"]
+
+[ext_resource type="Texture2D" uid="uid://bvav7wgp1b0t1" path="res://assets/texturas/madeiras/madeira_clara/madeira_clara_cor_base.png" id="1_e6j1c"]
+
+[resource]
+resource_name = "Parede_Terceiro_Andar"
+cull_mode = 2
+albedo_texture = ExtResource("1_e6j1c")
+roughness = 0.5

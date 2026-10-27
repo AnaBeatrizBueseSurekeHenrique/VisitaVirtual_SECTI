@@ -1,0 +1,6 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://diq4kkkm8bk8j"]
+
+[resource]
+resource_name = "Materiais"
+cull_mode = 2
+roughness = 0.5

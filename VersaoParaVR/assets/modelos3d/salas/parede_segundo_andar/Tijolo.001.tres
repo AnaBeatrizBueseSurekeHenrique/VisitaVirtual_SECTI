@@ -1,0 +1,16 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://dflxxo3xhb3ij"]
+
+[ext_resource type="Texture2D" uid="uid://xsnpyip85aqp" path="res://assets/texturas/paredes/parede_tijolo_2/parede_tijolo_2_cor.jpg" id="1_d5epg"]
+[ext_resource type="Texture2D" uid="uid://coi8v7h3x1f4o" path="res://assets/texturas/paredes/parede_tijolo_2/parede_tijolo_2_oclusao_ambiente.jpg" id="2_oxu51"]
+[ext_resource type="Texture2D" uid="uid://cggrnaamg6618" path="res://assets/texturas/paredes/parede_tijolo_2/parede_tijolo_2_normal.jpg" id="3_0sjhw"]
+[ext_resource type="Texture2D" uid="uid://rqtlpxask5f" path="res://assets/texturas/paredes/parede_tijolo_2/parede_tijolo_2_rugosidade.jpg" id="4_uriyo"]
+
+[resource]
+resource_name = "Tijolo.001"
+cull_mode = 2
+albedo_texture = ExtResource("1_d5epg")
+roughness_texture = ExtResource("4_uriyo")
+normal_enabled = true
+normal_texture = ExtResource("3_0sjhw")
+ao_enabled = true
+ao_texture = ExtResource("2_oxu51")

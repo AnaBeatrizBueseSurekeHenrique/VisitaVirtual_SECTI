@@ -1,0 +1,20 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cpewhyvx3sbd6"]
+
+[ext_resource type="Texture2D" uid="uid://cjqvx3mwuoa1g" path="res://assets/texturas/arvore/arvore_cor.jpg" id="1_e25m5"]
+[ext_resource type="Texture2D" uid="uid://0yohl4md3j0n" path="res://assets/texturas/arvore/arvore_oclusao_ambiente.jpg" id="2_qfl17"]
+[ext_resource type="Texture2D" uid="uid://csjcir738ax00" path="res://assets/texturas/arvore/arvore_metal.jpg" id="3_8xtn8"]
+[ext_resource type="Texture2D" uid="uid://d3vxleyn88lpd" path="res://assets/texturas/arvore/arvore_normal.jpg" id="4_1snyl"]
+[ext_resource type="Texture2D" uid="uid://brirmdhwmk6gu" path="res://assets/texturas/arvore/arvore_rugosidade.jpg" id="5_snpae"]
+
+[resource]
+resource_name = "Material"
+cull_mode = 2
+albedo_texture = ExtResource("1_e25m5")
+metallic = 1.0
+metallic_texture = ExtResource("3_8xtn8")
+roughness_texture = ExtResource("5_snpae")
+normal_enabled = true
+normal_texture = ExtResource("4_1snyl")
+ao_enabled = true
+ao_texture = ExtResource("2_qfl17")
+texture_filter = 2

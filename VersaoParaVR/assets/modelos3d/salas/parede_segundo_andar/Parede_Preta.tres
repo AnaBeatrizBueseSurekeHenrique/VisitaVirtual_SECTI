@@ -1,0 +1,18 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cl5o67nfsc156"]
+
+[ext_resource type="Texture2D" uid="uid://bnmnvhhfbvea4" path="res://assets/texturas/paredes/parede_preta_segundo_andar/parede_preta2_especular.jpg" id="1_iarud"]
+[ext_resource type="Texture2D" uid="uid://b2mowyjspsl7e" path="res://assets/texturas/paredes/parede_preta_segundo_andar/parede_preta2_oclusao_ambiente.jpg" id="2_8f3nx"]
+[ext_resource type="Texture2D" uid="uid://dll0ebwlq47w5" path="res://assets/texturas/paredes/parede_preta_segundo_andar/parede_preta_2_difusao.jpg" id="3_lytl0"]
+[ext_resource type="Texture2D" uid="uid://yckh28fhkjkk" path="res://assets/texturas/paredes/parede_preta_segundo_andar/parede_preta2_normal.jpg" id="4_etkfo"]
+
+[resource]
+resource_name = "Parede_Preta"
+cull_mode = 2
+albedo_color = Color(0.2673042, 0.26730424, 0.2673042, 1)
+albedo_texture = ExtResource("1_iarud")
+metallic = 1.0
+metallic_texture = ExtResource("3_lytl0")
+normal_enabled = true
+normal_texture = ExtResource("4_etkfo")
+ao_enabled = true
+ao_texture = ExtResource("2_8f3nx")

@@ -1,0 +1,19 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cntw6o8qyfukv"]
+
+[ext_resource type="Texture2D" uid="uid://c7jdxlbnhlr6x" path="res://assets/texturas/estrada/concreto_difuso.jpg" id="1_k27rc"]
+[ext_resource type="Texture2D" uid="uid://g2j7fe4mqghg" path="res://assets/texturas/concreto/concreto_oclusao_ambiente.jpg" id="2_1xpaf"]
+[ext_resource type="Texture2D" uid="uid://bykv271jhq4hq" path="res://assets/texturas/estrada/concreto_metal.jpg" id="2_8nxgw"]
+[ext_resource type="Texture2D" uid="uid://b5pg7e5pw4dap" path="res://assets/texturas/concreto/concreto_normal.jpg" id="4_prqrd"]
+[ext_resource type="Texture2D" uid="uid://cjjpfm038n7rg" path="res://assets/texturas/concreto/concreto_rugosidade.jpg" id="5_woegt"]
+
+[resource]
+resource_name = "Asfalto"
+cull_mode = 2
+albedo_texture = ExtResource("1_k27rc")
+metallic = 1.0
+metallic_texture = ExtResource("2_8nxgw")
+roughness_texture = ExtResource("5_woegt")
+normal_enabled = true
+normal_texture = ExtResource("4_prqrd")
+ao_enabled = true
+ao_texture = ExtResource("2_1xpaf")

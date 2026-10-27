@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cisix4m55ndo4"]
+
+[resource]
+resource_name = "Vidro_Interno"
+cull_mode = 2
+albedo_color = Color(0.6914875, 0.75630033, 0.9064181, 1)
+roughness = 0.5

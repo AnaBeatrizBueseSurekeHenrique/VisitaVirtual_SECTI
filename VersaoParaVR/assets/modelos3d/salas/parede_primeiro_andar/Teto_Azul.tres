@@ -1,0 +1,12 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://dx4sjk7m0txqt"]
+
+[ext_resource type="Texture2D" uid="uid://nvk07mga8w4b" path="res://assets/texturas/aco/aco_normal.jpg" id="1_ep8g6"]
+
+[resource]
+resource_name = "Teto_Azul"
+cull_mode = 2
+albedo_color = Color(0.27058637, 0.18823436, 0.90588254, 1)
+metallic = 0.79816556
+roughness = 0.60091746
+normal_enabled = true
+normal_texture = ExtResource("1_ep8g6")

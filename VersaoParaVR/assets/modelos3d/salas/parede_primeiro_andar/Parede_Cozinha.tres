@@ -1,0 +1,18 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://c7g0wum2htnqt"]
+
+[ext_resource type="Texture2D" uid="uid://dqc41tk25tpfn" path="res://assets/texturas/paredes/parede_cozinha/listra_cozinha_cor.jpg" id="1_0jvhg"]
+[ext_resource type="Texture2D" uid="uid://bp63geg7ehimm" path="res://assets/texturas/paredes/parede_cozinha/parede_cozinha_oclusao_ambiente.jpg" id="2_ppipw"]
+[ext_resource type="Texture2D" uid="uid://da673httxiucp" path="res://assets/texturas/paredes/parede_cozinha/listra_cozinha_metal.jpg" id="3_bws74"]
+[ext_resource type="Texture2D" uid="uid://2htk6b6godkv" path="res://assets/texturas/paredes/parede_cozinha/listra_cozinha_normal.jpg" id="4_6whiq"]
+
+[resource]
+resource_name = "Parede_Cozinha"
+cull_mode = 2
+albedo_texture = ExtResource("1_0jvhg")
+metallic = 1.0
+metallic_texture = ExtResource("3_bws74")
+roughness = 0.5
+normal_enabled = true
+normal_texture = ExtResource("4_6whiq")
+ao_enabled = true
+ao_texture = ExtResource("2_ppipw")

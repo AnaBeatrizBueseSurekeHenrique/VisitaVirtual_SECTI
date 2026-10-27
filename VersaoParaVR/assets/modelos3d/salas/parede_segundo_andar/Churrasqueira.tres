@@ -1,0 +1,16 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://clkeayjudodkr"]
+
+[ext_resource type="Texture2D" uid="uid://b64ag0xd6nxrc" path="res://assets/texturas/paredes/parede_churrasqueira/churrasqueira_cor.jpg" id="1_u8l5v"]
+[ext_resource type="Texture2D" uid="uid://cfsajvfnaiv3" path="res://assets/texturas/paredes/parede_churrasqueira/churrasqueira_oclusao_ambiente.jpg" id="2_h6rv5"]
+[ext_resource type="Texture2D" uid="uid://qq3daprynbhi" path="res://assets/texturas/paredes/parede_churrasqueira/churrasqueira_normal.jpg" id="3_7015t"]
+[ext_resource type="Texture2D" uid="uid://d3wlhgrupr4y6" path="res://assets/texturas/paredes/parede_churrasqueira/churrasqueira_rugosidade.jpg" id="4_wxdv5"]
+
+[resource]
+resource_name = "Churrasqueira"
+cull_mode = 2
+albedo_texture = ExtResource("1_u8l5v")
+roughness_texture = ExtResource("4_wxdv5")
+normal_enabled = true
+normal_texture = ExtResource("3_7015t")
+ao_enabled = true
+ao_texture = ExtResource("2_h6rv5")

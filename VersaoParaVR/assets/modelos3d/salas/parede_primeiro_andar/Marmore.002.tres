@@ -1,0 +1,16 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://bhfs66bgdcqcv"]
+
+[ext_resource type="Texture2D" uid="uid://be8yo6ftj22w7" path="res://assets/texturas/chao/chao_lajotas/chao_lajotas_cor.png" id="1_sghi1"]
+[ext_resource type="Texture2D" uid="uid://clbsue5yyj825" path="res://assets/texturas/chao/chao_lajotas/chao_lajotas_oclusao_ambiente.png" id="2_irfx2"]
+[ext_resource type="Texture2D" uid="uid://bno6djgdx8hw2" path="res://assets/texturas/chao/chao_lajotas/chao_lajotas_normal.png" id="3_uurwo"]
+[ext_resource type="Texture2D" uid="uid://bh5b6bni7qgcf" path="res://assets/texturas/chao/chao_lajotas/chao_lajotas_rugosidade.png" id="4_iij6l"]
+
+[resource]
+resource_name = "Marmore.002"
+cull_mode = 2
+albedo_texture = ExtResource("1_sghi1")
+roughness_texture = ExtResource("4_iij6l")
+normal_enabled = true
+normal_texture = ExtResource("3_uurwo")
+ao_enabled = true
+ao_texture = ExtResource("2_irfx2")

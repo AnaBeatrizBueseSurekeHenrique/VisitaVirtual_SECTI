@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://bd22hfqkamy2u"]
+
+[ext_resource type="Texture2D" uid="uid://cggrnaamg6618" path="res://assets/texturas/paredes/parede_tijolo_2/parede_tijolo_2_normal.jpg" id="1_yt1lo"]
+
+[resource]
+resource_name = "TijoloBranco"
+cull_mode = 2
+roughness = 0.5
+normal_enabled = true
+normal_texture = ExtResource("1_yt1lo")

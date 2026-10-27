@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://dndg5bfxeprpc"]
+
+[resource]
+resource_name = "CinzaClaro.001"
+cull_mode = 2
+albedo_color = Color(0.64468604, 0.64468604, 0.64468604, 1)
+roughness = 0.5

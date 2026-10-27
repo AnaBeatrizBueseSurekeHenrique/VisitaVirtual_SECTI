@@ -1,0 +1,13 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://o4u3ui7ioiv2"]
+
+[ext_resource type="Texture2D" uid="uid://ck26oc7md0oxi" path="res://assets/texturas/paredes/parede_interna/parede_interna_cor.jpg" id="1_ifc2x"]
+[ext_resource type="Texture2D" uid="uid://ddkrobtq6uj3n" path="res://assets/texturas/paredes/parede_interna/parede_interna_normal.jpg" id="2_rnt6j"]
+
+[resource]
+resource_name = "Parede_Interna"
+cull_mode = 2
+albedo_color = Color(0.7722747, 0.83209705, 0.8831517, 1)
+albedo_texture = ExtResource("1_ifc2x")
+roughness = 0.5
+normal_enabled = true
+normal_texture = ExtResource("2_rnt6j")

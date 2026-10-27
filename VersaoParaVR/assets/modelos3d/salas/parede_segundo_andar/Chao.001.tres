@@ -1,0 +1,19 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://wkupwoxommgo"]
+
+[ext_resource type="Texture2D" uid="uid://be8yo6ftj22w7" path="res://assets/texturas/chao/chao_lajotas/chao_lajotas_cor.png" id="1_0ajb0"]
+[ext_resource type="Texture2D" uid="uid://clbsue5yyj825" path="res://assets/texturas/chao/chao_lajotas/chao_lajotas_oclusao_ambiente.png" id="2_ic030"]
+[ext_resource type="Texture2D" uid="uid://dq8f00hl0csyn" path="res://assets/texturas/chao/chao_lajotas/chao_lajotas_metal.png" id="3_4jl4o"]
+[ext_resource type="Texture2D" uid="uid://bno6djgdx8hw2" path="res://assets/texturas/chao/chao_lajotas/chao_lajotas_normal.png" id="4_m2ps5"]
+[ext_resource type="Texture2D" uid="uid://bh5b6bni7qgcf" path="res://assets/texturas/chao/chao_lajotas/chao_lajotas_rugosidade.png" id="5_jf22l"]
+
+[resource]
+resource_name = "Chao.001"
+cull_mode = 2
+albedo_texture = ExtResource("1_0ajb0")
+metallic = 1.0
+metallic_texture = ExtResource("3_4jl4o")
+roughness_texture = ExtResource("5_jf22l")
+normal_enabled = true
+normal_texture = ExtResource("4_m2ps5")
+ao_enabled = true
+ao_texture = ExtResource("2_ic030")

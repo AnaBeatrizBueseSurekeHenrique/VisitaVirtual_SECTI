@@ -1,0 +1,5 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://c14rxkmgb4ueu"]
+
+[resource]
+resource_name = "Vidro.001"
+cull_mode = 2

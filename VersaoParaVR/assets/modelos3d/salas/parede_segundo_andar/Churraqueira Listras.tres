@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://dg5miakhhdgtn"]
+
+[resource]
+resource_name = "Churraqueira Listras"
+cull_mode = 2
+albedo_color = Color(0.23515972, 0.06553605, 0.02563688, 1)
+roughness = 0.5

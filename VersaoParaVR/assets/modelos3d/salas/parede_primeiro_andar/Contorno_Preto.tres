@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://c116dyiebf1x2"]
+
+[resource]
+resource_name = "Contorno_Preto"
+cull_mode = 2
+albedo_color = Color(0.1142309, 0.11930899, 0.1674248, 1)
+metallic = 0.073394
+roughness = 0.5

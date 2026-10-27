@@ -1,0 +1,14 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://bow03qhckr5b6"]
+
+[ext_resource type="Texture2D" uid="uid://bfij5sftyixyi" path="res://assets/texturas/arvore/arvore_folha_cor.png" id="1_mmtn7"]
+[ext_resource type="Texture2D" uid="uid://dkr4sy3mqaw4f" path="res://assets/texturas/arvore/arvore_folha_normal.png" id="2_3nfah"]
+
+[resource]
+resource_name = "Folha"
+transparency = 4
+cull_mode = 2
+albedo_texture = ExtResource("1_mmtn7")
+roughness = 0.5
+normal_enabled = true
+normal_texture = ExtResource("2_3nfah")
+texture_filter = 2
