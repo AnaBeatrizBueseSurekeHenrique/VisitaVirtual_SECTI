@@ -20,7 +20,7 @@ Além disso, cada versão do projeto é organizada da seguinte forma:
 ```
 ## Instalação do projeto:
   Para a instalação desse projeto, é necessário:
-  - Godot -- Versão 4.6.stable
+  - Godot - Versão 4.6.stable
   - Arquivos .glb - [Armazenados em site externo](https://mega.nz/folder/dFBxSRLZ#ZTQL8AFMCbDHHwMraXbbjA).
 
 ### Versão Para Realidade Virtual
