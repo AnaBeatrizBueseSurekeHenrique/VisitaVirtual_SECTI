@@ -37,7 +37,7 @@ Para utilização da versão em realidade virtual, é necessário o download dos
 - [Godot XR Tools - Versão 4.5.0.](https://godotengine.org/asset-library/asset/1698)
 - [Godot Open XR Vendors - Versão 2.0.3.](https://godotengine.org/asset-library/asset/2391)
 
-Ambas Godot XR Toold e Godot Open XR Vendors devem estar na pasta ``/addons``
+Ambas Godot XR Toold e Godot Open XR Vendors devem estar na pasta ``/addons/``
 Após a iniciação do projeto, além disso, é necessário baixar o modo de compilação para Android de Godot, por meio do menu de projeto do editor.<br/>
 ![Modo de Compilação para Android](https://file.garden/XufHAN0HKkSMo1Zp/Captura%20de%20tela%202026-10-27%20151958.png)
 
