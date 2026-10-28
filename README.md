@@ -27,17 +27,17 @@ Ao ser finalizada a instalação, os seguintes passos devem ser seguidos para se
 
 ![Importar](https://file.garden/XufHAN0HKkSMo1Zp/1.png)
 
-Após isto, se é selecionado o *project.godot* do projeto. A versão para realidade virtual, e a versão para navegador possuem *project.godot*s diferentes, resultando em projetos diferentes na _game engine_.
+- Após isto, se é selecionado o *project.godot* do projeto. A versão para realidade virtual e a versão para navegador possuem *project.godot*s diferentes, resultando em projetos diferentes na _game engine_.
 
 ![Projeto](https://file.garden/XufHAN0HKkSMo1Zp/2.png)
 
 ### Versão Para Realidade Virtual
 Para utilização da versão em realidade virtual, é necessário o download dos seguintes assets:
-- Arquivos .glb - [Armazenados em site externo](https://mega.nz/folder/dFBxSRLZ#ZTQL8AFMCbDHHwMraXbbjA).
+- [Arquivos .glb - Armazenados em site externo](https://mega.nz/folder/dFBxSRLZ#ZTQL8AFMCbDHHwMraXbbjA).
 - [Godot XR Tools - Versão 4.5.0.](https://godotengine.org/asset-library/asset/1698)
 - [Godot Open XR Vendors - Versão 2.0.3.](https://godotengine.org/asset-library/asset/2391)
 
-  
+Ambas Godot XR Toold e Godot Open XR Vendors devem estar na pasta ``/addons``
 Após a iniciação do projeto, além disso, é necessário baixar o modo de compilação para Android de Godot, por meio do menu de projeto do editor.<br/>
 ![Modo de Compilação para Android](https://file.garden/XufHAN0HKkSMo1Zp/Captura%20de%20tela%202026-10-27%20151958.png)
 
@@ -49,19 +49,19 @@ Além disso, os seguintes arquivos devem ser tornados globais:
 Em relação aos arquivos .glb requisitados, eles precisam ser baixados e movidos para suas respectivas pastas.
 ```
 ├── modelo_3d_secretaria.glb          |
-                                      |    -> devem ser movidos para a pasta ├── VersaoParaVR/assets/modelos3d/salas/modelo3d
+                                      |    -> devem ser movidos para a pasta ├── VersaoParaVR/assets/modelos3d/salas/modelo3d/
 ├── modelo_3d_secretaria.glb.import   |
 ```
 ```
 ├── parede_primeiro_andar.glb         |
-                                      |    -> devem ser movidos para a pasta ├── VersaoParaVR/assets/modelos3d/salas/parede_primeiro_andar
+                                      |    -> devem ser movidos para a pasta ├── VersaoParaVR/assets/modelos3d/salas/parede_primeiro_andar/
 ├── parede_primeiro_andar.glb.import  |
 ```
 ```
 ├── parede_segundo_andar.glb          |
-                                      |    -> devem ser movidos para a pasta ├── VersaoParaVR/assets/modelos3d/salas/parede_segundo_andar
+                                      |    -> devem ser movidos para a pasta ├── VersaoParaVR/assets/modelos3d/salas/parede_segundo_andar/
 ├── parede_segundo_andar.glb.import   |
 ```
 ## Exportação
-Para realização da exportação, e obtenção dos arquivos .html e .apk de cada versão, é necessário utilizar tela de exportação de godot, utilizando da versão Web para o projeto contido na VersãoParaWeb, e a primeira versão para Android contida no projeto VersaoParaVR, sendo selecionado a opção Exportar Projeto.
+Para realização da exportação, e obtenção dos arquivos .html e .apk de cada versão, é necessário utilizar tela de exportação de Godot, utilizando da versão *Web* para o projeto contido na VersãoParaWeb, e a primeira versão para *Android* contida no projeto VersaoParaVR, sendo selecionado a opção Exportar Projeto. Além disso, os arquivos de *export* resultantes podem ser encontrados em  [armazenamento externo.](https://mega.nz/folder/0U4VQJjZ#SPbNgPfrMmo2qVTQI1hBXQ).
 ![Exportação do projeto](https://file.garden/XufHAN0HKkSMo1Zp/Captura%20de%20tela%202026-10-27%20152509.png)
