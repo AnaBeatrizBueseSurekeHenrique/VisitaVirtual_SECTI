@@ -319,51 +319,6 @@ light_energy = 0.15
 shadow_enabled = true
 shadow_blur = 1.661
 
-[node name="OmniLight3D3" type="OmniLight3D" parent="Luz/Luz" unique_id=1732415590]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.8862305, -1.4643888, -8.540388)
-omni_range = 7.578
-
-[node name="OmniLight3D4" type="OmniLight3D" parent="Luz/Luz" unique_id=305298197]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.0564404, -1.671381, -2.7312286)
-light_bake_mode = 1
-omni_range = 7.578
-
-[node name="OmniLight3D5" type="OmniLight3D" parent="Luz/Luz" unique_id=1358940974]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.14210415, -1.4643888, -8.540388)
-omni_range = 7.578
-
-[node name="OmniLight3D6" type="OmniLight3D" parent="Luz/Luz" unique_id=1657203222]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.169612, -1.4643888, -8.540388)
-omni_range = 7.578
-
-[node name="OmniLight3D7" type="OmniLight3D" parent="Luz/Luz" unique_id=524406078]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.169612, -1.4643888, -2.7006931)
-omni_range = 7.578
-
-[node name="OmniLight3D8" type="OmniLight3D" parent="Luz/Luz" unique_id=1729435619]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.1116614, -1.3082833, 3.0347738)
-omni_range = 7.578
-
-[node name="OmniLight3D9" type="OmniLight3D" parent="Luz/Luz" unique_id=1354860828]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.782157, -1.830801, 8.876663)
-omni_range = 7.578
-
-[node name="OmniLight3D10" type="OmniLight3D" parent="Luz/Luz" unique_id=363311945]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13235998, -1.4643888, 8.864764)
-omni_range = 7.578
-
-[node name="OmniLight3D11" type="OmniLight3D" parent="Luz/Luz" unique_id=1487133208]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.8373, 0.14765835, 9.944589)
-omni_range = 7.578
-
-[node name="OmniLight3D13" type="OmniLight3D" parent="Luz/Luz" unique_id=544751123]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.021814, -1.2828145, 8.875157)
-omni_range = 7.578
-
-[node name="OmniLight3D14" type="OmniLight3D" parent="Luz/Luz" unique_id=905026436]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.074657, -1.9027953, -8.482024)
-omni_range = 7.578
-
 [node name="Escada" parent="." unique_id=521130504 instance=ExtResource("3_3xgpy")]
 transform = Transform3D(-4.3711385e-08, 0, -0.9999999, 0, 1, 0, 0.9999999, 0, -4.3711385e-08, 3.71074, -4.328102, -15.280074)
 

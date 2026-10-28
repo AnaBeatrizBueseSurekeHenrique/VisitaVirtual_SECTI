@@ -31,6 +31,7 @@ var DictionaryDialogue: Dictionary= {
 	"_dialog_min" : 0,
 	"_dialog_max" : 0	
 }
+@export var interact_jogador : Node3D
 ## Array que armazena multiplos valores de fim e inicio, permitindo alterar frases faladas do npc após interações com o usuário.
 @export var _array_dialogue: Array=[DictionaryDialogue]
 ##Armazena se o NPC se movimentará após o fim do dialogo.
@@ -122,6 +123,8 @@ func _on_interacoes_area_entered(_area: Area3D) -> void:
 	dicas.visible = true
 	dicas._mudar_texto("Aperte o trigger esquerdo para falar!")
 	
+	if not interact_jogador.interacao_atual.has(interacao):
+		interact_jogador.interacao_atual.append(interacao)
 
 
 func _on_interacoes_area_exited(_area: Area3D) -> void:

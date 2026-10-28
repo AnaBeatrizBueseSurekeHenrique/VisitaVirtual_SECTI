@@ -60,7 +60,7 @@ viewport_path = NodePath("SubViewportContainer/SubViewport")
 environment = SubResource("Environment_r3sgw")
 
 [node name="XROrigin3D" parent="." index="1" unique_id=1209220601]
-transform = Transform3D(-0.99819297, 0, 0.060090385, 0, 1, 0, -0.060090385, 0, -0.99819297, -11.1228695, 1.6573579, 11.184982)
+transform = Transform3D(-0.99819297, 0, 0.060090385, 0, 1, 0, -0.060090385, 0, -0.99819297, -11.1228695, 1.6573579, -2.8393292)
 
 [node name="Dicas" parent="XROrigin3D" index="0" unique_id=394757736 instance=ExtResource("9_r3sgw")]
 transform = Transform3D(0.99676317, 0, -0.080390155, 0, 1, 0, 0.080390155, 0, 0.99676317, 0.009063721, 1.5443151, -2.7944906)

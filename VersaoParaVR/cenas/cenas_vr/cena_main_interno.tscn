@@ -13,16 +13,16 @@
 [sub_resource type="BoxShape3D" id="BoxShape3D_sn4jb"]
 size = Vector3(1, 2.2250366, 1)
 
-[sub_resource type="ViewportTexture" id="ViewportTexture_6utga"]
+[sub_resource type="ViewportTexture" id="ViewportTexture_1bbca"]
 viewport_path = NodePath("SubViewportContainer/SubViewport")
 
-[sub_resource type="ViewportTexture" id="ViewportTexture_nf4g3"]
+[sub_resource type="ViewportTexture" id="ViewportTexture_6utga"]
 viewport_path = NodePath("SubViewportContainer/SubViewport")
 
 [node name="SceneBase" unique_id=2140041542 instance=ExtResource("1_qu6ad")]
 
 [node name="XROrigin3D" parent="." index="0" unique_id=1209220601]
-transform = Transform3D(0.9899398, 0, -0.14148873, 0, 1, 0, 0.14148873, 0, 0.9899398, -8.283018, 2.26884, 2.6460848)
+transform = Transform3D(0.9899398, 0, -0.14148873, 0, 1, 0, 0.14148873, 0, 0.9899398, -8.283018, 2.26884, 2.7519174)
 
 [node name="XRCamera3D" parent="XROrigin3D" index="0" unique_id=1515073703]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.3572917, 0)
@@ -73,34 +73,39 @@ hand_material_override = ExtResource("2_qu6ad")
 process_mode = 0
 transform = Transform3D(0.49999997, 0, 5.5879354e-09, 0, 0.441, 0, -1.4901161e-08, 0, 0.18999998, 0.052908897, -0.19800878, -2.1251607)
 visible = false
-texture = SubResource("ViewportTexture_6utga")
+texture = SubResource("ViewportTexture_1bbca")
 
 [node name="Dicas" parent="XROrigin3D" index="5" unique_id=394757736 instance=ExtResource("7_n2bwi")]
 transform = Transform3D(0.9999999, 0, 0, 0, 1, 0, 0, 0, 0.9999999, -0.61909866, 0.4905126, -2.4015434)
 visible = false
-texture = SubResource("ViewportTexture_nf4g3")
+texture = SubResource("ViewportTexture_6utga")
 
 [node name="AndarInterno" parent="." index="1" unique_id=362840914 instance=ExtResource("6_1k3lv")]
 
-[node name="Intro_Coworking" parent="AndarInterno/Testes" parent_id_path=PackedInt32Array(362840914, 259529232) index="2" unique_id=377357338 node_paths=PackedStringArray("hud", "dicas")]
+[node name="Intro_Coworking" parent="AndarInterno/Testes" parent_id_path=PackedInt32Array(362840914, 259529232) index="2" unique_id=377357338 node_paths=PackedStringArray("hud", "dicas", "interact_jogador")]
+transform = Transform3D(0.14674212, 0, -1.190994, 0, 1.2, 0, 1.190994, 0, 0.14674212, 1.9073906, 0.084, 8.226682)
 hud = NodePath("../../../XROrigin3D/DialogoUI")
 dicas = NodePath("../../../XROrigin3D/Dicas")
+interact_jogador = NodePath("../../../XROrigin3D/LeftHand/LeftHand/MovementGrapple/Componente_Interacao")
 
-[node name="Intro_Impressao" parent="AndarInterno/Testes" parent_id_path=PackedInt32Array(362840914, 259529232) index="3" unique_id=1887730447 node_paths=PackedStringArray("hud", "dicas")]
+[node name="Intro_Impressao" parent="AndarInterno/Testes" parent_id_path=PackedInt32Array(362840914, 259529232) index="3" unique_id=1887730447 node_paths=PackedStringArray("hud", "dicas", "interact_jogador")]
 hud = NodePath("../../../XROrigin3D/DialogoUI")
 dicas = NodePath("../../../XROrigin3D/Dicas")
+interact_jogador = NodePath("../../../XROrigin3D/LeftHand/LeftHand/MovementGrapple/Componente_Interacao")
 
-[node name="Intro_Andar" parent="AndarInterno/Testes" parent_id_path=PackedInt32Array(362840914, 259529232) index="4" unique_id=660173325 node_paths=PackedStringArray("hud", "dicas")]
+[node name="Intro_Andar" parent="AndarInterno/Testes" parent_id_path=PackedInt32Array(362840914, 259529232) index="4" unique_id=660173325 node_paths=PackedStringArray("hud", "dicas", "interact_jogador")]
 hud = NodePath("../../../XROrigin3D/DialogoUI")
 dicas = NodePath("../../../XROrigin3D/Dicas")
+interact_jogador = NodePath("../../../XROrigin3D/LeftHand/LeftHand/MovementGrapple/Componente_Interacao")
 _array_dialogue = [{
 "_dialog_max": 6,
 "_dialog_min": 0
 }]
 
-[node name="Intro_Rota_Exploracao" parent="AndarInterno/Testes" parent_id_path=PackedInt32Array(362840914, 259529232) index="5" unique_id=1833464472 node_paths=PackedStringArray("hud", "dicas")]
+[node name="Intro_Rota_Exploracao" parent="AndarInterno/Testes" parent_id_path=PackedInt32Array(362840914, 259529232) index="5" unique_id=1833464472 node_paths=PackedStringArray("hud", "dicas", "interact_jogador")]
 hud = NodePath("../../../XROrigin3D/DialogoUI")
 dicas = NodePath("../../../XROrigin3D/Dicas")
+interact_jogador = NodePath("../../../XROrigin3D/LeftHand/LeftHand/MovementGrapple/Componente_Interacao")
 
 [connection signal="button_pressed" from="XROrigin3D/LeftHand" to="XROrigin3D/LeftHand" method="_on_button_pressed"]
 [connection signal="input_float_changed" from="XROrigin3D/LeftHand" to="XROrigin3D/LeftHand" method="_on_input_float_changed"]
