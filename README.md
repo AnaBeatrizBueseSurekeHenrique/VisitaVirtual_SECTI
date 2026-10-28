@@ -23,7 +23,7 @@ Além disso, ambas as pastas ``VersaoParaVR`` e ``VersaoParaWeb`` possuem a segu
   - [Godot - Versão 4.6.](https://godotengine.org/download/archive/4.6.3-stable/)
     
 Ao ser finalizada a instalação, os seguintes passos devem ser seguidos para se utilizar dos projetos deste repositório:
-- Em primeiro lugar, se é selecionado a opção de *Importar* de Godot:
+- Em primeiro lugar, se é selecionado a opção de *Importar* de _Godot_:
 <p align="center">
       <img src="https://file.garden/XufHAN0HKkSMo1Zp/1-3.png">
 </p>
@@ -33,21 +33,20 @@ Ao ser finalizada a instalação, os seguintes passos devem ser seguidos para se
 
 ### Versão Para Realidade Virtual
 Para utilização da versão em realidade virtual, é necessário o download dos seguintes assets:
-- [Arquivos .glb - Armazenados em site externo](https://mega.nz/folder/dFBxSRLZ#ZTQL8AFMCbDHHwMraXbbjA).
-- [Godot XR Tools - Versão 4.5.0.](https://godotengine.org/asset-library/asset/1698)
-- [Godot Open XR Vendors - Versão 2.0.3.](https://godotengine.org/asset-library/asset/2391)
+- [Arquivos _.glb_ - Armazenados em site externo](https://mega.nz/folder/dFBxSRLZ#ZTQL8AFMCbDHHwMraXbbjA).
+- [_Godot XR Tools_ - Versão 4.5.0.](https://godotengine.org/asset-library/asset/1698)
+- [_Godot Open XR Vendors_ - Versão 2.0.3.](https://godotengine.org/asset-library/asset/2391)
 
 Ambas Godot XR Toold e Godot Open XR Vendors devem estar na pasta ``/addons/``
-Após a iniciação do projeto, além disso, é necessário baixar o modo de compilação para Android de Godot, por meio do menu de projeto do editor.<br/>
+Após a iniciação do projeto, além disso, é necessário baixar o modo de compilação para _Android_ de _Godot_, por meio do menu de projeto do editor.<br/>
 <p align="center"><img src="https://file.garden/XufHAN0HKkSMo1Zp/Captura%20de%20tela%202026-10-27%20151958.png"></p>
-![Modo de Compilação para Android](g)
 
 
 Além disso, os seguintes arquivos devem ser tornados globais:
-- XRToolsUserSettings - ``res://addons/godot-xr-tools/user_settings/user_settings.gd``
-- XRToolsRumbleManager - ``res://addons/godot-xr-tools/rumble/rumble_manager.gd``
+- _XRToolsUserSettings_ - ``res://addons/godot-xr-tools/user_settings/user_settings.gd``
+- _XRToolsRumbleManager_ - ``res://addons/godot-xr-tools/rumble/rumble_manager.gd``
 
-Em relação aos arquivos .glb requisitados, eles precisam ser baixados e movidos para suas respectivas pastas.
+Em relação aos arquivos _.glb_ requisitados, eles precisam ser baixados e movidos para suas respectivas pastas.
 ```
 ├── modelo_3d_secretaria.glb          |
                                       |    -> devem ser movidos para a pasta ├── VersaoParaVR/assets/modelos3d/salas/modelo3d/
@@ -64,5 +63,5 @@ Em relação aos arquivos .glb requisitados, eles precisam ser baixados e movido
 ├── parede_segundo_andar.glb.import   |
 ```
 ## Exportação
-Para realização da exportação, e obtenção dos arquivos .html e .apk de cada versão, é necessário utilizar tela de exportação de Godot, utilizando da versão *Web* para o projeto contido na VersãoParaWeb, e a primeira versão para *Android* contida no projeto VersaoParaVR, sendo selecionado a opção Exportar Projeto. Além disso, os arquivos de *export* resultantes podem ser encontrados em  [armazenamento externo.](https://mega.nz/folder/0U4VQJjZ#SPbNgPfrMmo2qVTQI1hBXQ).
+Para realização da exportação, e obtenção dos arquivos _.html_ e _.apk_ de cada versão, é necessário utilizar tela de exportação de _Godot_, utilizando da versão *Web* para o projeto contido na VersãoParaWeb, e a primeira versão para *Android* contida no projeto VersaoParaVR, sendo selecionado a opção _Exportar Projeto_. Além disso, os arquivos de *export* resultantes podem ser encontrados em  [armazenamento externo.](https://mega.nz/folder/0U4VQJjZ#SPbNgPfrMmo2qVTQI1hBXQ)
 <p align="center"><img src="https://file.garden/XufHAN0HKkSMo1Zp/Captura%20de%20tela%202026-10-27%20152509.png"></p>
