@@ -28,7 +28,7 @@ func _process(_delta: float) -> void:
 	match status:
 		##Caso ainda esteja sendo carregado, altera a barra de carregamento para indicar isto.
 		ResourceLoader.THREAD_LOAD_IN_PROGRESS:
-			# Como o valor de progress_array vai de 0 a 1, e o valor da barra de progresso vai de 1 a 100, o valor a ser utilizado é multiplicado por 100.
+			# Como o valor de progress_array vai de 0 a 1, e o valor da barra de progresso vai de 0 a 100, o valor a ser utilizado é multiplicado por 100.
 			var progress = progress_array[0] * 100
 			porcentagem.text = str(progress).pad_zeros(2).pad_decimals(0) + "%"
 			# Altera o valor da barra de progresso.
@@ -53,7 +53,6 @@ func _process(_delta: float) -> void:
 			get_tree().change_scene_to_packed(new_scene)
 			await  Transition._sair_cena()
 		# Caso haja falha
-		# TODO: Criar cena para anuncio de erro.
 		ResourceLoader.THREAD_LOAD_FAILED:
 			print("Loading failed!")
 			set_process(false)

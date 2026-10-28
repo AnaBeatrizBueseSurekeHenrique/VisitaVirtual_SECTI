@@ -1,5 +1,5 @@
 shader_type sky;
-
+// Desenvolvido por: https://godotshaders.com/shader/broodsac-sky-extended-from-sky-sorta-by-ansol/
 uniform sampler2D sky_texture;
 uniform float power = 0.2;
 uniform float scale_a = 0.5;

@@ -2,36 +2,34 @@ extends StaticBody3D
 ##Classe responsável por lidar com interações de dialogos dos NPCs
 class_name  NPC
 
-
-enum State {
-	IDLE,
-	SITTING,
-	WALK
+enum State { ## Armazena o estado atual do npc, controlando suas animações
+	IDLE, ## Quando o npc está em estado de repouso,
+	SITTING, ## Quando o npc está sentado,
+	WALK ## Quando o npc está caminhando.
 }
-@onready var interacao: Area3D = $Interacoes
-@onready var colisao : CollisionShape3D = $Interacoes/CollisionShape3D
-@export var _hud: CanvasLayer = null
-##Indica se o dialogo acarretará em uma troca de cena. Por padrão, é falso.
-@export var _muda_cena: bool = false
-##Caso este diálogo case uma troca de cena, esta variável armazena o caminho absoluto desta cena. Por padrão, é vázio.
-@export var _cena_nome : String = " "
-##Nome de em qual arquivo .json está armazenado o dialogo utilizado.
-@export var _dialogo_arq: String = "res://dialogos/dialogo_teste.json"
 ##Cena que armazena a caixa de dialogo.
 const DIALOGUE_BOX: PackedScene = preload("res://cenas/ui/dialogo_ui/dialogo_ui.tscn")
 ##Cena que armazena a caixa de dicas.
 const DICA: PackedScene = preload("res://cenas/ui/dialogo_ui/dicas_ui.tscn")
-var _new_dica : Classe_Dicas
-##Armazena se esse dialogo causará o fim do jogo, por padrão, é falso.
-var fim = false
 
 
-##Armazena quais linhas do .json serão utilizadas neste dialogo.
-var DictionaryDialogue: Dictionary= {
-	"_dialog_min" : 0,
-	"_dialog_max" : 0	
-}
+## Tocador de animações, possui armazenado as animações criadas em Blender do personagem.
 @onready var lobo_anim : AnimationPlayer = $lobo/AnimationPlayer
+## Área de interações do npc, responsável por realizar as interações de dialogo.
+@onready var interacao: Area3D = $Interacoes
+## Colisão da área de interação, responsável por controlar se a interação está ativa ou inativa.
+@onready var colisao : CollisionShape3D = $Interacoes/CollisionShape3D
+
+## Armazena o layer de UI da cena.
+@export var _hud: CanvasLayer = null
+##Indica se o dialogo acarretará em uma troca de cena. Por padrão, é falso.
+@export var _muda_cena: bool = false
+##Caso este diálogo cause uma troca de cena, esta variável armazena o caminho absoluto desta cena. Por padrão, é vázio.
+@export var _cena_nome : String = " "
+##Nome de em qual arquivo .json está armazenado o dialogo utilizado.
+@export var _dialogo_arq: String = "res://dialogos/dialogo_teste.json"
+
+
 ## Array que armazena multiplos valores de fim e inicio, permitindo alterar frases faladas do npc após interações com o usuário.
 @export var _array_dialogue: Array=[DictionaryDialogue]
 ##Armazena se o NPC se movimentará após o fim do dialogo.
@@ -45,16 +43,29 @@ var DictionaryDialogue: Dictionary= {
 @export var muda_falante : bool = false
 ##Quais possíveis falantes, caso muda_falante for igual a  true.
 @export var falantes : Array[NPC]
-var _new_dialog : ClasseDialogo
-var dialogo_iniciado = false
-var id_falante = 0
+## Armazena o estado atual do npc.
 @export var currentSate : State
-	
+
+var _new_dica : Classe_Dicas
+##Armazena se esse dialogo causará o fim do jogo, por padrão, é falso.
+var fim = false
+
+##Armazena quais linhas do .json serão utilizadas neste dialogo.
+var DictionaryDialogue: Dictionary= {
+	"_dialog_min" : 0,
+	"_dialog_max" : 0	
+}
+
+var _new_dialog : ClasseDialogo
+## Armazena se o dialogo atual foi iniciado
+var dialogo_iniciado = false
+## Armazena qual outro npc será interagivel após o fim deste dialogo.
+var id_falante = 0
+
 func _ready() -> void:
 	##Se o NPC for invisivel, sua colisão será desabilitada, impedindo de usuários interagirem com ele.
 	if(visible):
 		colisao.disabled = false
-	#Adiciona a interação.
 	interacao.interagir = _mostrarHud
 	lobo_anim.process_mode = Node.PROCESS_MODE_ALWAYS
 	match currentSate:

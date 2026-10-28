@@ -7,7 +7,6 @@
 [ext_resource type="Material" uid="uid://vgl5dgnnrgeu" path="res://assets/materiais/new_standard_material_3d.tres" id="5_h74c8"]
 [ext_resource type="PackedScene" uid="uid://dl8aors02o30g" path="res://cenas/ui/dialogo_ui/dialogo_ui.tscn" id="5_jtb87"]
 [ext_resource type="PackedScene" uid="uid://c2q5phg8w08o" path="res://addons/godot-xr-tools/functions/movement_jump.tscn" id="5_r3sgw"]
-[ext_resource type="Script" uid="uid://0fbe6hmsvkwx" path="res://cenas/salas/externo.gd" id="5_wk413"]
 [ext_resource type="Shader" uid="uid://dr5nhreyb3f4k" path="res://scripts/shaders/ceu.gdshader" id="6_sn4jb"]
 [ext_resource type="Texture2D" uid="uid://dbxn6scl2djrm" path="res://assets/texturas/anturio_folha/ceu.png" id="7_wk413"]
 [ext_resource type="PackedScene" uid="uid://cqvf1m4ccossx" path="res://cenas/ui/dicas.tscn" id="9_r3sgw"]
@@ -46,13 +45,13 @@ sky_material = SubResource("ShaderMaterial_pn7v0")
 background_mode = 2
 sky = SubResource("Sky_jtb87")
 
-[sub_resource type="ViewportTexture" id="ViewportTexture_u6vt8"]
+[sub_resource type="ViewportTexture" id="ViewportTexture_qs3cu"]
 viewport_path = NodePath("SubViewportContainer/SubViewport")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_sn4jb"]
 size = Vector3(1, 1.9697876, 1)
 
-[sub_resource type="ViewportTexture" id="ViewportTexture_gsyeq"]
+[sub_resource type="ViewportTexture" id="ViewportTexture_rlf54"]
 viewport_path = NodePath("SubViewportContainer/SubViewport")
 
 [sub_resource type="TextMesh" id="TextMesh_doame"]
@@ -68,7 +67,7 @@ transform = Transform3D(-0.99819297, 0, 0.060090385, 0, 1, 0, -0.060090385, 0, -
 [node name="Dicas" parent="XROrigin3D" index="0" unique_id=394757736 instance=ExtResource("9_r3sgw")]
 transform = Transform3D(0.99676317, 0, -0.080390155, 0, 1, 0, 0.080390155, 0, 0.99676317, 0.009063721, 1.5443151, -2.7944906)
 visible = false
-texture = SubResource("ViewportTexture_u6vt8")
+texture = SubResource("ViewportTexture_qs3cu")
 
 [node name="XRCamera3D" parent="XROrigin3D" index="1" unique_id=1515073703]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.3572917, 0)
@@ -112,10 +111,9 @@ hand_material_override = ExtResource("5_h74c8")
 process_mode = 0
 transform = Transform3D(0.49999997, 0, 5.5879354e-09, 0, 0.441, 0, -1.4901161e-08, 0, 0.18999998, 0.052908897, -0.19800878, -2.1251607)
 visible = false
-texture = SubResource("ViewportTexture_gsyeq")
+texture = SubResource("ViewportTexture_rlf54")
 
 [node name="Cena_De_Teste" parent="." index="2" unique_id=870400790 instance=ExtResource("2_0pkfj")]
-script = ExtResource("5_wk413")
 
 [node name="CharacterBody3D" parent="Cena_De_Teste" index="0" unique_id=1004876210]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.665024, -0.13877988, 17.622711)
@@ -123,7 +121,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.665024, -0.13877988, 17.6
 [node name="Interacao_Dialogo2" parent="Cena_De_Teste/CharacterBody3D" index="0" unique_id=377357338 node_paths=PackedStringArray("hud", "dicas")]
 transform = Transform3D(-1, 0, -1.509958e-07, 0, 1, 0, 1.509958e-07, 0, -1, 0.023575783, 0.0878247, -3.6931496)
 _cena_nome = "res://cenas/cenas_vr/cena_main_interno.tscn"
-_dialogo_arq = "res://dialogos/dialogo_inicio.json"
 hud = NodePath("../../../XROrigin3D/DialogoUI")
 dicas = NodePath("../../../XROrigin3D/Dicas")
 _array_dialogue = [{

@@ -1,5 +1,5 @@
 shader_type canvas_item;
-
+// Desenvolvido por: https://godotshaders.com/shader/animated-pattern-background/
 // Shader for creating an animated pattern background.
 // Works well with kenney's pattern pack: https://kenney.nl/assets/pattern-pack-extra
 

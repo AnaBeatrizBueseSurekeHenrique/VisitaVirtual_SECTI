@@ -1,5 +1,5 @@
 shader_type canvas_item;
-
+// Desenvolvido por: https://godotshaders.com/shader/pill-slider/
 /*
 	Pill Slider
 	-----------

@@ -11,7 +11,8 @@ const VELOCIDADE_PULO = 4.5
 const ROTACAO_CAMERA_MAX = 1.7
 const ROTACAO_CAMERA_MIN = -1.5
 @export var _hud : CanvasLayer
-##Caso uma cena possuir diferentes posições em que um jogador pode estar ao entrar na cena [i][Exemplo, jogador sai de um Cômodo B e entra em um Cômodo A por meio da Porta 1. Ao entrar novamente na Porta 1, será levado na frente da Porta 1 no Cômodo B.][/i]
+##Caso uma cena possuir diferentes posições em que um jogador pode estar ao entrar na cena 
+##[i][Exemplo, jogador sai de um Cômodo B e entra em um Cômodo A por meio da Porta 1. Ao entrar novamente na Porta 1, será levado na frente da Porta 1 no Cômodo B.][/i]
 @export var posicoes : Array[Marker3D] 
 var posicao_atual : int
 

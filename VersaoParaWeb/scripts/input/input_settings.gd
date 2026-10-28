@@ -3,9 +3,13 @@ extends MarginContainer
 @onready var input_button = preload("res://cenas/ui/pausa/input_button.tscn")
 @onready var lista_acoes = $VBoxContainer/ScrollContainer/ListaAcoes 
 
+## Armazena se o usuário esta trocando de tecla no momento.
 var is_remapping = false
+## Armazena qual ação terá sua tecla alterada.
 var action_to_remap = null
+## Armazena qual tecla será trocada para action_to_remap.
 var remapping_button = null
+## Lista de teclas utilizadas no projeto.
 var lista_keys : Array[String]
 var old_text
 
@@ -36,10 +40,12 @@ func _criar_acoes() -> void:
 		action_label.text = acoes[action]
 		var events = InputMap.action_get_events(action)
 		if events.size() > 0:
-			# Por padrão, ao Godot receber um input por teclado, o nome final é "Tecla - Pshysical"
+			# Por padrão, ao Godot receber um input por teclado, o nome final é "[Tecla] - Pshysical"
 			# Portanto, para dar nome as ações, retiro "Pshysical" da string
 			input_label.text = events[0].as_text().trim_suffix(" - Physical")
 			lista_keys.append(input_label.text)
+			# Altera o nome das teclas cujos nomes por padrão são em inglês
+			# Para seu equivalente em português, ou simbolos.
 			match input_label.text:
 				"Escape":
 					input_label.text = "Esc"
@@ -60,6 +66,7 @@ func _criar_acoes() -> void:
 		lista_acoes.add_child(button)
 		button.pressed.connect(on_input_button_pressed.bind(button, action))
 
+
 func on_input_button_pressed(button, action) -> void:
 	if not is_remapping:
 		is_remapping = true
@@ -73,6 +80,7 @@ func _input(event):
 		if(event is InputEventKey) or (event is InputEventMouseButton and event.pressed):
 			if( event is InputEventMouseButton and event.double_click):
 				event.double_click = false
+			# Verifica se esta tecla não é utilizada por outra ação, evitando duplicatas.
 			if(event.as_text().trim_suffix(" - Physical") in lista_keys and lista_keys[remapping_button.get_index()] != event.as_text()):
 				var input_label = remapping_button.find_child("InputAction")
 				input_label.text = "Outra ação já utiliza essa tecla!!"
@@ -112,7 +120,7 @@ func _update_action_list(button, event) -> void:
 				_:
 					pass
 
-
+## Reseta as teclas para o padrão do projeto.
 func _on_reset_button_button_up() -> void:
 	InputMap.load_from_project_settings()
 	_criar_acoes()

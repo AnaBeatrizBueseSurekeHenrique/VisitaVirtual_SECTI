@@ -1,4 +1,5 @@
 extends HSlider
+## Desenvolvido por Desenvolvido por: https://godotshaders.com/shader/pill-slider/
 ## Optional bridge script for pill_slider.gdshader.
 ## Attach to an HSlider, assign a ShaderMaterial using pill_slider.gdshader
 ## to `shader_material` in the inspector, and this will keep the shader's

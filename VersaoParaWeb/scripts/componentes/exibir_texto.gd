@@ -22,7 +22,8 @@ func adiciona_texto(texto: String, _step: float)-> void:
 		await get_tree().create_timer(step).timeout
 		_texto.visible_characters +=1
 	
-##Responsável por adicionar um link a caixa de dialogo, com link_texto sendo o texto exibido ao jogador, e link_url sendo a url que o jogador será levado ao clicar no link.
+##Responsável por adicionar um link a caixa de dialogo, com link_texto sendo o texto exibido ao jogador,
+## e link_url sendo a url que o jogador será levado ao clicar no link.
 func adicionar_link(link_texto: String, link_url: String):
 	botao = true
 	var link = link_button.get_child(0)

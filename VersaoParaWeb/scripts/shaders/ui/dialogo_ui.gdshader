@@ -5,6 +5,6 @@ uniform sampler2D SCREEN_TEXTURE : hint_screen_texture, filter_linear_mipmap;
 
 
 void fragment() {
-    // Pega o que está atrás do ColorRect na tela, e aplica um filtro de borrão.
+    // Pega o que está atrás do ColorRect na tela, e aplica um filtro de borrão..
     COLOR = textureLod(SCREEN_TEXTURE, SCREEN_UV, blur_amount);
 }

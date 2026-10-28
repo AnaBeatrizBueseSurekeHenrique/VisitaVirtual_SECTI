@@ -3,8 +3,8 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c8ujyujub7c7s"
-path.s3tc="res://.godot/imported/46725.png-99cbb2dfcaa4fb1ed13ad31880038a57.s3tc.ctex"
-path.etc2="res://.godot/imported/46725.png-99cbb2dfcaa4fb1ed13ad31880038a57.etc2.ctex"
+path.s3tc="res://.godot/imported/lobo.png-cfd34b8c3a1a22db082fbe13e8395b5e.s3tc.ctex"
+path.etc2="res://.godot/imported/lobo.png-cfd34b8c3a1a22db082fbe13e8395b5e.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/46725.png"
-dest_files=["res://.godot/imported/46725.png-99cbb2dfcaa4fb1ed13ad31880038a57.s3tc.ctex", "res://.godot/imported/46725.png-99cbb2dfcaa4fb1ed13ad31880038a57.etc2.ctex"]
+source_file="res://assets/texturas/lobo.png"
+dest_files=["res://.godot/imported/lobo.png-cfd34b8c3a1a22db082fbe13e8395b5e.s3tc.ctex", "res://.godot/imported/lobo.png-cfd34b8c3a1a22db082fbe13e8395b5e.etc2.ctex"]
 
 [params]
 

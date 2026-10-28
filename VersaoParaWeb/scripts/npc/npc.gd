@@ -1,10 +1,14 @@
 extends CharacterBody3D
 ##Script responsável por lidar com a movimentação de um NPC, caso ele precise se movimentar.
 
+##Velocidade de caminhada do NPC
 const SPEED = 4
-const JUMP_VELOCITY = 4.5
+## Intervalo aceitavel entre a distancia atual e a distancia desejada.
 const INTERVALO = 2
+## Pontos para onde se deseja movimentar.
 @export var markers: Array[Marker3D]
+## Armazena o objeto de interação de dialogo.
+
 @export var dialogo : StaticBody3D
 var caminhando : bool = false
 var jaCaminhou = false
@@ -22,7 +26,7 @@ func _physics_process(delta: float) -> void:
 		velocity += get_gravity() * delta
 	else:
 		velocity.y -= 1
-	
+	# Se o npc possui pontos para onde deve caminhar
 	if(markers):
 		if(not rotationou):
 			alvo = wrapf(markers.back().rotation.y - dialogo.rotation.y, -PI, PI)			
@@ -35,7 +39,7 @@ func _physics_process(delta: float) -> void:
 		dialogo.rotation.y = rotate_toward(dialogo.rotation.y,alvo, 5 * delta)
 		dialogo.interacao.process_mode = Node.PROCESS_MODE_DISABLED
 		#Verifica se a posição atual está dentro de um intervalo: posicão.x ∈ (x-INTERVALO, x+INTERVALO) e posição.z ∈ (z-INTERVALO, z+INTERVALO)
-		# Caso estiver, então assume que o NPC está na posição, e remove da lista de posições que ele deve percorrer.
+		#Caso estiver, então assume que o NPC está na posição, e remove da lista de posições que ele deve percorrer.
 		if(position.x > markers.back().position.x -INTERVALO and position.x < markers.back().position.x +INTERVALO and ((position.z > markers.back().position.z -INTERVALO and position.z < markers.back().position.z +INTERVALO))):
 			markers.pop_back()
 			rotationou = false

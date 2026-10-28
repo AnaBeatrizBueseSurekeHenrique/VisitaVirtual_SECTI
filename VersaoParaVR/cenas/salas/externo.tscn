@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://sxuk7bieukwx"]
 
-[ext_resource type="PackedScene" uid="uid://bxqgnq31mjq7d" path="res://assets/modelos3d/salas/modelo3d/modelo_3d_secretaria.glb" id="3_7qdqy"]
-[ext_resource type="Script" uid="uid://cw2nfsidgcoed" path="res://cenas/salas/dica_area.gd" id="4_7yab6"]
+[ext_resource type="PackedScene" path="res://assets/modelos3d/salas/modelo3d/modelo_3d_secretaria.glb" id="3_7qdqy"]
+[ext_resource type="Script" uid="uid://cw2nfsidgcoed" path="res://scripts/dica_area.gd" id="4_7yab6"]
 [ext_resource type="Script" uid="uid://3idb4urb0nee" path="res://scripts/npc/npc.gd" id="19_jsbtp"]
 [ext_resource type="PackedScene" uid="uid://bt621ee1nfu6e" path="res://cenas/interacao/interacao_dialogo.tscn" id="22_egkhr"]
 

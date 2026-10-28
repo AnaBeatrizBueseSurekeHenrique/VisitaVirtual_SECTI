@@ -6,7 +6,7 @@ const LINK_BUTTON: PackedScene = preload("res://cenas/ui/botoes/botao_link/link_
 
 ## Valor em que o dialogo se inicia
 @export var _dialog_min : int
-## Valor em que o dialogo atual termina
+## Valor em que o dialogo atual termina.
 @export var _dialog_max : int
 ## Classe responsável por exibir o texto.
 @export var _exibir_texto: ExibirTexto
@@ -24,7 +24,9 @@ var mudaCena = false
 var volta : bool = false
 ## Armazena o id de qual texto será retornado, caso a expressão volta seja verdadeira. 
 var volta_id = 0
+## Valor do texto do json, representado por "dialogo" em textos padrões e "texto" em textos com funções especificas atreladas a eles.
 var texto_val
+
 func _ready() -> void:
 	_id = _dialog_min
 	_inicializa_dialogo()
@@ -68,7 +70,6 @@ func _inicializa_dialogo() -> void:
 			_exibir_texto.adiciona_texto(texto["dialogo"], step)
 			
 ## Responsável por adicionar botões à caixa de dialogo, analisar o tipo de botão recebido e qual ação deve ocorrer ao ser clicado.
-
 func _adicionar_botoes(texto: Dictionary):
 	_exibir_texto.botao = true
 	for opcao in texto["opcoes"]:
@@ -96,13 +97,14 @@ func _adicionar_botoes(texto: Dictionary):
 					_id = _dialog_max-1
 					avanca_texto()
 				)
-			# Ou seja, ao clicar o botão, causa o término da visita, avançando a tela de créditos.
+			# Ou seja, ao clicar o botão, causa o término da visita, avançando para a tela de créditos.
 			"trigger_fim":
 				botao.mudar_pressed(func():
 					npc.fim = true
 					_id = _dialog_max-1
 					avanca_texto()
 					)
+			# Caso não corresponda a nenhum dos outros valores, o botão não fará nada ao ser clicado.
 			_:
 				pass
 		panel_botoes.add_child(botao)
@@ -120,7 +122,7 @@ func adiciona_link_button():
 func pula_dialogo(id: int):
 	_id = id-1
 	avancar_botao()
-## Ao botão ser clicado, todos os botões da caixa de dialogo são removidos, e  o texto volta a ser visivel.
+## Ao botão ser clicado, todos os botões da caixa de dialogo são removidos, e o texto volta a ser visivel.
 func avancar_botao():
 	_exibir_texto.botao = false
 	for n in panel_botoes.get_children():
@@ -130,9 +132,9 @@ func avancar_botao():
 	avanca_texto()
 	
 func _process(_delta: float) -> void:
-	#Proporção de texto visivel.
+	#Porcentagem de texto visivel.
 	var ui_ratio = _exibir_texto._texto.visible_ratio
-	# Caso um botão, ou link. não estiver em tela, o usuário poderá pressionar a tecla de interagir para avançar e acelerar o texto
+	# Caso um botão, ou link. não estiver em tela, o usuário poderá pressionar a tecla de interagir para avançar e acelerar o texto.
 	# Caso contrário, será aguardado até o usuário pressionar um botão.
 	if(!_exibir_texto.botao):
 
