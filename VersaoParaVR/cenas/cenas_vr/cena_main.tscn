@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://sxuk7bieukwx" path="res://cenas/salas/externo.tscn" id="2_0pkfj"]
 [ext_resource type="PackedScene" uid="uid://ymykqyx3v1bf" path="res://cenas/componentes/componente_interacao_jogador.tscn" id="2_fvspn"]
 [ext_resource type="PackedScene" uid="uid://c78tjrtiyqna8" path="res://addons/godot-xr-tools/functions/movement_grapple.tscn" id="2_wk413"]
-[ext_resource type="Material" uid="uid://vgl5dgnnrgeu" path="res://assets/materiais/new_standard_material_3d.tres" id="5_h74c8"]
+[ext_resource type="Material" uid="uid://vgl5dgnnrgeu" path="res://assets/materiais/material_maos.tres" id="5_h74c8"]
 [ext_resource type="PackedScene" uid="uid://dl8aors02o30g" path="res://cenas/ui/dialogo_ui/dialogo_ui.tscn" id="5_jtb87"]
 [ext_resource type="PackedScene" uid="uid://c2q5phg8w08o" path="res://addons/godot-xr-tools/functions/movement_jump.tscn" id="5_r3sgw"]
 [ext_resource type="Shader" uid="uid://dr5nhreyb3f4k" path="res://scripts/shaders/ceu.gdshader" id="6_sn4jb"]

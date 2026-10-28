@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dnycvx1tht3gy"]
 
 [ext_resource type="PackedScene" uid="uid://cqbudy7pelce7" path="res://addons/godot-xr-tools/cena_base.tscn" id="1_kcy1v"]
-[ext_resource type="Material" uid="uid://vgl5dgnnrgeu" path="res://assets/materiais/new_standard_material_3d.tres" id="2_2l5k4"]
+[ext_resource type="Material" uid="uid://vgl5dgnnrgeu" path="res://assets/materiais/material_maos.tres" id="2_2l5k4"]
 [ext_resource type="PackedScene" uid="uid://c78tjrtiyqna8" path="res://addons/godot-xr-tools/functions/movement_grapple.tscn" id="3_o2cf4"]
 [ext_resource type="PackedScene" uid="uid://ymykqyx3v1bf" path="res://cenas/componentes/componente_interacao_jogador.tscn" id="4_2l5k4"]
 [ext_resource type="PackedScene" uid="uid://c2q5phg8w08o" path="res://addons/godot-xr-tools/functions/movement_jump.tscn" id="5_xwu8k"]

@@ -4,7 +4,7 @@
 [ext_resource type="Shader" uid="uid://dr5nhreyb3f4k" path="res://scripts/shaders/ceu.gdshader" id="2_8xkhy"]
 [ext_resource type="Texture2D" uid="uid://dbxn6scl2djrm" path="res://assets/texturas/anturio_folha/ceu.png" id="3_rrkax"]
 [ext_resource type="PackedScene" uid="uid://cqvf1m4ccossx" path="res://cenas/ui/dicas.tscn" id="4_brlo0"]
-[ext_resource type="Material" uid="uid://vgl5dgnnrgeu" path="res://assets/materiais/new_standard_material_3d.tres" id="5_neunr"]
+[ext_resource type="Material" uid="uid://vgl5dgnnrgeu" path="res://assets/materiais/material_maos.tres" id="5_neunr"]
 [ext_resource type="PackedScene" uid="uid://c78tjrtiyqna8" path="res://addons/godot-xr-tools/functions/movement_grapple.tscn" id="6_lvpwe"]
 [ext_resource type="PackedScene" uid="uid://ymykqyx3v1bf" path="res://cenas/componentes/componente_interacao_jogador.tscn" id="7_qhar0"]
 [ext_resource type="PackedScene" uid="uid://c2q5phg8w08o" path="res://addons/godot-xr-tools/functions/movement_jump.tscn" id="8_8himp"]
@@ -46,13 +46,13 @@ sky_material = SubResource("ShaderMaterial_pn7v0")
 background_mode = 2
 sky = SubResource("Sky_jtb87")
 
-[sub_resource type="ViewportTexture" id="ViewportTexture_dtdg3"]
+[sub_resource type="ViewportTexture" id="ViewportTexture_xodco"]
 viewport_path = NodePath("SubViewportContainer/SubViewport")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_sn4jb"]
 size = Vector3(1, 1.9697876, 1)
 
-[sub_resource type="ViewportTexture" id="ViewportTexture_8xkhy"]
+[sub_resource type="ViewportTexture" id="ViewportTexture_pj06b"]
 viewport_path = NodePath("SubViewportContainer/SubViewport")
 
 [sub_resource type="BoxMesh" id="BoxMesh_neunr"]
@@ -71,11 +71,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.1228695, 1.6573579, 6.136
 [node name="Dicas" parent="XROrigin3D" index="0" unique_id=394757736 instance=ExtResource("4_brlo0")]
 transform = Transform3D(0.99676317, 0, -0.080390155, 0, 1, 0, 0.080390155, 0, 0.99676317, 0.009063721, 1.5443151, -2.7944906)
 visible = false
-texture = SubResource("ViewportTexture_dtdg3")
+texture = SubResource("ViewportTexture_xodco")
 
 [node name="XRCamera3D" parent="XROrigin3D" index="1" unique_id=1515073703]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.3572917, 0)
-script = null
 
 [node name="PlayerBody" parent="XROrigin3D" index="2" unique_id=1008909181]
 collision_mask = 1021
@@ -118,12 +117,11 @@ enabled = false
 [node name="MovementTurn" parent="XROrigin3D/RightHand/RightHand" index="3" unique_id=209344041]
 enabled = false
 
-[node name="DialogoUI" parent="XROrigin3D" index="5" unique_id=834063049 node_paths=PackedStringArray("transition") instance=ExtResource("9_snpo8")]
+[node name="DialogoUI" parent="XROrigin3D" index="5" unique_id=834063049 instance=ExtResource("9_snpo8")]
 process_mode = 0
 transform = Transform3D(0.49999997, 0, 5.5879354e-09, 0, 0.441, 0, -1.4901161e-08, 0, 0.18999998, 0.052908897, -0.19800878, -2.1251607)
 visible = false
-texture = SubResource("ViewportTexture_8xkhy")
-transition = NodePath("../Transition")
+texture = SubResource("ViewportTexture_pj06b")
 
 [node name="Transition" parent="XROrigin3D" index="6" unique_id=1397401020 instance=ExtResource("10_nna3g")]
 transform = Transform3D(0.9999993, 0, 0, 0, 1, 0, 0, 0, 0.9999993, -0.006368637, 0, -0.10586786)
