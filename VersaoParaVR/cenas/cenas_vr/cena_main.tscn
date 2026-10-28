@@ -54,8 +54,6 @@ size = Vector3(1, 1.9697876, 1)
 [sub_resource type="ViewportTexture" id="ViewportTexture_rlf54"]
 viewport_path = NodePath("SubViewportContainer/SubViewport")
 
-[sub_resource type="TextMesh" id="TextMesh_doame"]
-
 [node name="SceneBase2" unique_id=2140041542 instance=ExtResource("1_lenfn")]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." index="0" unique_id=807931234]
@@ -152,9 +150,6 @@ hud = NodePath("../../XROrigin3D/Dicas")
 
 [node name="Marker3D4" type="Marker3D" parent="Cena_De_Teste" index="6" unique_id=1929635690]
 transform = Transform3D(0.33975595, 0, 0.94051373, 0, 1, 0, -0.94051373, 0, 0.33975595, 24.299, -5.47, -11.072)
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="." index="3" unique_id=1747372950]
-mesh = SubResource("TextMesh_doame")
 
 [connection signal="button_pressed" from="XROrigin3D/LeftHand" to="XROrigin3D/LeftHand" method="_on_button_pressed"]
 [connection signal="input_float_changed" from="XROrigin3D/LeftHand" to="XROrigin3D/LeftHand" method="_on_input_float_changed"]
