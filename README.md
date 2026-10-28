@@ -24,12 +24,12 @@ Além disso, ambas as pastas ``VersaoParaVR`` e ``VersaoParaWeb`` possuem a segu
     
 Ao ser finalizada a instalação, os seguintes passos devem ser seguidos para se utilizar dos projetos deste repositório:
 - Em primeiro lugar, se é selecionado a opção de *Importar* de Godot:
-
-![Importar](https://file.garden/XufHAN0HKkSMo1Zp/1.png)
+<p align="center">
+      <img src="https://file.garden/XufHAN0HKkSMo1Zp/1-3.png">
+</p>
 
 - Após isto, se é selecionado o *project.godot* do projeto. A versão para realidade virtual e a versão para navegador possuem *project.godot*s diferentes, resultando em projetos diferentes na _game engine_.
-
-![Projeto](https://file.garden/XufHAN0HKkSMo1Zp/2.png)
+<p align="center"><img src="https://file.garden/XufHAN0HKkSMo1Zp/2-3.png"></p>
 
 ### Versão Para Realidade Virtual
 Para utilização da versão em realidade virtual, é necessário o download dos seguintes assets:
@@ -39,7 +39,8 @@ Para utilização da versão em realidade virtual, é necessário o download dos
 
 Ambas Godot XR Toold e Godot Open XR Vendors devem estar na pasta ``/addons/``
 Após a iniciação do projeto, além disso, é necessário baixar o modo de compilação para Android de Godot, por meio do menu de projeto do editor.<br/>
-![Modo de Compilação para Android](https://file.garden/XufHAN0HKkSMo1Zp/Captura%20de%20tela%202026-10-27%20151958.png)
+<p align="center"><img src="https://file.garden/XufHAN0HKkSMo1Zp/Captura%20de%20tela%202026-10-27%20151958.png"></p>
+![Modo de Compilação para Android](g)
 
 
 Além disso, os seguintes arquivos devem ser tornados globais:
@@ -64,4 +65,4 @@ Em relação aos arquivos .glb requisitados, eles precisam ser baixados e movido
 ```
 ## Exportação
 Para realização da exportação, e obtenção dos arquivos .html e .apk de cada versão, é necessário utilizar tela de exportação de Godot, utilizando da versão *Web* para o projeto contido na VersãoParaWeb, e a primeira versão para *Android* contida no projeto VersaoParaVR, sendo selecionado a opção Exportar Projeto. Além disso, os arquivos de *export* resultantes podem ser encontrados em  [armazenamento externo.](https://mega.nz/folder/0U4VQJjZ#SPbNgPfrMmo2qVTQI1hBXQ).
-![Exportação do projeto](https://file.garden/XufHAN0HKkSMo1Zp/Captura%20de%20tela%202026-10-27%20152509.png)
+<p align="center"><img src="https://file.garden/XufHAN0HKkSMo1Zp/Captura%20de%20tela%202026-10-27%20152509.png"></p>
