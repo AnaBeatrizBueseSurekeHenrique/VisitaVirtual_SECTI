@@ -128,6 +128,7 @@ func _adicionar_botoes(texto: Dictionary):
 					))
 			_:
 				pass
+		opcaoAtual.visible = false
 		panel_botoes.add_child(opcaoAtual)
 	# Deixa visivel a primeira opção.
 	panel_botoes.get_child(0).visible = true
@@ -188,7 +189,7 @@ func avancar_botao():
 	avanca_texto()
 	
 func _process(_delta: float) -> void:
-
+	
 	ui_ratio = (len(_exibir_texto.texto_og)-len(_exibir_texto._texto.text))
 	# Funções utilizadas para testes em desktop.
 	if Input.is_action_pressed("Interagir") and ui_ratio < 1:

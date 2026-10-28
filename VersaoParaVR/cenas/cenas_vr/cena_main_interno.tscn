@@ -9,7 +9,6 @@
 [ext_resource type="PackedScene" uid="uid://bk4uiiyuwumc0" path="res://cenas/salas/andar_interno.tscn" id="6_1k3lv"]
 [ext_resource type="Script" uid="uid://daoyotj4orlky" path="res://addons/godot-xr-tools/functions/movement_back.gd" id="6_gcefe"]
 [ext_resource type="PackedScene" uid="uid://cqvf1m4ccossx" path="res://cenas/ui/dicas.tscn" id="7_n2bwi"]
-[ext_resource type="PackedScene" uid="uid://umd8y006s5m7" path="res://cenas/globais/transition.tscn" id="9_qu6ad"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_sn4jb"]
 size = Vector3(1, 2.2250366, 1)
@@ -23,7 +22,7 @@ viewport_path = NodePath("SubViewportContainer/SubViewport")
 [node name="SceneBase" unique_id=2140041542 instance=ExtResource("1_qu6ad")]
 
 [node name="XROrigin3D" parent="." index="0" unique_id=1209220601]
-transform = Transform3D(0.9899398, 0, -0.14148873, 0, 1, 0, 0.14148873, 0, 0.9899398, -8.283018, 2.26884, -0.28905058)
+transform = Transform3D(0.9899398, 0, -0.14148873, 0, 1, 0, 0.14148873, 0, 0.9899398, -8.283018, 2.26884, 2.6460848)
 
 [node name="XRCamera3D" parent="XROrigin3D" index="0" unique_id=1515073703]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.3572917, 0)
@@ -80,9 +79,6 @@ texture = SubResource("ViewportTexture_6utga")
 transform = Transform3D(0.9999999, 0, 0, 0, 1, 0, 0, 0, 0.9999999, -0.61909866, 0.4905126, -2.4015434)
 visible = false
 texture = SubResource("ViewportTexture_nf4g3")
-
-[node name="Transition" parent="XROrigin3D" index="6" unique_id=1397401020 instance=ExtResource("9_qu6ad")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.012534618, 0, -0.08769989)
 
 [node name="AndarInterno" parent="." index="1" unique_id=362840914 instance=ExtResource("6_1k3lv")]
 
