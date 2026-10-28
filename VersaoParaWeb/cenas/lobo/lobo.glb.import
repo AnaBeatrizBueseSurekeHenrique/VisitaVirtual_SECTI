@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://crvss8508qbwb"
-path="res://.godot/imported/lobo.glb-743e1fddc21657e2370e76c72829e3f6.scn"
+path="res://.godot/imported/lobo.glb-20551615cc46d019fc9adfe1d9430a78.scn"
 
 [deps]
 
-source_file="res://cenas/salas/lobo.glb"
-dest_files=["res://.godot/imported/lobo.glb-743e1fddc21657e2370e76c72829e3f6.scn"]
+source_file="res://cenas/lobo/lobo.glb"
+dest_files=["res://.godot/imported/lobo.glb-20551615cc46d019fc9adfe1d9430a78.scn"]
 
 [params]
 
@@ -8267,7 +8267,7 @@ _subresources={
 "materials": {
 "Materiais": {
 "use_external/enabled": true,
-"use_external/fallback_path": "res://cenas/salas/Materiais.tres",
+"use_external/fallback_path": "res://assets/materiais/lobo.tres",
 "use_external/path": "uid://drjrinrco555o"
 }
 }

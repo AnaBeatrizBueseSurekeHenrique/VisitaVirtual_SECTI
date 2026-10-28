@@ -1,5 +1,5 @@
 extends Node
-##Script responsável por salvar preferências do jogador entre cenas
+##Script responsável por salvar as preferências do jogador entre cenas..
 
 var  sensibilidade_mouse : float = 0.4
 

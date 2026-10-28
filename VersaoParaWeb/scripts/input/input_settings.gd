@@ -8,9 +8,12 @@ var action_to_remap = null
 var remapping_button = null
 var lista_keys : Array[String]
 var old_text
+
 func _ready():
 	_criar_acoes()
-	
+
+## Dicionario de nomes das ações, segundo o input map do projeto
+## E o nome que será exibido ao jogador.
 var acoes = {
 	"cima" : "Frente",
 	"esquerda": "Esquerda",
@@ -33,6 +36,8 @@ func _criar_acoes() -> void:
 		action_label.text = acoes[action]
 		var events = InputMap.action_get_events(action)
 		if events.size() > 0:
+			# Por padrão, ao Godot receber um input por teclado, o nome final é "Tecla - Pshysical"
+			# Portanto, para dar nome as ações, retiro "Pshysical" da string
 			input_label.text = events[0].as_text().trim_suffix(" - Physical")
 			lista_keys.append(input_label.text)
 			match input_label.text:
@@ -61,7 +66,7 @@ func on_input_button_pressed(button, action) -> void:
 		action_to_remap = action
 		remapping_button = button
 		old_text = 	button.find_child("InputAction").text
-		button.find_child("InputAction").text = "Aperta na tecla desejada...."
+		button.find_child("InputAction").text = "Aperte a tecla desejada...."
 
 func _input(event):
 	if is_remapping:
@@ -70,7 +75,7 @@ func _input(event):
 				event.double_click = false
 			if(event.as_text().trim_suffix(" - Physical") in lista_keys and lista_keys[remapping_button.get_index()] != event.as_text()):
 				var input_label = remapping_button.find_child("InputAction")
-				input_label.text = "Outra ação utiliza essa tecla!!"
+				input_label.text = "Outra ação já utiliza essa tecla!!"
 				await get_tree().create_timer(5).timeout
 				if(input_label):
 					if(input_label is Label):

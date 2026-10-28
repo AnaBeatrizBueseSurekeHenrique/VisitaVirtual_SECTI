@@ -14,7 +14,6 @@
 [ext_resource type="ArrayMesh" uid="uid://bnvg155k3maes" path="res://assets/modelos3d/moveis/vidro/vidro_segundo_andar.obj" id="13_chqkt"]
 [ext_resource type="ArrayMesh" uid="uid://cr5oxbtai8sbd" path="res://assets/modelos3d/moveis/teto/teto_segundo_andar.obj" id="21_4ydr0"]
 [ext_resource type="PackedScene" uid="uid://bwhl0jonmx2l4" path="res://cenas/moveis/escadas/escada_segundo_andar.tscn" id="25_jjer6"]
-[ext_resource type="PackedScene" uid="uid://dv67il4hpg48u" path="res://cenas/ui/hud.tscn" id="25_nohd6"]
 [ext_resource type="PackedScene" uid="uid://cri4stprxudfj" path="res://cenas/moveis/cadeiras/sofas/sofa.tscn" id="27_x2sv8"]
 [ext_resource type="PackedScene" uid="uid://gd661rmgvvjm" path="res://cenas/moveis/cadeiras/bancos/banco_terceiro_andar.tscn" id="35_te62a"]
 [ext_resource type="PackedScene" uid="uid://gi52ovuwuok1" path="res://cenas/moveis/mesa/mesa_terceiro_andar.tscn" id="36_vl0ha"]
@@ -126,8 +125,6 @@ ssao_enabled = true
 glow_enabled = true
 
 [node name="SalaSegundoAndar" type="Node3D" unique_id=2116364423]
-
-[node name="hud" parent="." unique_id=1287318431 instance=ExtResource("25_nohd6")]
 
 [node name="Paredes2" type="StaticBody3D" parent="." unique_id=2106353431]
 

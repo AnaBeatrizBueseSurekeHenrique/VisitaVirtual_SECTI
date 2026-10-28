@@ -10,12 +10,9 @@ class_name Pause
 @onready var mouse_number : LineEdit = $Configs/MarginContainer/Configuracoes/Mouse/Mouse_number
 @onready var mouse_slider : HSlider = $Configs/MarginContainer/Configuracoes/Mouse/Mouse_Slider
 
-
 func _despausar():
 	get_tree().paused = false
 	self.visible = false
-
-
 
 func _on_retornar_button_up() -> void:
 	_despausar()

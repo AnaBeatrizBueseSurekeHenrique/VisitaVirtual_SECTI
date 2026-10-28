@@ -20,7 +20,6 @@ func change_scene():
 	await Transition._entrar_cena()
 	get_tree().root.add_child(loading_screen)
 	#Altera a cena atual para a tela de carregamento, e deleta a cena atual.
-	#await Transition.transition_in(0.2)
 	await get_tree().process_frame 
 	get_tree().current_scene = loading_screen
 	if current_scene:

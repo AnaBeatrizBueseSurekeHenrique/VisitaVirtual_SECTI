@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="SecretariaCienciaTecnologiaInovacao (Copy)"
+config/name="Visita SECTI - Web"
 run/main_scene="uid://ci6kwkx1x6tlj"
 config/features=PackedStringArray("4.6", "Forward Plus")
 run/low_processor_mode=true
@@ -63,6 +63,7 @@ folder_colors={
 "res://Cenas/moveis/Cadeiras/": "yellow",
 "res://Cenas/moveis/Estantes/": "pink",
 "res://Cenas/moveis/Mesa/": "purple",
+"res://assets/": "yellow",
 "res://dialogos/": "gray",
 "res://scripts/": "blue"
 }

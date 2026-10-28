@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://c2lv1ax3ultfa"]
 
 [ext_resource type="Script" uid="uid://d1dknkove5b3j" path="res://scripts/ui/creditos/creditos.gd" id="1_2ny56"]
-[ext_resource type="Material" uid="uid://xq17n2d4dmsp" path="res://new_shader_material.tres" id="2_gcux1"]
+[ext_resource type="Material" uid="uid://xq17n2d4dmsp" path="res://scripts/shaders/ui/padrao_tela.tres" id="2_gcux1"]
 [ext_resource type="FontFile" uid="uid://d4n3pxlb7g7bk" path="res://assets/fontes/geistpixel/geitspixel.ttf" id="3_khhy3"]
 [ext_resource type="FontFile" uid="uid://d0g4is27ioqvr" path="res://assets/fontes/quicksand/quicksand_static/quicksand_regular.ttf" id="4_swy5q"]
 [ext_resource type="FontFile" uid="uid://c0qwpilioxg37" path="res://assets/fontes/vt323/vt323.ttf" id="5_154rs"]
@@ -68,7 +68,6 @@ grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_ifwgb")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer2" unique_id=1621807026]
-visible = false
 layout_mode = 2
 
 [node name="CenterContainer" type="CenterContainer" parent="PanelContainer2/VBoxContainer" unique_id=1442542686]
@@ -168,7 +167,7 @@ text = "Passero One"
 layout_mode = 2
 theme_override_fonts/font = ExtResource("4_swy5q")
 theme_override_font_sizes/font_size = 32
-text = "- Viktoriya Grabowska "
+text = "- Viktoriya Grabowska"
 horizontal_alignment = 1
 
 [node name="Quicksand" type="HBoxContainer" parent="PanelContainer2/VBoxContainer/CenterContainer/MarginContainer/VBoxContainer/Scroll/VBoxContainer/VBoxContainer" unique_id=1816095168]
@@ -205,6 +204,13 @@ theme_override_font_sizes/font_size = 32
 text = "- Peter Hull"
 horizontal_alignment = 1
 
+[node name="Label6" type="Label" parent="PanelContainer2/VBoxContainer/CenterContainer/MarginContainer/VBoxContainer/Scroll/VBoxContainer" unique_id=766518653]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_swy5q")
+theme_override_font_sizes/font_size = 32
+text = "Visita virtual desenvolvida por Ana Beatriz Buese Sureke Henrique."
+horizontal_alignment = 1
+
 [node name="Control" type="Control" parent="PanelContainer2/VBoxContainer" unique_id=1533195687]
 layout_mode = 2
 size_flags_vertical = 3
@@ -227,6 +233,7 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_ab7aq")
 text = "Voltar a Tela Inicial"
 
 [node name="Licencas" type="VBoxContainer" parent="PanelContainer2" unique_id=263236797]
+visible = false
 layout_mode = 2
 
 [node name="Label2" type="Label" parent="PanelContainer2/Licencas" unique_id=1544517731]

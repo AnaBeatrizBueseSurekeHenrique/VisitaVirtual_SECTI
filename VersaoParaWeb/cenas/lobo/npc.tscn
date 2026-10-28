@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://ti8vuwn0fb7d"]
 
-[ext_resource type="Script" uid="uid://3idb4urb0nee" path="res://scripts/npc/npc.gd" id="1_t3edj"]
-[ext_resource type="PackedScene" uid="uid://bt621ee1nfu6e" path="res://cenas/interacao/interacao_dialogo.tscn" id="2_ni2rr"]
+[ext_resource type="Script" uid="uid://3idb4urb0nee" path="res://scripts/npc/npc.gd" id="1_dpaq6"]
+[ext_resource type="PackedScene" uid="uid://bt621ee1nfu6e" path="res://cenas/interacao/interacao_dialogo.tscn" id="2_dghvw"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_20qa1"]
 size = Vector3(1, 2.4577942, 1)
@@ -14,10 +14,10 @@ floor_constant_speed = true
 floor_block_on_wall = false
 floor_max_angle = 3.1415927
 floor_snap_length = 1.0
-script = ExtResource("1_t3edj")
+script = ExtResource("1_dpaq6")
 dialogo = NodePath("Interacao_Dialogo2")
 
-[node name="Interacao_Dialogo2" parent="." unique_id=377357338 node_paths=PackedStringArray("markers", "npc") instance=ExtResource("2_ni2rr")]
+[node name="Interacao_Dialogo2" parent="." unique_id=377357338 node_paths=PackedStringArray("markers", "npc") instance=ExtResource("2_dghvw")]
 physics_interpolation_mode = 1
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.023575783, 0, 0)
 _cena_nome = "res://cenas/salas/andar_interno.tscn"

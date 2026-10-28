@@ -6,7 +6,6 @@ extends Node3D
 var number_jogador :int = 1
 func _sair_cena():
 	animation_player.play("SairCena")
-	
 	await  animation_player.animation_finished
 	
 func _entrar_cena():
@@ -14,5 +13,6 @@ func _entrar_cena():
 	await  animation_player.animation_finished
 
 func _on_ready() -> void:
-	#Ao iniciar, deixa a opacidade, o canal alfa, do quadrado preto, como 0, deixando o transparente e não visivel.
+	#Ao iniciar, deixa a opacidade, o canal alfa, 
+	#do quadrado preto em 0, deixando-o transparente.
 	rect_out.color.a = 0

@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bnmxpf6y4mkjt"
-path.s3tc="res://.godot/imported/lobo_46725.png-b64ca872f2814f56cd3eab5c1142758e.s3tc.ctex"
+path.s3tc="res://.godot/imported/lobo_textura.png-bced3b7584c38e4adcce62ce5aafa589.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://cenas/salas/lobo_46725.png"
-dest_files=["res://.godot/imported/lobo_46725.png-b64ca872f2814f56cd3eab5c1142758e.s3tc.ctex"]
+source_file="res://assets/texturas/lobo_textura.png"
+dest_files=["res://.godot/imported/lobo_textura.png-bced3b7584c38e4adcce62ce5aafa589.s3tc.ctex"]
 
 [params]
 

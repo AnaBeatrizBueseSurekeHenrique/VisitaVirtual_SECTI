@@ -3,7 +3,6 @@
 
 newmtl Branco_Luz
 Ns 1000.000000
-Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
 Ks 0.500000 0.500000 0.500000
 Ke 0.000000 0.000000 0.000000
@@ -13,7 +12,6 @@ illum 2
 
 newmtl Cinza_Luz
 Ns 250.000000
-Ka 1.000000 1.000000 1.000000
 Kd 0.077251 0.094796 0.138072
 Ks 0.500000 0.500000 0.500000
 Ke 0.000000 0.000000 0.000000
@@ -23,7 +21,6 @@ illum 2
 
 newmtl Contorno_Preto.001
 Ns 250.000000
-Ka 0.073394 0.073394 0.073394
 Kd 0.012375 0.013285 0.023847
 Ks 0.500000 0.500000 0.500000
 Ke 0.000000 0.000000 0.000000
@@ -33,18 +30,14 @@ illum 3
 
 newmtl Material_Listras
 Ns 250.000000
-Ka 1.000000 1.000000 1.000000
 Ks 0.500000 0.500000 0.500000
 Ke 0.000000 0.000000 0.000000
 Ni 1.500000
 d 1.000000
 illum 2
-map_Kd C:/Users/anabe/OneDrive/Documentos/Estagio/Projeto_MundoVirtual_SecretariaInovacao/Assets/texturas/bamboo/4K-bamboo_wall_basecolor.png
-map_Bump -bm 1.000000 C:/Users/anabe/OneDrive/Documentos/Estagio/Projeto_MundoVirtual_SecretariaInovacao/Assets/texturas/bamboo/4K-bamboo_wall_normal.png
 
 newmtl Material_Teto
 Ns 250.000000
-Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
 Ks 0.500000 0.500000 0.500000
 Ke 0.000000 0.000000 0.000000
@@ -54,7 +47,6 @@ illum 2
 
 newmtl Material_Teto.002
 Ns 250.000000
-Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
 Ks 0.500000 0.500000 0.500000
 Ke 0.000000 0.000000 0.000000
@@ -64,33 +56,27 @@ illum 2
 
 newmtl Parede_Interna
 Ns 250.000000
-Ka 1.000000 1.000000 1.000000
 Kd 0.024552 0.028144 0.031436
 Ks 0.500000 0.500000 0.500000
 Ke 0.000000 0.000000 0.000000
 Ni 1.500000
 d 1.000000
 illum 2
-map_Bump -bm 1.000000 C:/Users/anabe/OneDrive/Documentos/Estagio/Projeto_MundoVirtual_SecretariaInovacao/Assets/texturas/paredes/parede_interna/parede_interna_normal.jpg
 
 newmtl Parede_Preta
 Ns 0.000000
-Ka 1.000000 1.000000 1.000000
 Kd 0.039936 0.042790 0.038930
 Ks 0.500000 0.500000 0.500000
 Ke 0.000000 0.000000 0.000000
 Ni 1.500000
 d 1.000000
 illum 2
-map_Bump -bm 1.000000 C:/Users/anabe/OneDrive/Documentos/Estagio/Projeto_MundoVirtual_SecretariaInovacao/Assets/texturas/paredes/parede_externa/parede_externa_normal.png
 
 newmtl Tijolo.001
 Ns 250.000000
-Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
 Ks 0.500000 0.500000 0.500000
 Ke 0.000000 0.000000 0.000000
 Ni 1.500000
 d 1.000000
 illum 2
-map_Bump -bm 1.000000 C:/Users/anabe/OneDrive/Documentos/Estagio/Projeto_MundoVirtual_SecretariaInovacao/Assets/Texturas/paredes/parede_tijolo/parede_tijolo_normal.jpg

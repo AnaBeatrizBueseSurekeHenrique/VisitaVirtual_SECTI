@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://ci6kwkx1x6tlj"]
 
 [ext_resource type="Script" uid="uid://dmoao7ufbenlp" path="res://scripts/ui/tela_inicial.gd" id="1_3a3gw"]
-[ext_resource type="Material" uid="uid://xq17n2d4dmsp" path="res://new_shader_material.tres" id="2_7e2g1"]
+[ext_resource type="Material" uid="uid://xq17n2d4dmsp" path="res://scripts/shaders/ui/padrao_tela.tres" id="2_7e2g1"]
 [ext_resource type="FontFile" uid="uid://c0qwpilioxg37" path="res://assets/fontes/vt323/vt323.ttf" id="4_ab7aq"]
 [ext_resource type="FontFile" uid="uid://d0g4is27ioqvr" path="res://assets/fontes/quicksand/quicksand_static/quicksand_regular.ttf" id="4_q53aj"]
 [ext_resource type="FontFile" uid="uid://d4n3pxlb7g7bk" path="res://assets/fontes/geistpixel/geitspixel.ttf" id="5_l0qsa"]

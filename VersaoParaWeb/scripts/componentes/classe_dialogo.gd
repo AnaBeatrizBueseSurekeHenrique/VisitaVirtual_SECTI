@@ -12,7 +12,6 @@ const LINK_BUTTON: PackedScene = preload("res://cenas/ui/botoes/botao_link/link_
 @export var _exibir_texto: ExibirTexto
 ## Local onde botões e links são armazenados no dialogo
 @export var panel_botoes : GridContainer
-var base_pitch;
 ## Armazena o NPC responsável pelo inicio do dialogo.
 var npc : NPC
 ##Velocidade padrão em que a mensagem será exibida
@@ -137,8 +136,6 @@ func _process(_delta: float) -> void:
 	# Caso contrário, será aguardado até o usuário pressionar um botão.
 	if(!_exibir_texto.botao):
 
-
-			
 		#Caso todo o texto esteja visivel
 		if Input.is_action_just_pressed("interagir") and ui_ratio >= 1:
 			avanca_texto()
@@ -158,7 +155,6 @@ func _process(_delta: float) -> void:
 				panel_botoes.remove_child(n)
 				n.queue_free() 	
 			avanca_texto()
-
 
 func avanca_texto():
 	if(! volta):

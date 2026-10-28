@@ -294,7 +294,7 @@ transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 0, 0, 0)
 
 [node name="Componente_Mudar_Cena" parent="." unique_id=1783618635 instance=ExtResource("17_aol5k")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.484928, 5.581649, -12.606755)
-caminho_cena = "C:/Users/anabe/OneDrive/Documentos/Estagio/Projeto_MundoVirtual_SecretariaInovacao/cenas/salas/sala_segundo_andar.tscn"
+caminho_cena = "/sala_segundo_andar.tscn"
 numero_jogador = 1
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Componente_Mudar_Cena" unique_id=1346277939]

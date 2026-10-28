@@ -1,6 +1,6 @@
 [gd_resource type="StandardMaterial3D" format=3 uid="uid://drjrinrco555o"]
 
-[ext_resource type="Texture2D" uid="uid://bnmxpf6y4mkjt" path="res://cenas/salas/lobo_46725.png" id="1_wvjh1"]
+[ext_resource type="Texture2D" uid="uid://bnmxpf6y4mkjt" path="res://assets/texturas/lobo_textura.png" id="1_dr8ug"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wvjh1"]
 render_priority = 1
@@ -20,7 +20,7 @@ next_pass = SubResource("StandardMaterial3D_wvjh1")
 diffuse_mode = 3
 disable_fog = true
 vertex_color_use_as_albedo = true
-albedo_texture = ExtResource("1_wvjh1")
+albedo_texture = ExtResource("1_dr8ug")
 metallic = 0.29
 metallic_specular = 0.3
 roughness = 0.44
@@ -28,7 +28,7 @@ emission_enabled = true
 emission = Color(1, 1, 1, 1)
 emission_energy_multiplier = 0.7
 emission_operator = 1
-emission_texture = ExtResource("1_wvjh1")
+emission_texture = ExtResource("1_dr8ug")
 rim_enabled = true
 rim_tint = 0.0
 clearcoat_enabled = true

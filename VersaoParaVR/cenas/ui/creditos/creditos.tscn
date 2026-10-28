@@ -177,7 +177,7 @@ text = "Passero One"
 layout_mode = 2
 theme_override_fonts/font = ExtResource("4_swy5q")
 theme_override_font_sizes/font_size = 32
-text = "- Viktoriya Grabowska "
+text = "- Viktoriya Grabowska"
 horizontal_alignment = 1
 
 [node name="Quicksand" type="HBoxContainer" parent="SubViewportContainer/SubViewport/PanelContainer2/VBoxContainer/CenterContainer/MarginContainer/VBoxContainer/Scroll/VBoxContainer/VBoxContainer" unique_id=1816095168]
@@ -212,6 +212,13 @@ layout_mode = 2
 theme_override_fonts/font = ExtResource("4_swy5q")
 theme_override_font_sizes/font_size = 32
 text = "- Peter Hull"
+horizontal_alignment = 1
+
+[node name="Label6" type="Label" parent="SubViewportContainer/SubViewport/PanelContainer2/VBoxContainer/CenterContainer/MarginContainer/VBoxContainer/Scroll/VBoxContainer" unique_id=1912652700]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_swy5q")
+theme_override_font_sizes/font_size = 32
+text = "Visita virtual desenvolvida por Ana Beatriz Buese Sureke Henrique."
 horizontal_alignment = 1
 
 [node name="MarginContainer" type="MarginContainer" parent="SubViewportContainer/SubViewport/PanelContainer2/VBoxContainer" unique_id=520804877]

@@ -9,7 +9,6 @@ func _ready() -> void:
 ## Ou seja, a cena inicial.
 func _on_button_pressed() -> void:	
 	audio.play()
-	#await audio.finished
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 
 	ChangeScene.scene_name = "res://cenas/salas/externo.tscn"

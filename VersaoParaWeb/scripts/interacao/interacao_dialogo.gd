@@ -2,6 +2,7 @@ extends StaticBody3D
 ##Classe responsável por lidar com interações de dialogos dos NPCs
 class_name  NPC
 
+
 enum State {
 	IDLE,
 	SITTING,

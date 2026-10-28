@@ -1,6 +1,6 @@
 [gd_resource type="StandardMaterial3D" format=3 uid="uid://u6olaxedu14t"]
 
-[ext_resource type="Texture2D" uid="uid://bvav7wgp1b0t1" path="res://assets/texturas/madeiras/madeira_clara/madeira_clara_cor_base.png" id="1_wicel"]
+[ext_resource type="Texture2D" uid="uid://c53nvcse2velx" path="res://assets/texturas/madeiras/madeira_clara/madeira_clara_cor_base.png" id="1_wicel"]
 [ext_resource type="Texture2D" uid="uid://bcm3lu071fx83" path="res://assets/texturas/madeiras/madeira_clara/madeira_clara_oclusao_ambiente.png" id="2_gob1g"]
 [ext_resource type="Texture2D" uid="uid://b52w6siccnwbv" path="res://assets/texturas/madeiras/madeira_clara/madeira_clara_metal.png" id="3_ymoud"]
 [ext_resource type="Texture2D" uid="uid://chmkvqd7lu14a" path="res://assets/texturas/madeiras/madeira_clara/madeira_clara_normal.png" id="4_s0kur"]
